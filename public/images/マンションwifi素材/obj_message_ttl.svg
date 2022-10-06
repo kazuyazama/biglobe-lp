@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" width="31.11" height="30.83" viewBox="0 0 31.11 30.83">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #0071bc;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="design">
+    <g>
+      <line class="d" x1="21.39" y1="29.97" x2="1.23" y2=".85"/>
+      <line class="d" x1="29.79" y1="28.97" x2="18.71" y2="8.82"/>
+    </g>
+  </g>
+</svg>
