@@ -1,50 +1,73 @@
+import Link from 'next/link';
+import { Link as Scroll } from 'react-scroll';
+
 const Header = () => {
     return (
-        <>
-           <div className="navbar bg-base-100">
+        <div className="w-full fixed z-10">
+        <div className="navbar bg-base-100 ">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
-                    <li tabIndex={0}>
-                    <a className="justify-between">
-                        Parent
-                        <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-                    </a>
-                    <ul className="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="#campaign">キャンペーン</a></li>
+                    <li><a href="">料金</a></li>
+                    <li><a>開通までの流れ</a></li>
+                    <li><a>FAQ</a></li>
+                   
                 </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <div className="flex flex-col">
+                <a className="btn btn-ghost normal-case md:text-lg"><img src="/vercel.svg" alt="" /></a>
+               
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
-                <li><a>Item 1</a></li>
-                <li tabIndex={0}>
-                    <a>
-                    Parent
-                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                    </a>
-                    <ul className="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                    </ul>
+                
+                <li>
+                    <Scroll to="top" smooth={true} duration={600} >
+                    HOME
+                    </Scroll> 
                 </li>
-                <li><a>Item 3</a></li>
+                <li>
+                    <Scroll to="campaign" smooth={true} duration={600} offset={-60}>
+                    キャンペーン
+                    </Scroll>
+                    
+                </li>
+                <li>
+                    <Scroll to="cost" smooth={true} duration={600} offset={-60}>
+                    料金
+                    </Scroll>
+                   
+                </li>
+                <li>
+                    <Scroll to="nagare" smooth={true} duration={600} offset={-60}>
+                    開通までの流れ
+                    </Scroll>
+                </li>
+                <li>
+                    <Scroll to="faq" smooth={true} duration={600} offset={-60} >
+                    FAQ
+                    </Scroll>
+                </li>
+               
+    
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                <Link href="/form/web">
+                <a className="btn">Webお申し込み</a>
+                </Link>
             </div>
-            </div>
-        </>
+        </div>
+        <div className="bg-base-100 text-center">
+        <p className="text-xs ">ビッグローブ光正規代理店株式会社リスターつ</p>
+        </div>
+        </div>
     );
 }
 

@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'top-background':"url('/images/sample/back_1.webp'),url('/images/background/background1.webp')"
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

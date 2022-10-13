@@ -1,12 +1,12 @@
 import FormHeader from "./FormHeader";
-import FormFooter from "./FormFooter"
+import Footer from "../../Layout/Footer";
 
 const FormLayout = ({children}) => {
     return (
         <>
         <FormHeader />
         <main>{children}</main>
-        <FormFooter />
+        <Footer />
         </>
     );
 }
