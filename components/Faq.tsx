@@ -5,7 +5,7 @@ const Faq = () => {
 
         <div className="flex flex-col space-y-6">
 
-        <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box ">
+        <div tabIndex={0} className="collapse collapse-plus border-2 border-secondary bg-base-100 rounded-box ">
         <input type="checkbox" /> 
         <div className="collapse-title text-xl font-medium">
         ビッグローブ光とはどんなサービスですか？

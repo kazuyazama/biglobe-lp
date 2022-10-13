@@ -12,7 +12,7 @@ const Campaign = () => {
           <div className="basis-full ">
 
         
-            <div className="card  bg-base-100 shadow-xl">
+            <div className="card shadow-xl bg-secondary ">
             <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
