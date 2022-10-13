@@ -7,7 +7,10 @@ const ContactSection = () => {
         <>
          <div className="md:flex flex-row justify-center md:space-x-5">
          
-            <div className="px-10 md:px-0 pb-5 md:pb-0 col-span-2 self-center ">当社限定キャンペーンなら最大68,000円おトク！WEB申込は２４時間受付！</div>
+            <div className="pb-5 md:pb-0 md:text-2xl font-semibold flex flex-col items-center">
+                <h1>当社限定キャンペーンなら最大29,800円おトク！</h1>
+                <h1 className="text-primary">WEB申込は２４時間受付！</h1>
+            </div>
 
             <div className="flex space-x-5 justify-center">
 
@@ -18,7 +21,7 @@ const ContactSection = () => {
             </div>
             <div className="">
             <Link href="/form/call">
-            <button className="btn btn-accent md:btn-wide md:btn-md lg:btn-lg w-40">電話相談</button>
+            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg w-40">電話相談</button>
             </Link>
             </div>
 

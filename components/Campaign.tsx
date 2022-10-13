@@ -15,8 +15,10 @@ const Campaign = () => {
             <div className="card  bg-base-100 shadow-xl">
             <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">業界10年の経験</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
+                <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大30,000円)または
+                  工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらかをお選びいただけるキャンペーンです！
+                  両方ともに高速wifiルーターは付いてきます。</p>
                 <div className="card-actions justify-end">
                 <button className="btn btn-primary">Buy Now</button>
                 </div>
@@ -33,7 +35,7 @@ const Campaign = () => {
         <div className="card bg-base-100 shadow-xl">
         <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
         <div className="card-body">
-            <h2 className="card-title">業界10年の経験</h2>
+            <h2 className="card-title">IPv6ルーター月額料金無料特典</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
             <button className="btn btn-primary">Buy Now</button>
@@ -48,7 +50,7 @@ const Campaign = () => {
         <div className="card bg-base-100 shadow-xl">
         <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
         <div className="card-body">
-            <h2 className="card-title">スピードお申し込み</h2>
+            <h2 className="card-title">auスマートバリュー</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
             <button className="btn btn-primary">Buy Now</button>
@@ -63,7 +65,7 @@ const Campaign = () => {
         <div className="card bg-base-100 shadow-xl">
         <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
         <div className="card-body">
-            <h2 className="card-title">豊富な特典</h2>
+            <h2 className="card-title">UQモバイル自宅セット割</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
             <button className="btn btn-primary">Buy Now</button>

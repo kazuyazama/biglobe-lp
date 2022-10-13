@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
 
 const Header = () => {
     return (
         <div className="w-full fixed z-10">
-        <div className="navbar bg-base-100 ">
+        <div className="navbar bg-base-100 md:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,10 +20,18 @@ const Header = () => {
                    
                 </ul>
                 </div>
-                <div className="flex flex-col">
-                <a className="btn btn-ghost normal-case md:text-lg"><img src="/vercel.svg" alt="" /></a>
+
+             
+
+                
+                {/* <a className="btn btn-ghost normal-case md:text-lg"><img src="/BIGLOBE光.png" alt="" /></a> */}
+                <a className="normal-case text-2xl flex ">
+                <Image src="/BIGLOBE光.png" width={180} height={40} alt=""  />
+                {/* <Image src="/BIGLOBE-logo.png" width={35} height={15} alt="" /> */}
+                </a>
+                
                
-                </div>
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -58,14 +67,16 @@ const Header = () => {
     
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end flex">
                 <Link href="/form/web">
-                <a className="btn">Webお申し込み</a>
+                <a className="btn btn-secondary ">Webお申し込み</a>
                 </Link>
             </div>
         </div>
-        <div className="bg-base-100 text-center">
-        <p className="text-xs ">ビッグローブ光正規代理店株式会社リスターつ</p>
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-center flex justify-center flex-nowrap md:space-x-4">
+        <span className="text-xs md:text-sm text-white">BIGLOBE正規代理店:株式会社リ・スターツ </span>
+        <span className='text-xs md:text-sm text-white'>届出番号:C2111718</span>
+       
         </div>
         </div>
     );

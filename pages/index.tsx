@@ -6,6 +6,7 @@ import Nagare from '../components/Nagare';
 import Onayami from '../components/Onayami';
 import Point from '../components/Point';
 import Strong from '../components/Strong';
+import Crosing from '../components/Crosing';
 import type { NextPageWithLayout } from './_app'
 
 const Home: NextPageWithLayout = () => {
@@ -17,8 +18,8 @@ const Home: NextPageWithLayout = () => {
 
       {/* topimage */}
       <section className='container pt-20' id='top'>
-        <div className='w-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
-        {/* <div className='bg-top-background w-screen bg-cover'> */}
+        {/* <div className='w-screen bg-gradient-to-r from-cyan-500 to-blue-500'> */}
+        <div className='bg-top-background w-screen bg-cover'>
           
         <div className='container mx-auto sm:px-20'>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
@@ -49,7 +50,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
     
-      <section className='bg-gradient-to-r from-cyan-500 to-red-500 py-8 '>
+      <section className='bg-accent py-8 border-y-2 border-secondary'>
       <div className='container mx-auto md:px-20'>
       <ContactSection />
       </div>
@@ -58,7 +59,7 @@ const Home: NextPageWithLayout = () => {
 
 
        
-      <section className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-20' >
+      <section className='bg-primary   pb-20' >
       <div className='container mx-auto md:px-20'>
 
       <Strong />
@@ -67,7 +68,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-gradient-to-r from-cyan-500 to-blue-500 '>
+      <section className='bg-base-100 '>
       <div className='container mx-auto md:px-20'>
       <Onayami />
       </div>
@@ -75,7 +76,7 @@ const Home: NextPageWithLayout = () => {
 
 
 
-      <section className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-20' id='cost'>
+      <section className='bg-primary pb-20' id='cost'>
       <div className='container mx-auto md:px-20 '>
 
       <Point />
@@ -85,7 +86,7 @@ const Home: NextPageWithLayout = () => {
 
      
 
-      <section className='bg-gradient-to-r from-cyan-500 to-yellow-500 pb-20 ' id='campaign'>
+      <section className='bg-base-100 pb-20 ' id='campaign'>
       <div className='container mx-auto md:px-20 '>
 
       <Campaign />
@@ -94,7 +95,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-gradient-to-r from-cyan-500 to-red-500 py-8'>
+      <section className='bg-accent py-8 border-y-2 border-secondary'>
       <div className='container mx-auto md:px-20 '>
 
       <ContactSection />
@@ -102,7 +103,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-20' id='nagare'>
+      <section className='bg-primary pb-20' id='nagare'>
       <div className='container mx-auto md:px-20 '>
 
          <Nagare />
@@ -113,7 +114,7 @@ const Home: NextPageWithLayout = () => {
 
      
 
-      <section className='bg-gradient-to-r from-yellow-500 to-blue-500 pb-20' id='faq'>
+      <section className='bg-base-100 pb-20' id='faq'>
       <div className='container mx-auto md:px-20 '>
 
         <Faq />
@@ -124,15 +125,17 @@ const Home: NextPageWithLayout = () => {
       </section>
 
 
-      <section className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-20'>
+      <section className='bg-primary pb-20'>
       <div className='container mx-auto md:px-20 '>
-         不安を解消 キャンセルは工事前であれば可能です。ご不明な点があればまずはご相談ください。
+
+        <Crosing />
+     
 
       </div>
 
       </section>
 
-      <section className='bg-gradient-to-r from-cyan-500 to-red-500 py-8'>
+      <section className='bg-accent py-8  border-y-2 border-secondary'>
       <div className='container mx-auto md:px-20 '>
 
       <ContactSection />

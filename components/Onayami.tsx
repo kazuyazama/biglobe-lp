@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Onayami = () => {
     return (
-        <div>
+        <div className="pt-20">
             <Image src="/images/main/nayami.png" width={500} height={300} layout="responsive" />
             {/* こんなお悩みありませんか？
 
