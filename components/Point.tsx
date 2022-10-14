@@ -11,7 +11,7 @@ const Point = () => {
         </div>
 
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 border-secondary p-10 bg-base-100 rounded-xl">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4  p-10 bg-base-100 rounded-xl">
 
 
             <div className="col-span-2 ">
@@ -77,7 +77,7 @@ const Point = () => {
         </div>
 
         <h1 className="text-2xl font-semibold">スマホとセットでよりお得に！</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 border-secondary bg-base-100">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 bg-base-100">
 
             <div className="col-span-2 ">
 
@@ -105,7 +105,7 @@ const Point = () => {
         </div>
 
         <h1 className="text-2xl font-semibold">IPv6対応で速度が速い</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 border-secondary  bg-base-100">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  bg-base-100">
 
             <div className="col-span-2 ">
 
@@ -132,7 +132,7 @@ const Point = () => {
         </div>
 
         <h1 className="text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 border-secondary bg-base-100">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 bg-base-100">
 
             <div className="col-span-2 ">
 

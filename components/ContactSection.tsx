@@ -16,12 +16,12 @@ const ContactSection = () => {
 
             <div className="">
             <Link href="/form/web">
-            <button className="btn btn-secondary md:btn-wide md:btn-md lg:btn-lg w-40">web申込</button>
+            <button className="btn btn-secondary md:btn-wide md:btn-md lg:btn-lg w-40">webお申し込み</button>
             </Link>
             </div>
             <div className="">
             <Link href="/form/call">
-            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg w-40">電話相談</button>
+            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg w-40 text-slate-100">電話相談</button>
             </Link>
             </div>
 

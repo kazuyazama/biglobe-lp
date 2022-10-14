@@ -50,7 +50,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
     
-      <section className='bg-accent py-8 border-y-2 border-secondary'>
+      <section className=' bg-accent py-8  border-secondary'>
       <div className='container mx-auto md:px-20'>
       <ContactSection />
       </div>
@@ -59,7 +59,7 @@ const Home: NextPageWithLayout = () => {
 
 
        
-      <section className='bg-primary   pb-20' >
+      <section className='bg-sky-200   pb-20' >
       <div className='container mx-auto md:px-20'>
 
       <Strong />
@@ -76,7 +76,7 @@ const Home: NextPageWithLayout = () => {
 
 
 
-      <section className='bg-primary pb-20' id='cost'>
+      <section className='bg-sky-200 pb-20' id='cost'>
       <div className='container mx-auto md:px-20 '>
 
       <Point />
@@ -86,7 +86,7 @@ const Home: NextPageWithLayout = () => {
 
      
 
-      <section className='bg-base-100 pb-20 ' id='campaign'>
+      <section className='bg-yellow-50 pb-20 ' id='campaign'>
       <div className='container mx-auto md:px-20 '>
 
       <Campaign />
@@ -95,7 +95,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-accent py-8 border-y-2 border-secondary'>
+      <section className='bg-accent py-8 '>
       <div className='container mx-auto md:px-20 '>
 
       <ContactSection />
@@ -103,7 +103,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-primary pb-20' id='nagare'>
+      <section className='bg-sky-200 pb-20' id='nagare'>
       <div className='container mx-auto md:px-20 '>
 
          <Nagare />
@@ -125,7 +125,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
 
-      <section className='bg-primary pb-20'>
+      <section className='bg-sky-200 pb-20'>
       <div className='container mx-auto md:px-20 '>
 
         <Crosing />

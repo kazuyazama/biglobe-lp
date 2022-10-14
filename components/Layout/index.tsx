@@ -1,7 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer"
+import { ReactElement } from "react";
 
-const Layout = ({children}) => {
+type LayoutProps = Required<{
+    readonly children: ReactElement
+  }>
+
+const Layout = ({children}:LayoutProps) => {
     return (
         <>
         <Header />

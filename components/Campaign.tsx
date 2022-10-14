@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const Campaign = () => {
@@ -12,7 +13,7 @@ const Campaign = () => {
           <div className="basis-full ">
 
         
-            <div className="card shadow-xl bg-secondary ">
+            <div className="card bg-base-100 shadow-xl border-4 border-accent  ">
             <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
@@ -20,7 +21,9 @@ const Campaign = () => {
                   工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらかをお選びいただけるキャンペーンです！
                   両方ともに高速wifiルーターは付いてきます。</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+                <Link href='/campaign'>
+                <button className="btn btn-primary">詳細</button>
+                </Link>
                 </div>
             </div>
             </div>
