@@ -1,7 +1,7 @@
 const Point = () => {
     return (
         <>
-        <h1 className="text-center text-2xl py-20 font-semibold">ビッグローブ光なら解決！４つのポイント</h1>
+        <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">ビッグローブ光なら解決！４つのポイント</h1>
 
         <div className="flex flex-col space-y-10 ">
 
@@ -11,20 +11,19 @@ const Point = () => {
         </div>
 
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4  p-10 bg-base-100 rounded-xl">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
 
 
             <div className="col-span-2 ">
-
                 <p className="text-center">
                 SoftBank 光なら、キャンペーン適用で月額2,800円(税込3,080円)からご利用いただけます！
                 回線とプロバイダ料金込みなのでとってもおトクです！
                 </p>
-
             </div>
-       
 
-            <div className=" card  bg-base-100 shadow-xl">
+
+            {/* マンションと戸建のところをレスポンシブでやるためにタブに変える */}
+            <div className="col-span-2 md:col-span-1  card bg-base-100 shadow-xl">
                 <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">マンション</h2>
@@ -34,7 +33,7 @@ const Point = () => {
                     </div>
                 </div>
             </div>
-            <div className=" card  bg-base-100 shadow-xl">
+            <div className="col-span-2 md:col-span-1  card  bg-base-100 shadow-xl">
                 <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">戸建</h2>
@@ -71,7 +70,6 @@ const Point = () => {
             <div className="col-span-2">
                 画像
             </div>
-
 
 
         </div>

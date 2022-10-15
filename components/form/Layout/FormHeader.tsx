@@ -4,6 +4,8 @@ import Image from "next/image";
 const FormHeader = () => {
     return (
         <>
+        <div className="overflow-x-hidden ">
+
         <div className="navbar bg-base-100 px-5">
            
         <div className="flex flex-row mx-auto md:space-x-10 ">
@@ -19,6 +21,7 @@ const FormHeader = () => {
             <span className="text-xs md:text-base ">BIGLOBE正規代理店</span>
             <span className="text-xs md:text-base inline-block">株式会社リ・スターツ </span>
             </div>
+        </div>
         </div>
 
         </div>

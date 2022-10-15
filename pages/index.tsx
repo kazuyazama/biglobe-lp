@@ -18,8 +18,10 @@ const Home: NextPageWithLayout = () => {
 
       {/* topimage */}
       <section className='container pt-20' id='top'>
-        {/* <div className='w-screen bg-gradient-to-r from-cyan-500 to-blue-500'> */}
-        <div className='bg-top-background w-screen bg-cover'>
+        {/* <div className='bg-top-background w-screen bg-cover bg-left'> */}
+        <div className='bg-top-background w-screen bg-cover bg-bottom'>
+    
+        
           
         <div className='container mx-auto sm:px-20'>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
@@ -36,13 +38,12 @@ const Home: NextPageWithLayout = () => {
 
         {/* news */}
 
-        <div className='flex justify-center my-5'>
-        <div className="basis-5/6  alert shadow-lg">
-        <div className=''>
+        <div className='flex justify-center my-2 md:my-5'>
+        <div className='flex items-center space-x-2'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info flex-shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <h1 className=''>法改正により、よりお得にご利用ができるようになりました。</h1>
+          <h1 className='text-xs md:text-base'>法改正により、よりお得にご利用ができるようになりました。</h1>
+   
         </div>
-      </div>
 
       
         </div>
@@ -59,8 +60,8 @@ const Home: NextPageWithLayout = () => {
 
 
        
-      <section className='bg-sky-200   pb-20' >
-      <div className='container mx-auto md:px-20'>
+      <section className='bg-sky-200 pb-20' >
+      <div className='container mx-auto px-5 md:px-20'>
 
       <Strong />
        
@@ -69,7 +70,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
       <section className='bg-base-100 '>
-      <div className='container mx-auto md:px-20'>
+      <div className='container mx-auto px-5 md:px-20'>
       <Onayami />
       </div>
       </section>
@@ -77,7 +78,7 @@ const Home: NextPageWithLayout = () => {
 
 
       <section className='bg-sky-200 pb-20' id='cost'>
-      <div className='container mx-auto md:px-20 '>
+      <div className='container mx-auto px-5 md:px-20 '>
 
       <Point />
       </div>
@@ -87,7 +88,7 @@ const Home: NextPageWithLayout = () => {
      
 
       <section className='bg-yellow-50 pb-20 ' id='campaign'>
-      <div className='container mx-auto md:px-20 '>
+      <div className='container mx-auto px-5 md:px-20 '>
 
       <Campaign />
          
@@ -104,7 +105,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
       <section className='bg-sky-200 pb-20' id='nagare'>
-      <div className='container mx-auto md:px-20 '>
+      <div className='container mx-auto px-5 md:px-20 '>
 
          <Nagare />
 
@@ -115,7 +116,7 @@ const Home: NextPageWithLayout = () => {
      
 
       <section className='bg-base-100 pb-20' id='faq'>
-      <div className='container mx-auto md:px-20 '>
+      <div className='container mx-auto px-5 md:px-20 '>
 
         <Faq />
 
@@ -126,7 +127,7 @@ const Home: NextPageWithLayout = () => {
 
 
       <section className='bg-sky-200 pb-20'>
-      <div className='container mx-auto md:px-20 '>
+      <div className='container mx-auto px-5 md:px-20 '>
 
         <Crosing />
      

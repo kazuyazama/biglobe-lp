@@ -6,7 +6,7 @@ const Campaign = () => {
         <>
 
         <div className="">
-        <h1 className="text-center text-2xl py-20">キャンペーン</h1>
+        <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">キャンペーン</h1>
 
         <div className="flex justify-center ">
 
@@ -30,7 +30,7 @@ const Campaign = () => {
           </div>
         </div>
 
-        <div className="flex justify-center space-x-5 pt-5">
+        <div className="md:flex justify-center space-y-5 md:space-y-0 md:space-x-5 pt-5">
 
           <div className="basis-1/3 ">
 

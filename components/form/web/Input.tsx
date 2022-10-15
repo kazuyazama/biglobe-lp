@@ -40,21 +40,23 @@ const Input = () => {
 
     return (
         <>
-      
-        <div className="container mx-auto px-40 py-20">
+        <div className=" overflow-x-hidden">
+
+        <div className="container mx-auto px-5 md:px-40 py-20">
 
         <div className="text-center">
 
-          <h1 className="py-5">ビッグローブ光お申し込みフォーム</h1>
-          <ul className="steps w-1/2">
+          <h1 className="py-5 ">ビッグローブ光お申し込みフォーム</h1>
+          <ul className="steps w-full md:w-1/2 ">
           <li className="step step-primary">ご入力</li>
-          <li className="step ">ご確認</li>
+          <li className="step">ご確認</li>
           <li className="step">完了</li>
           </ul>
 
+
         </div>
 
-        <div className="flex flex-row ">
+        <div className="flex flex-row  ">
         <div className="basis-full">
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -70,7 +72,7 @@ const Input = () => {
             </div>
           <input
             type="text"
-            className="input basis-full  input-bordered "
+            className="input w-full input-bordered "
             placeholder="山田太郎"
             {...register("name", {
               required: "お名前は必須項目です。"
@@ -95,7 +97,7 @@ const Input = () => {
             </div>
           <input
             type="text"
-            className="input basis-full  input-bordered "
+            className="input w-full  input-bordered "
             placeholder="ヤマダタロウ"
             {...register("furigana", {
               required: "フリガナは必須項目です。"
@@ -169,7 +171,7 @@ const Input = () => {
             </div>
           <input
             type="date"
-            className="input basis-full  input-bordered "
+            className="input w-full  input-bordered "
             placeholder="ヤマダタロウ"
             {...register("birthday", {
               required: "生年月日は必須項目です。"
@@ -197,7 +199,7 @@ const Input = () => {
             </div>
           <input
             type="email"
-            className="input basis-full  input-bordered "
+            className="input w-full  input-bordered "
             placeholder="yamada@gmail.com"
             {...register("email", {
               required: "メールアドレスは必須項目です。"
@@ -222,7 +224,7 @@ const Input = () => {
             </div>
           <input
             type="tel"
-            className="input basis-full  input-bordered "
+            className="input w-full  input-bordered "
             placeholder="09011112222"
             {...register("tel", {
               required: "電話番号は必須項目です。"
@@ -303,7 +305,7 @@ const Input = () => {
             </div>
           <input
             type="text"
-            className="input basis-full input-bordered  "
+            className="input w-full input-bordered  "
             placeholder="1112222"
             {...register("zip", {
               required: {
@@ -316,7 +318,7 @@ const Input = () => {
           /> 
           </label>
           <div className="flex">
-          <div className="basis-1/3">
+          <div className="md:basis-1/3">
           <ErrorMessage
             errors={errors}
             name="zip"
@@ -342,7 +344,7 @@ const Input = () => {
             </div>
           <input
             type="text"
-            className="input basis-full input-bordered"
+            className="input w-full input-bordered"
             defaultValue={`${address ? address.prefecture : ''}${address ? address.address1 : ''}${address ? address.address2 : ''}`}
             placeholder="東京都町田市森野"
             {...register("address", {
@@ -376,7 +378,7 @@ const Input = () => {
             </div>
           <input
             type="text"
-            className="input basis-full "
+            className="input w-full "
             placeholder="09011112222"
             {...register("address2", {
               required: "番地は必須項目です。"
@@ -405,11 +407,11 @@ const Input = () => {
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
-          <span>確認お電話ご希望時間帯</span>
+          <span>お電話ご希望時間</span>
        
         </div>
 
-        <div className="basis-full flex space-x-2">
+        <div className="basis-full md:flex space-x-0 md:space-x-2">
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
@@ -486,7 +488,7 @@ const Input = () => {
 
         </div>
         <div className="flex">
-        <div className="basis-1/3">
+        <div className="md:basis-1/3">
         <ErrorMessage
             errors={errors}
             name="time"
@@ -507,13 +509,13 @@ const Input = () => {
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
-          <span>確認お電話ご希望曜日</span>
+          <span>お電話ご希望曜日</span>
           
         </div>
         
 
       
-        <div className="basis-full flex space-x-2">
+        <div className="basis-full md:flex space-x-0 md:space-x-2">
 
 
         <div className="form-control">
@@ -592,7 +594,7 @@ const Input = () => {
 
         </div>
         <div className="flex">
-        <div className="basis-1/3" >
+        <div className="md:basis-1/3" >
         <ErrorMessage
             errors={errors}
             name="week"
@@ -614,7 +616,7 @@ const Input = () => {
               <span>ご質問など</span>
             </div>
           <textarea
-            className="textarea h-24 basis-full input-bordered"
+            className="textarea h-24 w-full input-bordered"
             placeholder="ご質問などを入力"
             {...register("question", {
             })}
@@ -665,6 +667,7 @@ const Input = () => {
 
       </div>
 
+      </div>
       </div>
         </>
     );

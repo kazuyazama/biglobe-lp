@@ -1,7 +1,12 @@
 import FormHeader from "./FormHeader";
 import Footer from "../../Layout/Footer";
+import { ReactElement } from "react";
 
-const FormLayout = ({children}) => {
+type LayoutProps = Required<{
+    readonly children: ReactElement
+  }>
+
+const FormLayout = ({children}:LayoutProps) => {
     return (
         <>
         <FormHeader />
