@@ -1,11 +1,26 @@
 import type { NextPageWithLayout } from "./_app";
+import type { ReactElement } from "react";
+import FormLayout from "../components/form/Layout";
 
-const privacy:NextPageWithLayout = () => {
+const Privacy:NextPageWithLayout = () => {
     return (
-        <div>
-            Enter
+        <>
+        <div className="overflow-x-hidden ">
+        <section className='container mx-auto md:px-20 px-5'>
+
+            プライバシーポリシーページ
+        </section>
         </div>
+        </>
     );
 }
 
-export default privacy;
+Privacy.getLayout = (page:ReactElement) =>  {
+    return (
+      <FormLayout>
+        {page}
+      </FormLayout>
+    )
+}
+
+export default Privacy;

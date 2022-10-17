@@ -42,11 +42,11 @@ const Input = () => {
         <>
         <div className=" overflow-x-hidden">
 
-        <div className="container mx-auto px-5 md:px-40 py-20">
+        <div className="container mx-auto px-5 md:px-40 pb-10">
 
         <div className="text-center">
 
-          <h1 className="py-5 ">ビッグローブ光お申し込みフォーム</h1>
+          <h1 className="py-10 text-xl md:text-2xl">ビッグローブ光お申し込みフォーム</h1>
           <ul className="steps w-full md:w-1/2 ">
           <li className="step step-primary">ご入力</li>
           <li className="step">ご確認</li>
@@ -65,10 +65,10 @@ const Input = () => {
 
         {/* お名前入力欄 */}
         <div className="py-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
-              <span>お名前（フルネーム）</span>
+              <span>お名前(フルネーム)</span>
             </div>
           <input
             type="text"
@@ -90,10 +90,10 @@ const Input = () => {
 
         {/* フリガナ入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
-            <span>フリガナ（フルネーム）</span>
+            <span>フリガナ(フルネーム)</span>
             </div>
           <input
             type="text"
@@ -117,7 +117,7 @@ const Input = () => {
 
          <div className="py-3">
 
-          <div className="md:flex items-center">
+          <div className="md:flex items-center space-y-3 md:space-y-0">
           <div className="basis-1/3 space-x-2">
           <div className="badge badge-secondary">必須</div>
           <span>性別</span>
@@ -164,7 +164,7 @@ const Input = () => {
         
         {/* 生年月日入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
             <span>生年月日</span>
@@ -192,7 +192,7 @@ const Input = () => {
         {/* メールアドレス入力欄 */}
 
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>メールアドレス</span>
@@ -217,7 +217,7 @@ const Input = () => {
 
         {/* 折り返し電話番号入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>折り返し電話番号</span>
@@ -248,7 +248,7 @@ const Input = () => {
 
         <div className="py-3">
 
-        <div className="md:flex items-center">
+        <div className="md:flex items-center space-y-3 md:space-y-0">
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
         <span>建物のタイプ</span>
@@ -298,7 +298,7 @@ const Input = () => {
 
         {/* 設置先郵便番号入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>設置先郵便番号</span>
@@ -337,7 +337,7 @@ const Input = () => {
 
         {/* 設置先ご住所入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
             <span>設置先ご住所</span>
@@ -371,7 +371,7 @@ const Input = () => {
         {/* 番地入力欄 */}
         {handleTatemono === '集合住宅' ? (
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
               <div className="badge badge-secondary">必須</div>
               <span>建物名・部屋番号</span>
@@ -403,7 +403,7 @@ const Input = () => {
 
         <div className="py-6">
 
-        <div className="md:flex items-center">
+        <div className="md:flex items-center space-y-3 md:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
@@ -505,7 +505,7 @@ const Input = () => {
 
         <div className="py-6">
 
-        <div className="md:flex items-center">
+        <div className="md:flex items-center space-y-3 md:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
@@ -610,7 +610,7 @@ const Input = () => {
 
         {/* ご質問など入力欄 */}
         <div className="pb-3 space-y-3">
-          <label className="md:flex items-center">
+          <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2 ">
             <div className="badge badge-primary ">任意</div>
               <span>ご質問など</span>

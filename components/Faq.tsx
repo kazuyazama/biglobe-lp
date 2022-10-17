@@ -7,7 +7,7 @@ const Faq = () => {
 
         <div tabIndex={0} className="collapse collapse-plus border-2 border-primary bg-base-100 rounded-box ">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title font-medium">
         ビッグローブ光とはどんなサービスですか？
         </div>
         <div className="collapse-content "> 
@@ -22,7 +22,7 @@ const Faq = () => {
 
         <div tabIndex={1} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title font-medium">
             転用とは何ですか？
         </div>
         <div className="collapse-content"> 
@@ -33,7 +33,7 @@ const Faq = () => {
         </div>
         <div tabIndex={2} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title font-medium">
             接続はどのようにすればよいですか？
         </div>
         <div className="collapse-content"> 
@@ -48,7 +48,7 @@ const Faq = () => {
         </div>
         <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title font-medium">
             インターネット接続や設定をしてほしいです。
         </div>
         <div className="collapse-content"> 
@@ -61,7 +61,7 @@ const Faq = () => {
         </div>
         <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title  font-medium">
             乗り換え（転用）には工事が必要ですか？
         </div>
         <div className="collapse-content"> 
@@ -77,7 +77,7 @@ const Faq = () => {
         </div>
         <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <input type="checkbox" /> 
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title  font-medium">
             工事日の日程はどのように決まるのでしょうか？
         </div>
         <div className="collapse-content"> 

@@ -1,3 +1,9 @@
+import {FaRegBuilding} from "react-icons/fa";
+import {BsHouse} from "react-icons/bs";
+
+import Link from "next/link";
+import Image from "next/image";
+
 const Point = () => {
     return (
         <>
@@ -10,39 +16,54 @@ const Point = () => {
         <h1 className="text-2xl font-semibold">月額料金が安い</h1>
         </div>
 
+    
+
+    
 
         <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
 
 
             <div className="col-span-2 ">
-                <p className="text-center">
-                SoftBank 光なら、キャンペーン適用で月額2,800円(税込3,080円)からご利用いただけます！
+                <h2 className="text-center text-lg">
+                BIGLOBE 光なら、月額3,980円(税込3,080円)からご利用いただけます！
                 回線とプロバイダ料金込みなのでとってもおトクです！
-                </p>
+                </h2>
             </div>
 
 
-            {/* マンションと戸建のところをレスポンシブでやるためにタブに変える */}
-            <div className="col-span-2 md:col-span-1  card bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">マンション</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                </div>
+
+            <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
+
+            <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
+            <figure className="pl-3 md:pl-10"><FaRegBuilding className="text-5xl md:text-7xl" /></figure>
+            <div className="card-body items-center px-0">
+                <h2 className="card-title">マンションタイプ</h2>
+                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
+            
             </div>
-            <div className="col-span-2 md:col-span-1  card  bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">戸建</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                </div>
             </div>
+            </div>
+
+            <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
+
+            <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
+            <figure className="pl-3 md:pl-10"><BsHouse className="text-5xl md:text-7xl" /></figure>
+            <div className="card-body items-center px-0">
+                <h2 className="card-title">戸建タイプ</h2>
+                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
+
+            </div>
+            </div>
+            </div>
+
+            <div className="col-span-2">
+                <h1>コミコミでお得な料金の画像</h1>
+                
+
+            </div>
+
+
+        
 
 
             <div className="col-span-2">
@@ -58,66 +79,75 @@ const Point = () => {
 
             <div className="col-span-2 ">
 
-            <h2 className="text-xl text-center">集合住宅の割引イメージ</h2>
+            <div className="text-xl text-center">+</div>
+
+            <h2 className="text-xl text-center">当サイト限定！キャッシュバックキャンペーン</h2>
 
             <p className="text-center">
-            SoftBank 光なら、キャンペーン適用で月額2,800円(税込3,080円)からご利用いただけます！
-            回線とプロバイダ料金込みなのでとってもおトクです！
+            当サイトからお申し込み頂くと
+            高額キャッシュバック(最大30,000円)または 工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらか
+            がお選びいただけます。
             </p>
 
             </div>
 
             <div className="col-span-2">
-                画像
+                ↑の詳細画像とリンク
             </div>
 
 
         </div>
 
+        <div className="flex items-center space-x-5 -mb-10">
+        <p className="text-5xl font-extrabold text-accent">02</p>  
         <h1 className="text-2xl font-semibold">スマホとセットでよりお得に！</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 bg-base-100">
+        </div>
+
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 ">
 
             <div className="col-span-2 ">
 
-                <p className="text-center">
+                <h2 className="text-center">
                 auひかりなどに対応していない集合住宅や地域の方でも安心です。BIGLOBE光ならauひかりサービスと同様のauスマートバリューがご利用できます。
-                さらに離れて暮らしているご家族の月額料金も割引！
-                </p>
+                </h2>
+
+        
             </div>
 
             <div className="col-span-2">
-                画像
+                 <Image src="/images/sample/ausmart_top2.webp" width={500} height={150} />
             </div>
        
+    
             <div className="col-span-2">
-                <p className="text-sm text-justify leading-relaxed">
-                    auセット割の詳細
-            
-                </p>
+            ひとりでも、家族でもおトク！画像
             </div>
-        
+
             <div className="col-span-2">
-                画像
+            <Link href="campaign/#au-sv">
+            <a className="btn">詳細</a>
+            </Link>
             </div>
 
         </div>
 
         <h1 className="text-2xl font-semibold">IPv6対応で速度が速い</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  bg-base-100">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  ">
 
             <div className="col-span-2 ">
 
-                <p className="text-center">
+                <h2 className="text-center">
                 ビッグローブ光なら超光速通信IPv6が無料でご利用できます。今ならIPv6対応ルーターが６ヶ月間無料で利用できます。
-                </p>
+                </h2>
+            </div>
+
+
+            <div className="col-span-2">
+            <p>IPv6とは説明亜エフェfエフェげふぇ</p>
             </div>
 
             <div className="col-span-2">
-                画像
-            </div>
-
-            <div className="col-span-2">
-                画像
+            <Image src="/images/sample/ipv6比較.webp" width={500} height={150} />
             </div>
        
             <div className="col-span-2">
@@ -130,22 +160,19 @@ const Point = () => {
         </div>
 
         <h1 className="text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 bg-base-100">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 ">
 
             <div className="col-span-2 ">
 
-                <p className="text-center">
-                急な引っ越しや転勤が多い方でも安心！通常は15000円程かかる移転工事費が何度でも無料で利用できます。NTT回線のため、全国で利用できないエリアは稀です。
-                </p>
+                <h3 className="text-center">
+                急な引っ越しや転勤が多い方でも安心！通常は15000円程かかる移転工事費が何度でも無料で利用できます。
+                </h3>
             </div>
 
             <div className="col-span-2">
-                画像
+                引っ越し無料の画像
             </div>
 
-            <div className="col-span-2">
-                画像
-            </div>
        
             <div className="col-span-2">
                 <p className="text-sm text-justify leading-relaxed">

@@ -12,11 +12,21 @@ const Header = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="#campaign">キャンペーン</a></li>
-                    <li><a href="">料金</a></li>
-                    <li><a>開通までの流れ</a></li>
-                    <li><a>FAQ</a></li>
+                    <li>
+                        <Scroll to="top" smooth={true} duration={600}>HOME</Scroll>
+                    </li>
+                    <li>
+                        <Scroll to="campaign" smooth={true} duration={600} offset={-60}>キャンペーン</Scroll>
+                    </li>
+                    <li>
+                        <Scroll to="cost" smooth={true} duration={600} offset={-60}>料金</Scroll>
+                    </li>
+                    <li>
+                        <Scroll to="nagare" smooth={true} duration={600} offset={-60}>開通までの流れ</Scroll>
+                    </li>
+                    <li>
+                        <Scroll to="faq" smooth={true} duration={600} offset={-60}>FAQ</Scroll>
+                    </li>
                    
                 </ul>
                 </div>
@@ -26,7 +36,7 @@ const Header = () => {
                 
                 {/* <a className="btn btn-ghost normal-case md:text-lg"><img src="/BIGLOBE光.png" alt="" /></a> */}
                 <a className="normal-case text-2xl flex ">
-                <Image src="/BIGLOBE光.png" width={180} height={40} alt=""  />
+                <Image src="/hikari_01.png" width={180} height={35} alt=""  />
                 {/* <Image src="/BIGLOBE-logo.png" width={35} height={15} alt="" /> */}
                 </a>
                 

@@ -12,13 +12,12 @@ const FormHeader = () => {
             <div className="basis-2/3 md:basis-auto">
             <Link href="/">
             <a className="normal-case text-2xl flex ">
-                <Image src="/BIGLOBE光.png" width={180} height={40} alt=""  />
-                 <Image src="/BIGLOBE-logo.png" width={35} height={15} alt="" />
+                <Image src="/BIGLOBE_logo_A-01.png" width={160} height={80} alt=""  />
             </a>
             </Link>
             </div>
             <div className="basis-1/2 md:basis-auto text-center">
-            <span className="text-xs md:text-base ">BIGLOBE正規代理店</span>
+            <span className="text-xs md:text-base ">正規代理店</span>
             <span className="text-xs md:text-base inline-block">株式会社リ・スターツ </span>
             </div>
         </div>

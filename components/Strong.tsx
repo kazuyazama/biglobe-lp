@@ -1,7 +1,7 @@
 const Strong = () => {
     return (
         <div>
-        <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">当サイトが選ばれる理由</h1>
+        <h1 className="text-center text-xl md:text-2xl py-20 font-semibold">当サイトが選ばれる理由</h1>
 
         <div className="flex-col md:flex md:flex-row justify-evenly space-y-10 md:space-y-0 ">
 

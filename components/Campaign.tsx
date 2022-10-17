@@ -6,16 +6,23 @@ const Campaign = () => {
         <>
 
         <div className="">
-        <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">キャンペーン</h1>
+        <h1 className="text-center text-xl md:text-2xl py-20 font-semibold">キャンペーン</h1>
 
         <div className="flex justify-center ">
 
           <div className="basis-full ">
 
-        
-            <div className="card bg-base-100 shadow-xl border-4 border-accent  ">
-            <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-            <div className="card-body">
+
+            <div className="card bg-base-100 shadow-xl ">
+            <div className="bg-accent text-xl text-center py-3">
+             当サイト限定！選べるキャンペーン
+            </div>
+            <div className="card md:card-side  rounded-t-none">
+            <figure className="w-full "><img src="https://placeimg.com/400/225/arch" 
+            alt="Shoes" className="w-full hover:opacity-75" />
+            </figure>
+
+            <div className="card-body ">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
                 <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大30,000円)または
                   工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらかをお選びいただけるキャンペーンです！
@@ -27,6 +34,9 @@ const Campaign = () => {
                 </div>
             </div>
             </div>
+
+
+            </div>
           </div>
         </div>
 
@@ -34,9 +44,11 @@ const Campaign = () => {
 
           <div className="basis-1/3 ">
 
+
                 
         <div className="card bg-base-100 shadow-xl">
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+          <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full" /></figure>
         <div className="card-body">
             <h2 className="card-title">IPv6ルーター月額料金無料特典</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -51,7 +63,8 @@ const Campaign = () => {
 
        
         <div className="card bg-base-100 shadow-xl">
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full" /></figure>
         <div className="card-body">
             <h2 className="card-title">auスマートバリュー</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -66,7 +79,8 @@ const Campaign = () => {
 
 
         <div className="card bg-base-100 shadow-xl">
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full" /></figure>
         <div className="card-body">
             <h2 className="card-title">UQモバイル自宅セット割</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
