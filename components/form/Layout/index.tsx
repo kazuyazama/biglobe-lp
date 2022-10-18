@@ -10,7 +10,11 @@ const FormLayout = ({children}:LayoutProps) => {
     return (
         <>
         <FormHeader />
-        <main>{children}</main>
+        <main>
+        <div className="overflow-x-hidden py-20">
+        {children}
+        </div>
+        </main>
         <Footer />
         </>
     );

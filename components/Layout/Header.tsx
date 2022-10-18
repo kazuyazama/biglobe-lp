@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
+import {IoMdArrowDroprightCircle} from "react-icons/io"
+import {AiOutlineForm} from "react-icons/ai"
+
 
 const Header = () => {
     return (
         <div className="w-full fixed z-10">
-        <div className="navbar bg-base-100 md:px-20">
-            <div className="navbar-start">
+        <div className="navbar bg-base-100 md:px-20 md:py-3 ">
+            <div className="navbar-start ">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -33,12 +36,13 @@ const Header = () => {
 
              
 
-                
-                {/* <a className="btn btn-ghost normal-case md:text-lg"><img src="/BIGLOBE光.png" alt="" /></a> */}
-                <a className="normal-case text-2xl flex ">
-                <Image src="/hikari_01.png" width={180} height={35} alt=""  />
-                {/* <Image src="/BIGLOBE-logo.png" width={35} height={15} alt="" /> */}
+                <div className='normal-case '>
+                <Link href="/">
+                <a className="flex w-40 pl-1 pr-4 md:pl-1 md:pr-0 ">
+                <Image src="/hikari_01.png" width={180} height={35} alt="" />
                 </a>
+                </Link>
+                </div>
                 
                
                 
@@ -79,7 +83,7 @@ const Header = () => {
             </div>
             <div className="navbar-end flex">
                 <Link href="/form/web">
-                <a className="btn btn-secondary ">Webお申し込み</a>
+                <a className="btn btn-secondary space-x-1 px-1 md:px-3"><AiOutlineForm className='md:text-xl' /><span>Webお申し込み</span><IoMdArrowDroprightCircle className='md:text-xl '/></a>
                 </Link>
             </div>
         </div>

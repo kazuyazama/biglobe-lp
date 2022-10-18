@@ -6,13 +6,13 @@ const FormHeader = () => {
         <>
         <div className="overflow-x-hidden ">
 
-        <div className="navbar bg-base-100 px-5">
+        <div className="navbar bg-base-100 px-5 border-b border-primary">
            
         <div className="flex flex-row mx-auto md:space-x-10 ">
             <div className="basis-2/3 md:basis-auto">
             <Link href="/">
-            <a className="normal-case text-2xl flex ">
-                <Image src="/BIGLOBE_logo_A-01.png" width={160} height={80} alt=""  />
+            <a className="normal-case flex">
+                <Image src="/BIGLOBE_logo_A-01.png" width={160} height={80} alt="BIGLOBE"  />
             </a>
             </Link>
             </div>

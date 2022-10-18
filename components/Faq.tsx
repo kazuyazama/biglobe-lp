@@ -5,7 +5,7 @@ const Faq = () => {
 
         <div className="flex flex-col space-y-6">
 
-        <div tabIndex={0} className="collapse collapse-plus border-2 border-primary bg-base-100 rounded-box ">
+        <div tabIndex={0} className="collapse collapse-plus border-2 border-primary hover:bg-primary hover:text-base-100 bg-base-100 rounded-box ">
         <input type="checkbox" /> 
         <div className="collapse-title font-medium">
         ビッグローブ光とはどんなサービスですか？
@@ -20,7 +20,7 @@ const Faq = () => {
         </div>
         </div>
 
-        <div tabIndex={1} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div tabIndex={1} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100 ">
         <input type="checkbox" /> 
         <div className="collapse-title font-medium">
             転用とは何ですか？
@@ -31,7 +31,7 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={2} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div tabIndex={2} className="collapse collapse-plus border border-primary  bg-base-100 rounded-box hover:bg-primary hover:text-base-100">
         <input type="checkbox" /> 
         <div className="collapse-title font-medium">
             接続はどのようにすればよいですか？
@@ -46,7 +46,7 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div tabIndex={3} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-primary hover:text-base-100">
         <input type="checkbox" /> 
         <div className="collapse-title font-medium">
             インターネット接続や設定をしてほしいです。
@@ -59,7 +59,7 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div tabIndex={3} className="collapse collapse-plus border border-primary  bg-base-100 rounded-box hover:bg-primary hover:text-base-100">
         <input type="checkbox" /> 
         <div className="collapse-title  font-medium">
             乗り換え（転用）には工事が必要ですか？
@@ -75,7 +75,7 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div tabIndex={3} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-primary hover:text-base-100">
         <input type="checkbox" /> 
         <div className="collapse-title  font-medium">
             工事日の日程はどのように決まるのでしょうか？

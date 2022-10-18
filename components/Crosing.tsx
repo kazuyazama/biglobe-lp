@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const Crosing = () => {
     return (
         <div className="flex items-center">
-            <div>不安を解消 キャンセルは工事前であれば可能です。ご不明な点があればまずはご相談ください。</div>
-            <div>画像</div>
-              
+            <div className="basis-1/2">不安を解消 キャンセルは工事前であれば可能です。ご不明な点があればまずはご相談ください。</div>
+        <div className="basis-1/2"><Image src="/images/main/crosing.webp" width={800} height={500} layout='responsive' /></div>
+          
         </div>
     );
 }

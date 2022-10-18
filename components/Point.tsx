@@ -7,18 +7,17 @@ import Image from "next/image";
 const Point = () => {
     return (
         <>
+        <div className="border translate-x-4 rotate-45 h-20">
+
+        </div>
         <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">ビッグローブ光なら解決！４つのポイント</h1>
 
-        <div className="flex flex-col space-y-10 ">
+        <div className="flex flex-col ">
 
-        <div className="flex items-center space-x-5 -mb-10">
+        <div className="flex items-center space-x-5 ">
         <p className="text-5xl font-extrabold text-accent">01</p>  
         <h1 className="text-2xl font-semibold">月額料金が安い</h1>
         </div>
-
-    
-
-    
 
         <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
 
@@ -35,7 +34,7 @@ const Point = () => {
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
             <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
-            <figure className="pl-3 md:pl-10"><FaRegBuilding className="text-5xl md:text-7xl" /></figure>
+            <figure className="pl-3 md:pl-10"><FaRegBuilding className="text-3xl md:text-7xl" /></figure>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
                 <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
@@ -47,7 +46,7 @@ const Point = () => {
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
             <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
-            <figure className="pl-3 md:pl-10"><BsHouse className="text-5xl md:text-7xl" /></figure>
+            <figure className="pl-3 md:pl-10"><BsHouse className="text-3xl md:text-7xl" /></figure>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
                 <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
@@ -59,11 +58,7 @@ const Point = () => {
             <div className="col-span-2">
                 <h1>コミコミでお得な料金の画像</h1>
                 
-
             </div>
-
-
-        
 
 
             <div className="col-span-2">
@@ -95,15 +90,19 @@ const Point = () => {
                 ↑の詳細画像とリンク
             </div>
 
-
         </div>
 
-        <div className="flex items-center space-x-5 -mb-10">
+        <div className="flex items-center space-x-5 pt-10 ">
         <p className="text-5xl font-extrabold text-accent">02</p>  
         <h1 className="text-2xl font-semibold">スマホとセットでよりお得に！</h1>
         </div>
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 ">
+        
+
+    
+ 
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
+
 
             <div className="col-span-2 ">
 
@@ -124,14 +123,20 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-            <Link href="campaign/#au-sv">
+            <Link href="campaignDetail/#au-sv">
             <a className="btn">詳細</a>
             </Link>
             </div>
 
         </div>
 
+       
+
+        <div className="flex items-center space-x-5 pt-10">
+        <p className="text-5xl font-extrabold text-accent">03</p>  
         <h1 className="text-2xl font-semibold">IPv6対応で速度が速い</h1>
+        </div>
+
         <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  ">
 
             <div className="col-span-2 ">
@@ -159,7 +164,12 @@ const Point = () => {
 
         </div>
 
+        <div className="flex items-center space-x-5 pt-10">
+        <p className="text-5xl font-extrabold text-accent">03</p>  
         <h1 className="text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
+        </div>
+
+
         <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 ">
 
             <div className="col-span-2 ">

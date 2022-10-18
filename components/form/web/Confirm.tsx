@@ -47,12 +47,12 @@ const Confirm = () => {
     return (
         <>
 
-      <div className="container mx-auto px-40 py-20">
+        <div className="container mx-auto px-5 md:px-40">
 
 
         <div className="text-center">
 
-          <h1 className="py-5">入力内容確認画面</h1>
+          <h1 className="pb-10 text-xl md:text-2xl">入力内容確認画面</h1>
           <ul className="steps w-1/2">
           <li className="step step-primary">ご入力</li>
           <li className="step step-primary">ご確認</li>
@@ -197,7 +197,7 @@ const Confirm = () => {
         <div className="py-3 space-y-3">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">確認お電話ご希望曜日</p> 
-            <p className="basis-full">{values.week && values.time.join()}</p> 
+            <p className="basis-full">{values.week && values.week.join()}</p> 
           </div>
         </div>
 

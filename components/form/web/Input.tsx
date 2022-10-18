@@ -4,6 +4,7 @@ import { ErrorMessage } from "@hookform/error-message";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { usePostalJp } from 'use-postal-jp'
+import Link from "next/link"
 
 type Adress = {
   prefectureCode: string; // 都道府県コード
@@ -16,7 +17,7 @@ type Adress = {
 const Input = () => {
     const router = useRouter();
 
-      //郵便番号入れたら自動入力する為の処理
+    //郵便番号入れたら自動入力する為の処理
 
     const [value, setValue] = useState('')
   
@@ -24,7 +25,7 @@ const Input = () => {
 
     //マンションの場合は、建物名と部屋番号入力欄が出る様に保持するstate
 
-    const [handleTatemono, setHandleTatemono] = useState('');
+    const [handleTatemono, setHandleTatemono] = useState('集合住宅');
   
     //react-hook-form
     const {
@@ -40,13 +41,19 @@ const Input = () => {
 
     return (
         <>
-        <div className=" overflow-x-hidden">
+    
 
-        <div className="container mx-auto px-5 md:px-40 pb-10">
+        <div className="container mx-auto px-5 md:px-40 -mt-20 ">
+        <div className="text-sm breadcrumbs pb-20">
+        <ul>
+            <li><Link href="/"><a>Home</a></Link></li> 
+            <li><a>お申し込みフォーム</a></li> 
+        </ul>
+        </div>
 
         <div className="text-center">
 
-          <h1 className="py-10 text-xl md:text-2xl">ビッグローブ光お申し込みフォーム</h1>
+          <h1 className="pb-10 text-xl md:text-2xl">ビッグローブ光お申し込みフォーム</h1>
           <ul className="steps w-full md:w-1/2 ">
           <li className="step step-primary">ご入力</li>
           <li className="step">ご確認</li>
@@ -276,7 +283,7 @@ const Input = () => {
             className="radio checked:bg-secondary" 
             {...register("tatemono", {
               required: "建物タイプは必須項目です。",
-              onChange: (e) => setHandleTatemono(e.target.value)
+              onChange: (e) => setHandleTatemono(e.target.value),
             })}
             checked={handleTatemono === '戸建'}
              />
@@ -379,7 +386,7 @@ const Input = () => {
           <input
             type="text"
             className="input w-full "
-            placeholder="09011112222"
+            placeholder="横山第二ビル 2-A"
             {...register("address2", {
               required: "番地は必須項目です。"
             })}
@@ -418,7 +425,7 @@ const Input = () => {
             value="いつでも" 
             className="checkbox checked:bg-red-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
              />
             <p className="label-text">いつでも</p> 
@@ -430,7 +437,7 @@ const Input = () => {
             value="12時～14時" 
             className="checkbox checked:bg-blue-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
             />
             <span className="label-text">12時～14時</span> 
@@ -442,7 +449,7 @@ const Input = () => {
             value="14時～16時" 
             className="checkbox checked:bg-blue-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
             />
             <span className="label-text">14時～16時</span> 
@@ -454,7 +461,7 @@ const Input = () => {
             value="16時～18時" 
             className="checkbox checked:bg-blue-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
             />
             <span className="label-text">16時～18時</span> 
@@ -466,7 +473,7 @@ const Input = () => {
             value="18時〜20時" 
             className="checkbox checked:bg-blue-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
             />
             <span className="label-text">18時〜20時</span> 
@@ -478,7 +485,7 @@ const Input = () => {
             value="20時〜21時" 
             className="checkbox checked:bg-blue-500" 
             {...register("time", {
-              required: "確認お電話希望時間帯は必須項目です。"
+              required: "お電話ご希望時間は必須項目です。"
             })}
             />
             <span className="label-text">20時〜21時</span> 
@@ -524,7 +531,7 @@ const Input = () => {
             value="いつでも" 
             className="checkbox checked:bg-red-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
              />
             <p className="label-text">いつでも</p> 
@@ -536,7 +543,7 @@ const Input = () => {
             value="月曜" 
             className="checkbox checked:bg-blue-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
             />
             <span className="label-text">月曜</span> 
@@ -548,7 +555,7 @@ const Input = () => {
             value="火曜" 
             className="checkbox checked:bg-blue-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
             />
             <span className="label-text">火曜</span> 
@@ -560,7 +567,7 @@ const Input = () => {
             value="水曜" 
             className="checkbox checked:bg-blue-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
             />
             <span className="label-text">水曜</span> 
@@ -572,7 +579,7 @@ const Input = () => {
             value="木曜" 
             className="checkbox checked:bg-blue-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
             />
             <span className="label-text">木曜</span> 
@@ -584,7 +591,7 @@ const Input = () => {
             value="金曜" 
             className="checkbox checked:bg-blue-500" 
             {...register("week", {
-              required: "確認お電話ご希望曜日は必須項目です。"
+              required: "お電話ご希望曜日は必須項目です。"
             })}
             />
             <span className="label-text">金曜</span> 
@@ -668,7 +675,7 @@ const Input = () => {
       </div>
 
       </div>
-      </div>
+  
         </>
     );
 }

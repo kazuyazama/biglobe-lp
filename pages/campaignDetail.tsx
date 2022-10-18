@@ -2,29 +2,36 @@ import type { NextPageWithLayout } from "./_app";
 import { ReactElement } from "react";
 import FormLayout from "../components/form/Layout";
 import Image from "next/image";
+import { Link as Scroll } from "react-scroll";
+import Link from "next/link";
 
 const Campaign:NextPageWithLayout = () => {
     return (
         <>
         {/* 参考ページ：https://www.biglobe-hikari.net/campaign/ */}
-        <div className="overflow-x-hidden ">
+        
+        <div className="overflow-x-hidden -mt-20">
         <section className='container mx-auto md:px-20 px-5'>
-        <div className="">
-            <h1>BIGLOBE 光 キャンペーンのご案内</h1>
+        <div className="text-sm breadcrumbs pb-20">
+        <ul>
+            <li><Link href="/"><a>Home</a></Link></li> 
+            <li><a>キャンペーン詳細</a></li> 
+        </ul>
         </div>
-
-        <div>
+        <div className="text-center ">
+            <h1 className="text-2xl">BIGLOBE 光 キャンペーンのご案内</h1>
             <p>
             ビッグローブ光ならお得がいっぱい！
             現在開催中のお得なキャンペーンや割引をご紹介します。
             </p>
-
         </div>
+
+      
 
         <div className="grid grid-cols-6 justify-items-center">
 
             <div className="col-span-6">
-            現在、当サイトからお申し込みでお得なキャンペーンが適用されます！
+            当サイトからお申し込みでお得なキャンペーンが適用されます！
             下記2つからお好きなキャンペーンをお選びいただけます。
             </div>
             <div className="col-span-3">高額キャッシュバック</div>
@@ -36,30 +43,48 @@ const Campaign:NextPageWithLayout = () => {
                 <p>特典１の詳細</p>
             </div>
 
-
             <div className="col-span-6 w-full ">
-                <ul className="outline outline-primary rounded-2xl flex-col items-center justify-between my-20 ">
 
-                <li className="flex justify-center space-x-10 border-b-2 py-5">
-                    <div> 新規お申込み</div>
-                    <div>37,000円 現金キャッシュバック</div>
-                </li>
-                <li className="flex justify-center space-x-10 border-b-2 py-5">
-                    <div>他社転用</div>
-                    <div>37,000円 現金キャッシュバック</div>
-                </li>
-                <li className="flex justify-center space-x-10 py-5">
-                    <div>  事業者変更</div>
-                    <div>37,000円 現金キャッシュバック</div>
-                </li>
+            <ul className="outline outline-primary rounded-2xl">
 
-                </ul>
-             </div>
+            <li className="flex flex-row justify-center">
+                <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
+                    <p className="">新規お申込み</p>
+                </div>
+                <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
+                    <p><span className="text-secondary font-bold">30,000円</span> 現金キャッシュバック</p>
+                </div>
+            </li>
+            <li className="flex flex-row justify-center">
+                <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
+                    <p className="">他社から転用</p>
+                </div>
+                <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
+                <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
+                </div>
+            </li>
+            <li className="flex flex-row justify-center">
+                <div className="basis-1/2 bg-yellow-100 text-center py-3">
+                    <p className="">事業者変更</p>
+                </div>
+                <div className="basis-1/2 text-center  bg-red-50 py-3">
+                <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
+                </div>
+            </li>
+
+            </ul>
+
+            </div>
+
+
+
 
              <div className="col-span-6">
                 <h1>選べるキャンペーン【その2】工事費無料+キャッシュバックキャンペーン</h1>
-                <div>特典１の内容</div>
-                <p>特典１の詳細</p>
+                <div>特典2の内容</div>
+                <p>特典2の詳細
+                    他社からの転用・事業者変更の方は原則工事がない為、特典１と特典２は同じ内容となります。
+                </p>
             </div>
 
             {/* <div className="col-span-6 w-full ">
@@ -81,7 +106,7 @@ const Campaign:NextPageWithLayout = () => {
                 </div>
              </div> */}
 
-            <div className="col-span-6 w-full ">
+            <div className="col-span-6 w-full py-5">
 
                 <ul className="outline outline-primary rounded-2xl">
 
@@ -90,7 +115,7 @@ const Campaign:NextPageWithLayout = () => {
                         <p className="">新規お申込み</p>
                     </div>
                     <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>37,000円 現金キャッシュバック+工事費無料</p>
+                    <p><span className="text-secondary font-bold">20,000円</span> 現金キャッシュバック+工事費無料</p>
                     </div>
                 </li>
                 <li className="flex flex-row justify-center">
@@ -98,7 +123,7 @@ const Campaign:NextPageWithLayout = () => {
                         <p className="">他社から転用</p>
                     </div>
                     <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>37,000円 現金キャッシュバック+工事費無料</p>
+                    <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
                     </div>
                 </li>
                 <li className="flex flex-row justify-center">
@@ -106,7 +131,7 @@ const Campaign:NextPageWithLayout = () => {
                         <p className="">事業者変更</p>
                     </div>
                     <div className="basis-1/2 text-center  bg-red-50 py-3">
-                        <p>37,000円 現金キャッシュバック+工事費無料</p>
+                    <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
                     </div>
                 </li>
 
@@ -114,36 +139,57 @@ const Campaign:NextPageWithLayout = () => {
             
              </div>
 
-             <div className="col-span-6 justify-self-start">
-                <h2>当社キャッシュバックの特徴</h2>
-                <ul>
-                    <li>開通したら最短で２ヵ月後に現金でお振込いたします！
-                        ※遅くても３ヵ月後には全員もらえます</li>
-                    <li>お申込みの際にお振込口座を伺うので、キャッシュバックの申請モレは一切なし！
-                        キャッシュバック還元率１００％です！</li>
+             <div className="col-span-6 justify-self-start w-full pt-4">
+                <h2 className="text-xl">当社キャッシュバックの特徴</h2>
+                <hr />
+                <ul className="list-disc list-inside space-y-2 py-3">
+                    <li>
+                        開通したら最短で２ヵ月後に現金でお振込いたします！
+                        ※遅くても３ヵ月後には全員もらえます
+                    </li>
+                    <li>
+                        お申込みの際にお振込口座を伺うので、キャッシュバックの申請モレは一切なし！
+                        キャッシュバック還元率１００％です！
+                    </li>
                     <li>不必要なオプションには一切入る必要はありません！</li>
                 </ul>
              </div>
 
-             <div className="col-span-6 justify-self-start">
-                <h2>対象者</h2>
-                <ul>
-                    <li>開通したら最短で２ヵ月後に現金でお振込いたします！
-                        ※遅くても３ヵ月後には全員もらえます</li>
-                    <li>お申込みの際にお振込口座を伺うので、キャッシュバックの申請モレは一切なし！
-                        キャッシュバック還元率１００％です！</li>
-                    <li>不必要なオプションには一切入る必要はありません！</li>
+             <div className="col-span-6 justify-self-start w-full pt-4">
+                <h2 className="border-b-2 border-secondary "><span className="text-xl">対象者</span></h2>
+                <ul className="list-disc list-inside space-y-2 py-3 ">
+                    <li>上記キャンペーン期間中に当サイト（お申込みフォームまたは、電話によるお申込み）からお申し込みいただいた方。</li>
+                    <li>ご利用確認時にキャンペーン対象の光回線の利用を継続されている方。</li>
+                    <li>お申し込み月を含む6ヵ月後の月末日までに対象サービスを開通された方。</li>
                 </ul>
              </div>
 
-             <div className="col-span-6 justify-self-start">
-                <h2>適用条件・注意事項</h2>
-                <ul>
-                    <li>開通したら最短で２ヵ月後に現金でお振込いたします！
-                        ※遅くても３ヵ月後には全員もらえます</li>
-                    <li>お申込みの際にお振込口座を伺うので、キャッシュバックの申請モレは一切なし！
-                        キャッシュバック還元率１００％です！</li>
-                    <li>不必要なオプションには一切入る必要はありません！</li>
+            
+             
+
+             <div className="col-span-6 justify-self-start w-full pt-4">
+                <h2 className="text-xl">適用条件・注意事項</h2>
+                <hr />
+                <ul className="list-disc list-inside space-y-2 ">
+                    <li>
+                    キャッシュバックは開通月から起算し、翌々月の月末日に指定口座へお振込をいたします。
+                    例）1月10日に開通 → 3月31日に指定口座へお振込み（翌々月の月末日）
+                    例）1月31日に開通 → 3月31日に指定口座へお振込み（翌々月の月末日）
+                    </li>
+                    <li>
+                    本キャンペーンは対象のサービスを8ヵ月以上継続して利用していただく事が条件となります。
+                    上記期間内の解約（お引越し等による解約や引越し先エリア外継続利用不可も含む）や料金不払いによる強制解約となった場合、本キャンペーンの違約金としてキャッシュバック金額を全額ご請求させていただきます。
+                    ※お引越し先で継続利用をしていただければ本キャンペーン違約金の対象外となります。
+                    </li>
+                    <li>    
+                    本キャンペーンの権利を第三者へ譲渡することはできません。
+                    譲渡が発覚した場合、本キャンペーンは無効とさせていただきます。
+                    </li>
+                    <li>当サイト経由以外でのお申込みは本キャンペーンの対象外となります。</li>
+                    <li>本キャンペーンの適用条件は予告無く変更となる場合があります。</li>
+                    <li>本キャンペーンにお申込みをされた場合は、適用条件のすべての条件に同意いただいたものとみなされます。予めご了承ください。</li>
+                    <li>サイト内に記載の当社キャッシュバック還元率は、設備の提供状況やお客様都合によるキャンセルなどで、SoftBank 光または、SoftBank Airを開通されなかった場合を除きます。</li>
+                    <li>キャンペーン提供主体：株式会社リスターツ</li>
                 </ul>
              </div>
 
@@ -256,24 +302,31 @@ const Campaign:NextPageWithLayout = () => {
             ひとりでも、家族でもおトク！
             </div>
 
-            <div className="col-span-3">aa</div>
-            <div className="col-span-3">bbb</div>
+            <div className="col-span-3">
+            一人でも家族でも、同居家族が割引き対象です。
+            さらに50歳以上なら離れて暮らす家族も割引き対象に。
+            最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。
+            <Scroll to="notes" smooth={true} duration={600}>割引適用についての注意事項はこちら</Scroll>
+            </div>
+            <div className="col-span-3">
+                画像
+            </div>
 
-            <div className="col-span-6">
-                <h3>適用条件</h3>
-                <p>以下の条件(1)(2)を両方満たす方がauスマートバリューにお申し込みできます。</p>
-
-                <ul>
+            <div className="col-span-6 w-full">
+                <h3 className="text-xl border-b pt-4">適用条件</h3>
+                <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
+                <ul className="list-disc list-inside space-y-2">      
                     <li>auスマートフォン(5G)、auスマートフォン(4G)、auケータイ、4G LTEタブレットで対象の料金プランにご加入している方</li>
                     <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
+                <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
                 </ul>
 
-                <h3>お申し込みについて</h3>
-                <p>ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。</p>
+                <h3 className="text-xl border-b pt-4">お申し込みについて</h3>
+                <p className="py-3">ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。</p>
                 
-                <h3>割引適用についての注意事項</h3>
+                <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
 
-                <p className="border p-3">
+                <p className="border p-3 rounded" id="notes">
                 ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット含む)合計10回線までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービスとau携帯電話(タブレット含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です。
                 auスマートバリューのお申し込み翌月以降から割引適用となります。
                 スマホセット割ご加入の方がauスマートバリューを申し込みされた場合、自動的にauスマートバリューの割引に切り替わります。ただしauスマートバリュー適用前にスマホセット割を廃止した場合、前月末をもってスマホセット割は終了となり、auスマートバリューは翌月から割引が適用となります。

@@ -51,7 +51,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
     
-      <section className=' bg-accent py-8  border-secondary'>
+      <section className=' bg-accent py-4 md:py-6  border-secondary'>
       <div className='container mx-auto md:px-20'>
       <ContactSection />
       </div>
@@ -96,7 +96,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-accent py-8 '>
+      <section className='bg-accent py-4 md:py-6'>
       <div className='container mx-auto md:px-20 '>
 
       <ContactSection />
@@ -126,7 +126,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
 
-      <section className='bg-sky-200 pb-20'>
+      <section className='bg-sky-200 '>
       <div className='container mx-auto px-5 md:px-20 '>
 
         <Crosing />
@@ -136,7 +136,7 @@ const Home: NextPageWithLayout = () => {
 
       </section>
 
-      <section className='bg-accent py-8  border-y-2 border-secondary'>
+      <section className='bg-accent py-4 md:py-6  border-y-2 border-secondary'>
       <div className='container mx-auto md:px-20 '>
 
       <ContactSection />

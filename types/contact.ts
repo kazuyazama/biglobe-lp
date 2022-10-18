@@ -10,7 +10,7 @@ export type ContactType = {
     address:string;
     address2:boolean;
     time:any;
-    week:string;
+    week:any;
     question:string
   };
   
