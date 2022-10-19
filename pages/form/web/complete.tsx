@@ -3,18 +3,37 @@ import type { NextPageWithLayout } from "../../_app";
 import { ReactElement, useEffect } from "react"; 
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useState } from "react";
 
 const complete:NextPageWithLayout = () => {
-    //直アクセスのリダイレクト処理
-    // const router = useRouter();
-    // useEffect(() => {
-    //     router.replace('/')
-    // },[])
+    
+    // 直アクセスのリダイレクト処理
+    const router = useRouter();
+
+    const [isDisplay,setIsDisplay] = useState('');
+    useEffect(() => {
+      if(router.isReady) {
+        if (router.query.display === 'ok') 
+       { setIsDisplay(router.query.display);
+      } else {
+        router.push('/')
+      }
+    }
+    },[router.isReady]);
+
     
     return (
 
       <>
-      <div className="container mx-auto px-40 py-20 text-center">
+      <div className="overflow-x-hidden pb-20">
+      
+      <div className="container mx-auto px-40 text-center ">
+      <div className="text-sm breadcrumbs pb-10">
+        <ul>
+            <li><Link href="/"><a>Home</a></Link></li> 
+            <li><a>お申し込みフォーム</a></li> 
+        </ul>
+        </div>
 
     
         <ul className="steps w-1/2 py-5">
@@ -34,6 +53,7 @@ const complete:NextPageWithLayout = () => {
         <Link href="/">
         <a className="btn btn-ghost">トップに戻る</a>
         </Link>
+      </div>
       </div>
       </>
     );

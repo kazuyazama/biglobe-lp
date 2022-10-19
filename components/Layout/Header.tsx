@@ -7,7 +7,7 @@ import {AiOutlineForm} from "react-icons/ai"
 
 const Header = () => {
     return (
-        <div className="w-full fixed z-10">
+        <div className="w-full fixed z-50">
         <div className="navbar bg-base-100 md:px-20 md:py-3 ">
             <div className="navbar-start ">
                 <div className="dropdown">

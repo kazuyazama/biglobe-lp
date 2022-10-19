@@ -70,15 +70,17 @@ const Home: NextPageWithLayout = () => {
       </section>
 
       <section className='bg-base-100 '>
-      <div className='container mx-auto px-5 md:px-20'>
+      {/* <div className='container mx-auto px-5 md:px-20'> */}
+      <div className='container mx-auto md:px-20'>
       <Onayami />
       </div>
       </section>
 
 
 
-      <section className='bg-sky-200 pb-20' id='cost'>
+      <section className='bg-sky-200 pt-20 md:pt-40 pb-20 ' id='cost'>
       <div className='container mx-auto px-5 md:px-20 '>
+      
 
       <Point />
       </div>

@@ -12,11 +12,11 @@ const Confirm = () => {
         handleSubmit,
         getValues,
         reset,
-        formState:{isValid} //form内の入力の有無や送信の状態などを取得できる isValid以外にも色々ある
+        formState:{isValid} //form内の入力の有無や送信の状態などを取得 isValid以外にも色々ある
     } = useFormContext<ContactType>();
 
    const values = getValues();
-   console.log(values.time)
+   
 
    if(!isValid) {
     router.push(`/form/call`)
@@ -35,20 +35,31 @@ const Confirm = () => {
           init(userID)  
           send(serviceID,templateID ,data)
           .then(() => {
-          router.push("/form/call/complete");;
-          }, () => {
+          
+          router.push({
+            pathname:"/form/call/complete",
+            query:{display:"ok"}
+          },"/form/call/complete"
+          )}, () => {
           alert('送信出来ませんでした');
           })
-          reset();
+          reset({week:"",time:""}); //{}の中はリセット後、underfinedになるのを防ぐ処理
       }
     
    }
   
     return (
         <>
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden pb-20">
+   
 
-        <div className="container mx-auto  px-5 md:px-40">
+        <div className="container mx-auto  px-5 md:px-40 ">
+        <div className="text-sm breadcrumbs pb-10">
+        <ul>
+            <li><Link href="/"><a>Home</a></Link></li> 
+            <li><a>電話相談</a></li> 
+        </ul>
+        </div>
 
 
         <div className="text-center">
@@ -123,7 +134,8 @@ const Confirm = () => {
         <div className="py-3 space-y-3">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">お電話ご希望日時</p> 
-            <p className="basis-full">{`${values.week}の${values.time}`}</p> 
+            <p className="basis-full">{values.week + values.time && `${values.week}の${values.time}`}</p> 
+       
     
           </div>
         </div>
@@ -172,6 +184,7 @@ const Confirm = () => {
 
       </div>
       </div>
+   
         </>
     );
 }

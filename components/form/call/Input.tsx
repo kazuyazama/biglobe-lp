@@ -22,9 +22,10 @@ const Input = () => {
 
     return (
         <>
+         <div className="overflow-x-hidden pb-20">
       
-        <div className="container mx-auto px-5 md:px-40 -mt-20">
-        <div className="text-sm breadcrumbs pb-20">
+        <div className="container mx-auto px-5 md:px-40">
+        <div className="text-sm breadcrumbs pb-10">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
             <li><a>電話相談</a></li> 
@@ -285,6 +286,7 @@ const Input = () => {
 
       </div>
 
+      </div>
       </div>
   
         </>

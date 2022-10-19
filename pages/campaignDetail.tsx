@@ -10,9 +10,9 @@ const Campaign:NextPageWithLayout = () => {
         <>
         {/* 参考ページ：https://www.biglobe-hikari.net/campaign/ */}
         
-        <div className="overflow-x-hidden -mt-20">
+        <div className="overflow-x-hidden pb-20">
         <section className='container mx-auto md:px-20 px-5'>
-        <div className="text-sm breadcrumbs pb-20">
+        <div className="text-sm breadcrumbs pb-10">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
             <li><a>キャンペーン詳細</a></li> 

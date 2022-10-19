@@ -8,13 +8,13 @@ const Footer = () => {
             <Link href="/">
             <a className="link link-hover">TOP</a> 
             </Link>
-            <Link href="/">
+            <Link href="/company">
             <a className="link link-hover">運営会社</a>
             </Link> 
             <Link href="/">
             <a className="link link-hover">注意事項</a> 
             </Link>
-            <Link href="/">
+            <Link href="/privacy">
             <a className="link link-hover">プライバシーポリシー</a>
             </Link>
         </div> 

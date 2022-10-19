@@ -11,7 +11,7 @@ const FormLayout = ({children}:LayoutProps) => {
         <>
         <FormHeader />
         <main>
-        <div className="overflow-x-hidden py-20">
+        <div>
         {children}
         </div>
         </main>

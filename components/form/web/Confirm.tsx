@@ -35,7 +35,10 @@ const Confirm = () => {
           init(userID)  
           send(serviceID,templateID ,data)
           .then(() => {
-          router.push("/form/web/complete");;
+          router.push(
+            {pathname:"/form/web/complete",
+            query:{display:'ok'},
+          },"/form/web/complete");
           }, () => {
           alert('送信出来ませんでした');
           })
@@ -46,8 +49,15 @@ const Confirm = () => {
   
     return (
         <>
+         <div className="overflow-x-hidden pb-20">
 
         <div className="container mx-auto px-5 md:px-40">
+        <div className="text-sm breadcrumbs pb-10">
+        <ul>
+            <li><Link href="/"><a>Home</a></Link></li> 
+            <li><a>お申し込みフォーム</a></li> 
+        </ul>
+        </div>
 
 
         <div className="text-center">
@@ -240,6 +250,7 @@ const Confirm = () => {
 
       </div>
 
+      </div>
       </div>
         </>
     );

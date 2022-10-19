@@ -7,10 +7,17 @@ import Image from "next/image";
 const Point = () => {
     return (
         <>
-        <div className="border translate-x-4 rotate-45 h-20">
-
+        {/* <div className="relative">
+        <div className="border-t-[250px] border-t-base-100 border-r-[100px] md:border-r-[960px] 
+        border-l-[100px] md:border-l-[960px] 
+        border-b-transparent border-r-transparent border-l-transparent ">
+           
+    
         </div>
+        </div> */}
         <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold">ビッグローブ光なら解決！４つのポイント</h1>
+
+      
 
         <div className="flex flex-col ">
 
@@ -19,7 +26,7 @@ const Point = () => {
         <h1 className="text-2xl font-semibold">月額料金が安い</h1>
         </div>
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl ">
 
 
             <div className="col-span-2 ">
@@ -56,7 +63,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                <h1>コミコミでお得な料金の画像</h1>
+                <Image src="/images/main/コミコミ_ol.svg" alt="" width={800} height={500}  />
                 
             </div>
 
@@ -198,6 +205,7 @@ const Point = () => {
        
 
         </div>
+       
             
   
 

@@ -5,7 +5,7 @@ import FormLayout from "../components/form/Layout";
 const Privacy:NextPageWithLayout = () => {
     return (
         <>
-        <div className="overflow-x-hidden ">
+        <div className="overflow-x-hidden pb-20">
         <section className='container mx-auto md:px-20 px-5'>
 
             プライバシーポリシーページ
