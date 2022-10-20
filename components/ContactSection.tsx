@@ -22,7 +22,7 @@ const ContactSection = () => {
 
             <div className="">
             <Link href="/form/web">
-            <button className="btn btn-secondary md:btn-wide md:btn-md lg:btn-lg space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out"><AiOutlineForm className="text-xl md:text-2xl" /><span>webお申し込み</span><IoMdArrowDroprightCircle className="text-xl md:text-2xl " /></button>
+            <button className="btn btn-secondary  md:btn-wide md:btn-md lg:btn-lg space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out"><AiOutlineForm className="text-xl md:text-2xl" /><span>webお申し込み</span><IoMdArrowDroprightCircle className="text-xl md:text-2xl " /></button>
             </Link>
             </div>
             <div className="">

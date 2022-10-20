@@ -1,18 +1,20 @@
 import {MdArrowForwardIos} from "react-icons/md"
-import {FcAssistant} from "react-icons/fc";
+
+import Image from "next/image";
 
 
 const Nagare = () => {
     return (
         <>
-        <div className="text-center text-2xl py-20"><h1>利用までの流れ</h1></div>
+        <div className="text-center text-2xl py-20 font-semibold before:content-['Flow'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10"><h1>利用までの流れ</h1></div>
     
 
         <div className="flex flex-col md:flex-row justify-evenly items-center space-y-5 md:space-y-0">
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl h-96 ">
                 
-            <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <figure className="bg-primary"><Image src="/images/main/web申し込み.svg" alt="Shoes" width={300} height={200} /></figure>
+            
             <div className="card-body items-center text-center">
                 <h2 className="card-title">お申し込み</h2>
                 <p>お電話またはwebフォームよりお申し込みください。</p>
@@ -28,8 +30,8 @@ const Nagare = () => {
 
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl h-96">
-            {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
-            <figure className="pt-6"><FcAssistant className="text-8xl" /></figure>
+            <figure className="bg-primary"><Image src="/images/main/内容確認連絡.svg" alt="Shoes" width={300} height={200} /></figure>
+          
             <div className="card-body items-center text-center">
                 <h2 className="card-title">確認</h2>
                 <p>弊社より確認のお電話をさせていただきます。後日、工事日程をご案内します。</p>
@@ -44,7 +46,7 @@ const Nagare = () => {
         
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl  h-96">
-            <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <figure className="bg-primary"><Image src="/images/main/工事.svg" alt="Shoes" width={300} height={200} /></figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">開通工事</h2>
                 <p>工事業者がご自宅にお伺いし、回線の開通に必要な工事を実地致します。</p>
@@ -56,7 +58,7 @@ const Nagare = () => {
             <div className="basis-1/5">
 
             <div className="card card-compact bg-base-100 shadow-xl h-96">
-            <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <figure className="bg-primary"><Image src="/images/main/開通.svg" alt="Shoes" width={300} height={200} /></figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">利用開始</h2>
                 <p>接続設定をしていただいた後、インターネットをお使いいただけます。</p>

@@ -5,10 +5,9 @@ const Campaign = () => {
     return (
         <>
 
-        <div className="">
-        <h1 className="text-center text-xl md:text-2xl py-20 font-semibold">キャンペーン</h1>
-
-        <div className="flex justify-center ">
+        <div className="pt-20 relative">
+        <h1 className="text-center text-xl md:text-2xl font-semibold  before:content-['Campaign'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">キャンペーン</h1>
+        <div className="flex justify-center pt-20 ">
 
           <div className="basis-full ">
 

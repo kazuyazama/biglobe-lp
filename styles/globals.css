@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .polygon {
+    width: 500px;
+    height: 300px;
+    clip-path: polygon(0% 20%, 50% 20%, 50% 0%, 100% 50%, 50% 100%, 50% 80%, 0% 80%)
+} */
+
+
