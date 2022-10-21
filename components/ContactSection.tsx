@@ -1,7 +1,7 @@
 import Link from "next/link";
-import {IoMdArrowDroprightCircle} from "react-icons/io"
 import {AiOutlineForm} from "react-icons/ai"
 import {FiPhoneCall} from "react-icons/fi"
+import {IoIosArrowDroprightCircle} from "react-icons/io"
 
 
 
@@ -22,12 +22,20 @@ const ContactSection = () => {
 
             <div className="">
             <Link href="/form/web">
-            <button className="btn btn-secondary  md:btn-wide md:btn-md lg:btn-lg space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out"><AiOutlineForm className="text-xl md:text-2xl" /><span>webお申し込み</span><IoMdArrowDroprightCircle className="text-xl md:text-2xl " /></button>
+            <button className="btn btn-secondary md:btn-wide md:btn-md lg:btn-lg rounded-2xl space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out relative drop-shadow-xl outline outline-2 outline-offset-1 outline-pink-500">
+                <AiOutlineForm className="text-2xl md:text-3xl md:absolute left-6" />
+                <span className="md:text-xl">webお申し込み</span>
+                <IoIosArrowDroprightCircle className="text-xl md:text-2xl md:absolute right-3" />
+            </button>
             </Link>
             </div>
             <div className="">
             <Link href="/form/call">
-            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out" ><FiPhoneCall className="text-xl md:text-2xl text-slate-100"  /><span className="text-slate-100">電話相談</span><IoMdArrowDroprightCircle className="text-xl md:text-2xl text-slate-100" /></button>
+            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg rounded-2xl space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out relative  outline-2  drop-shadow-xl outline outline-offset-1 outline-blue-500" >
+                <FiPhoneCall className="text-2xl md:text-3xl text-slate-100 md:absolute left-9"  />
+                <span className="text-slate-100 md:text-xl ">でんわで相談</span> 
+                <IoIosArrowDroprightCircle className="text-xl md:text-2xl text-slate-100 md:absolute right-3 "/>
+            </button>
             </Link>
             </div>
 

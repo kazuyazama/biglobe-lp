@@ -1,4 +1,5 @@
 import {MdArrowForwardIos} from "react-icons/md"
+import {IoIosArrowForward} from "react-icons/io"
 
 import Image from "next/image";
 
@@ -6,7 +7,7 @@ import Image from "next/image";
 const Nagare = () => {
     return (
         <>
-        <div className="text-center text-2xl py-20 font-semibold before:content-['Flow'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10"><h1>利用までの流れ</h1></div>
+        <div className="text-center text-2xl md:text-3xl py-20 font-semibold before:content-['Flow'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10"><h1>利用までの流れ</h1></div>
     
 
         <div className="flex flex-col md:flex-row justify-evenly items-center space-y-5 md:space-y-0">
@@ -19,8 +20,13 @@ const Nagare = () => {
                 <h2 className="card-title">お申し込み</h2>
                 <p>お電話またはwebフォームよりお申し込みください。</p>
                 <div className="card-actions justify-center ">
-                <a href="tel:0120-197-802" className="btn btn-primary text-slate-100">電話する</a>
-                <a className="btn btn-secondary">webフォーム </a>
+                <a href="tel:0120-197-802" className="btn btn-primary text-slate-100 before:content-['電話する'] relative">
+                <span className="absolute right-0.5"><IoIosArrowForward /></span>
+                </a>
+                <a className="btn btn-secondary before:content-['webフォーム'] relative ">
+                <span className="absolute right-0.5"><IoIosArrowForward /></span>
+                </a>
+            
                 </div>
             </div>
             </div>

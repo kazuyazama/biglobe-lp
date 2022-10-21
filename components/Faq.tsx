@@ -5,12 +5,12 @@ const Faq = () => {
 
         <div className="flex flex-col space-y-6">
 
-        <div tabIndex={0} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100 ">
-        <input type="checkbox" /> 
-        <div className="collapse-title font-medium ">
+        <div className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100 ">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title font-medium  peer-checked:bg-sky-100 peer-checked:border-b border-primary">
         ビッグローブ光とはどんなサービスですか？
         </div>
-        <div className="collapse-content "> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4 "> 
         <p>
         ビッグローブ光は、NTT東日本・NTT西日本の光回線とBIGLOBEのプロバイダ接続サービスをひとつにまとめたサービスです（光コラボレーションモデル）。
         フレッツ光と同じ通信速度最大1Gbps※の高速光回線、充実したサポート、そして月々のお支払いをシンプルにお安くした料金体系が特長です。
@@ -20,23 +20,24 @@ const Faq = () => {
         </div>
         </div>
 
-        <div tabIndex={1} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100 ">
-        <input type="checkbox" /> 
-        <div className="collapse-title font-medium">
+        <div className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100 ">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title font-medium peer-checked:bg-sky-100 peer-checked:border-b border-primary">
             転用とは何ですか？
         </div>
-        <div className="collapse-content"> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4"> 
             <p>
             現在NTT東日本・NTT西日本の提供しているフレッツ光およびオプションサービスをご利用のお客さまが、当社の提供する光回線（「ビッグローブ光」）およびオプションサービスに契約を変更することを「転用」といいます。転用でお申し込みの場合の流れは下記ページからご確認いただけます。
             </p>
         </div>
         </div>
-        <div tabIndex={2} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
-        <input type="checkbox" /> 
-        <div className="collapse-title font-medium ">
+
+        <div  className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title font-medium peer-checked:bg-sky-100 peer-checked:border-b border-primary ">
             接続はどのようにすればよいですか？
         </div>
-        <div className="collapse-content"> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4"> 
             <p>
             セットアップガイド（BIGLOBE設定シート）の手順のとおりに設定していただけば接続が行えます。
             会員サポートページでもご案内していますので、お困りの際はご確認ください。
@@ -46,12 +47,13 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
-        <input type="checkbox" /> 
-        <div className="collapse-title font-medium">
+
+        <div className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title font-medium peer-checked:bg-sky-100 peer-checked:border-b border-primary">
             インターネット接続や設定をしてほしいです。
         </div>
-        <div className="collapse-content"> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4"> 
             <p>
             スタッフがお客さまのご自宅に訪問するBIGLOBE訪問サポート（有料）をご利用ください。インターネット設定やウイルス駆除、個人レッスンなどなどのメニューがございます。
             BIGLOBE訪問サポートについては下記ページをご確認ください。
@@ -59,12 +61,13 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
-        <input type="checkbox" /> 
-        <div className="collapse-title  font-medium">
+
+        <div className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title  font-medium peer-checked:bg-sky-100 peer-checked:border-b border-primary">
             乗り換え（転用）には工事が必要ですか？
         </div>
-        <div className="collapse-content"> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4"> 
             <p>
             現在フレッツ 光ネクストをご利用いただいているお客さまは工事は必要ありません。
             フレッツ光のご契約が以下のタイプの場合、工事が必要となります。その際、別途工事費がかかります。
@@ -75,12 +78,13 @@ const Faq = () => {
             </p>
         </div>
         </div>
-        <div tabIndex={3} className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
-        <input type="checkbox" /> 
-        <div className="collapse-title  font-medium">
+
+        <div className="collapse collapse-plus border border-primary bg-base-100 rounded-box hover:bg-sky-100">
+        <input type="checkbox" className="peer" /> 
+        <div className="collapse-title  font-medium peer-checked:bg-sky-100 peer-checked:border-b border-primary">
             工事日の日程はどのように決まるのでしょうか？
         </div>
-        <div className="collapse-content"> 
+        <div className="collapse-content peer-checked:bg-base-100 peer-checked:py-4"> 
             <p>
             お申し込みの際に、お電話でご希望の光回線のタイプや工事日などについて調整いたします。
             開通までの詳しい流れは下記よりご確認いただけます。

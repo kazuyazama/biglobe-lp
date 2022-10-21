@@ -15,15 +15,15 @@ const Point = () => {
     
         </div>
         </div> */}
-        <h1 className="text-center text-xl md:text-2xl py-10 md:py-20 font-semibold before:content-['Point'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">ビッグローブ光なら解決！４つのポイント</h1>
+        <h1 className="text-center text-2xl md:text-3xl pb-10 pt-16 md:pt-32 md:pb-20 font-semibold before:content-['Point'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">ビッグローブ光なら解決！４つのポイント</h1>
 
       
 
         <div className="flex flex-col ">
 
         <div className="flex items-center space-x-5 ">
-        <p className="text-5xl font-extrabold text-accent">01</p>  
-        <h1 className="text-2xl font-semibold">月額料金が安い</h1>
+        <p className="text-4xl md:text-5xl font-extrabold text-accent">01</p>  
+        <h1 className="text-xl md:text-2xl font-semibold">月額料金が安い</h1>
         </div>
 
         <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl ">
@@ -41,7 +41,7 @@ const Point = () => {
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
             <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
-            <figure className="pl-3 md:pl-10"><FaRegBuilding className="text-3xl md:text-7xl" /></figure>
+            <div className="pl-4 md:pl-10"><FaRegBuilding  className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
                 <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
@@ -53,7 +53,7 @@ const Point = () => {
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
             <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
-            <figure className="pl-3 md:pl-10"><BsHouse className="text-3xl md:text-7xl" /></figure>
+            <div className="pl-4 md:pl-10"><BsHouse className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
                 <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
@@ -100,8 +100,8 @@ const Point = () => {
         </div>
 
         <div className="flex items-center space-x-5 pt-10 ">
-        <p className="text-5xl font-extrabold text-accent">02</p>  
-        <h1 className="text-2xl font-semibold">スマホとセットでよりお得に！</h1>
+        <p className="text-4xl md:text-5xl font-extrabold text-accent">02</p>  
+        <h1 className="text-xl md:text-2xl font-semibold">スマホとセットでよりお得に！</h1>
         </div>
 
         
@@ -120,8 +120,8 @@ const Point = () => {
         
             </div>
 
-            <div className="col-span-2">
-                 <Image src="/images/sample/ausmart_top2.webp" width={500} height={150} />
+            <div className="col-span-2 outline outline-primary rounded">
+                 <Image src="/images/main/auスマートバリュー.svg" width={600} height={300}  />
             </div>
        
     
@@ -140,8 +140,8 @@ const Point = () => {
        
 
         <div className="flex items-center space-x-5 pt-10">
-        <p className="text-5xl font-extrabold text-accent">03</p>  
-        <h1 className="text-2xl font-semibold">IPv6対応で速度が速い</h1>
+        <p className="text-4xl md:text-5xl font-extrabold text-accent">03</p>  
+        <h1 className="text-xl md:text-2xl font-semibold">IPv6対応で速度が速い</h1>
         </div>
 
         <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  ">
@@ -172,8 +172,8 @@ const Point = () => {
         </div>
 
         <div className="flex items-center space-x-5 pt-10">
-        <p className="text-5xl font-extrabold text-accent">03</p>  
-        <h1 className="text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
+        <p className="text-4xl md:text-5xl font-extrabold text-accent">03</p>  
+        <h1 className="text-xl md:text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
         </div>
 
 

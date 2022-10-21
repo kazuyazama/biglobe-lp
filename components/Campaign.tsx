@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {IoIosArrowForward} from "react-icons/io"
 
 
 const Campaign = () => {
@@ -6,7 +7,7 @@ const Campaign = () => {
         <>
 
         <div className="pt-20 relative">
-        <h1 className="text-center text-xl md:text-2xl font-semibold  before:content-['Campaign'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">キャンペーン</h1>
+        <h1 className="text-center text-2xl md:text-3xl font-semibold  before:content-['Campaign'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">キャンペーン</h1>
         <div className="flex justify-center pt-20 ">
 
           <div className="basis-full ">
@@ -26,9 +27,12 @@ const Campaign = () => {
                 <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大30,000円)または
                   工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらかをお選びいただけるキャンペーンです！
                   両方ともに高速wifiルーターは付いてきます。</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-center md:justify-end">
                 <Link href='/campaignDetail'>
-                <button className="btn btn-secondary btn-wide">詳細</button>
+                <button 
+                className="btn btn-secondary btn-wide before:content-['詳しく見る'] before:text-lg relative">
+                <span className="text-xl absolute right-2"><IoIosArrowForward /></span>
+                </button>
                 </Link>
                 </div>
             </div>
@@ -47,12 +51,15 @@ const Campaign = () => {
                 
         <div className="card bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full hover:opacity-75" /></figure>
+        <figure><img src="/images/main/IPv6.svg" alt="Shoes" className="w-full hover:opacity-75" /></figure>
         <div className="card-body">
             <h2 className="card-title">IPv6ルーター月額料金無料特典</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button className="relative btn btn-secondary px-8"> 
+                <span className="">詳しく見る</span>
+                <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
+            </button>
             </div>
         </div>
         </div>
@@ -68,7 +75,10 @@ const Campaign = () => {
             <h2 className="card-title">auスマートバリュー</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button 
+                className="btn btn-secondary before:content-['詳しく見る'] relative px-8">
+                <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
+            </button>
             </div>
         </div>
         </div>
@@ -84,7 +94,10 @@ const Campaign = () => {
             <h2 className="card-title">UQモバイル自宅セット割</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button 
+                className="btn btn-secondary before:content-['詳しく見る']  relative px-8">
+                <span className="absolute right-1"><IoIosArrowForward /></span>
+            </button>
             </div>
         </div>
         </div>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
-import {IoMdArrowDroprightCircle} from "react-icons/io"
+import {IoIosArrowDroprightCircle} from "react-icons/io"
 import {AiOutlineForm} from "react-icons/ai"
 
 
@@ -83,7 +83,11 @@ const Header = () => {
             </div>
             <div className="navbar-end flex">
                 <Link href="/form/web">
-                <a className="btn btn-secondary space-x-1 px-1 md:px-3"><AiOutlineForm className='md:text-xl' /><span>Webお申し込み</span><IoMdArrowDroprightCircle className='md:text-xl '/></a>
+                <a className="btn btn-secondary rounded-xl space-x-1 px-1 md:px-3 drop-shadow-lg outline outline-2 outline-offset-1 outline-pink-500">
+                    <AiOutlineForm className='md:text-xl' />
+                    <span>Webお申し込み</span>
+                    <IoIosArrowDroprightCircle className='md:text-xl '/>
+                </a>
                 </Link>
             </div>
         </div>

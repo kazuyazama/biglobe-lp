@@ -195,7 +195,7 @@ const Campaign:NextPageWithLayout = () => {
 
              <div className="col-span-6">
                 <h1>無線LAN付IPv6対応ルータ月額料金無料特典</h1>
-                <div>特典１の内容、画像
+                <div><Image src="/images/main/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -255,7 +255,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="au-sv">
                 <h1>auスマートバリュー</h1>
-                <div>特典１の内容、画像
+                <div><Image src="/images/main/auスマートバリュー.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
