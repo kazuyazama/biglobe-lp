@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormContext, SubmitHandler, } from "react-hook-form"; // SubmitHandlerは、submitイベントに関する関数の型宣言に使う
 import { ErrorMessage } from "@hookform/error-message";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { usePostalJp } from 'use-postal-jp'
 import Link from "next/link"
+import { usePostalJp } from 'use-postal-jp'
+
+import type { ContactType } from "../../../types/contact";
 
 type Adress = {
   prefectureCode: string; // 都道府県コード
@@ -34,7 +35,8 @@ const Input = () => {
         formState:{errors,isValid},
     } = useFormContext();
 
-    const onSubmit = async (data: any) => {
+    const onSubmit:SubmitHandler<ContactType>  = async (data) => {
+        console.log(data)
        //ここでバリデーション用APIを叩くなど処理をする想定
         router.push(`/form/web/?confirm=check`)
     }
@@ -352,7 +354,7 @@ const Input = () => {
           <input
             type="text"
             className="input w-full input-bordered"
-            defaultValue={`${address ? address.prefecture : ''}${address ? address.address1 : ''}${address ? address.address2 : ''}`}
+            defaultValue={!error ? `${address ? address.prefecture : ''}${address ? address.address1 : ''}${address ? address.address2 : ''}`: '住所が所得できませんでした'}
             placeholder="東京都町田市森野"
             {...register("address", {
               required: {

@@ -120,8 +120,8 @@ const Point = () => {
         
             </div>
 
-            <div className="col-span-2 outline outline-primary rounded">
-                 <Image src="/images/main/auスマートバリュー.svg" width={600} height={300}  />
+            <div className="col-span-2">
+                 <Image src="/images/main/auスマートバリュー2.svg" width={600} height={300}  />
             </div>
        
     

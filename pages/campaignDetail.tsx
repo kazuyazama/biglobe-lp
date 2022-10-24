@@ -4,6 +4,8 @@ import FormLayout from "../components/form/Layout";
 import Image from "next/image";
 import { Link as Scroll } from "react-scroll";
 import Link from "next/link";
+import {HiPlus} from "react-icons/hi"
+import {GoArrowDown} from "react-icons/go"
 
 const Campaign:NextPageWithLayout = () => {
     return (
@@ -342,6 +344,166 @@ const Campaign:NextPageWithLayout = () => {
                 「ケーブルプラス電話　auケータイセット割」等、KDDIが実施する他の施策とは併用できない場合があります。
                 ビッグローブ・KDDIが実施する他の施策とは併用できない場合があります。
                 法人向けビッグローブ光は割引対象外となります。
+                </p>
+
+            </div>
+
+
+
+            <div className="col-span-6" id="uq-set">
+                <h1>UQ mobile 自宅セット割</h1>
+                <div className="text-center"><Image src="/images/main/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                </div>
+                <p>ビッグローブ光インターネットとビッグローブ光電話のご利用で、UQ mobileの対象プランにご加入の方はUQ mobileのご利用料金を割引いたします。（ UQ mobileへのお申込みが必要です。）</p>
+            </div>
+
+
+
+            <div className="col-span-6 w-full">
+
+                <div className="flex items-center justify-around relative space-x-2">
+                <div className="basis-full">
+                <Image src="/images/main/auスマートバリュー2.svg" width={250} height={200} layout="responsive" />
+                </div>
+                <HiPlus className="text-6xl"   />
+                <div className="basis-full">
+                <Image src="/images/main/auスマートバリュー2.svg" width={250} height={200}  layout="responsive"  />
+                </div>
+                </div>   
+            </div>
+
+            <div className="col-span-6 w-full relative ">
+                {/* <span className="border-t-[50px] border-l-[100px] border-r-[100px] border-b-transparent border-r-transparent border-l-transparent"></span> */}
+            <GoArrowDown className="md:text-6xl lg:text-8xl absolute inset-x-1/2 -translate-x-1/2 -translate-y-28"  />
+            {/* <div className="flex justify-center text-8xl -mt-20">
+            <GoArrowDown  />
+            </div> */}
+            <div className="-mt-10">
+
+            <Image src="/images/main/auスマートバリュー2.svg" width={500} height={250} layout="responsive"   /> 
+            </div>
+            
+            
+
+            <p>
+            別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
+            ビッグローブ光 auひかり BIGLOBE WiMAX+5G
+            自宅セット割 インターネットコースはお申し込みが必要です。
+            現在「くりこしプラン」ご契約中のお客さまは、「くりこしプラン +5G」へのプラン変更で、自宅セット割をご利用いただけます。
+            </p>   
+            </div>
+        
+
+           
+
+            <div className="col-span-6 w-full ">
+
+                <h1>割引額と対象の料金プラン</h1>
+
+                <div className="outline outline-primary rounded-2xl">
+
+                <div className="flex flex-row justify-center">
+                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
+                        <p className="">料金プラン</p>
+                    </div>
+                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
+                        <p>毎月の割引額</p>
+                    </div>
+                </div>
+                <div className="flex flex-row justify-center">
+                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
+                        <p className="">使い放題MAX 5G</p>
+                    </div>
+                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
+                        <p>6カ月間 0円/月</p>
+                    </div>
+                </div>
+                <div className="flex flex-row justify-center">
+                    <div className="basis-1/2 bg-yellow-100 text-center py-3">
+                        <p className="">ピタットプラン 5G</p>
+                    </div>
+                    <div className="basis-1/2 text-center  bg-red-50 py-3">
+                        <p>6カ月間 0円/月</p>
+                    </div>
+                </div>
+
+                </div>
+
+                <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
+               
+            </div>
+
+
+            <div className="col-span-6">
+            家族もおトク！最大10回線＊まで割引対象
+            </div>
+
+            <div className="col-span-3">
+            BIGLOBE WiMAX+5Gの場合、合計9回線。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります。
+            対象のご自宅のインターネットサービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。
+            au回線は自宅セット割の割引対象外です
+            <Scroll to="notes" smooth={true} duration={600}>割引適用についての注意事項はこちら</Scroll>
+            </div>
+            <div className="col-span-3">
+                画像
+            </div>
+
+            <div className="col-span-6 w-full">
+                <h3 className="text-xl border-b pt-4">適用条件</h3>
+                <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
+                <ul className="list-disc list-inside space-y-2">      
+                    <li>UQ mobileの対象プラン(S/M/L)にご加入している方</li>
+                    <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
+                <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
+                </ul>
+
+                <h3 className="text-xl border-b pt-4">お申し込みについて</h3>
+                <p className="py-3">
+                対象サービス契約者のご家族がUQ mobileをご利用の場合
+                ビッグローブ光のお申し込みと、対象サービス契約者のご家族であることの登録が必要です。ご家族であることの登録は、UQスポット、au Style、auショップおよびUQ mobileお客さまセンターにてお手続き可能です。
+                </p>
+                
+                <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
+
+                <p className="border p-3 rounded" id="notes">
+                対象サービス1契約につき、UQ mobile回線合計10回線(BIGLOBE WiMAX +5Gの場合、サービス1回線につき、UQ mobile合計9回線)までとなります。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります(au回線は⾃宅セット割の割引対象外です)。対象サービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。ただし、50歳以上のご家族の場合は対象サービスにご契約している住所と別住所でもお申し込みできます。別姓やUQ mobile回線が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。
+                自宅セット割
+                お申し込み翌月以降、条件を満たした月のご利用分から割引を適用します。
+                「でんきコース」と「インターネットコース」は重複して適用されず、「インターネットコース」を適用します。
+                UQ mobileの解約をした場合、お手続きの当月分をもって割引の適用を終了します。UQ mobileの月額基本料が日割となる場合は本割引も日割を適用します。
+                対象サービスが開通前の場合も割引の適用となりますが、適用開始から6ヵ月経過後も開通されていない場合は、順次、割引を終了します。ただし、お申し込み条件外などの理由により開通できないことを当社が確認した場合は、6ヵ月以内でも割引を終了する場合があります。
+                お客さま都合により対象サービスのお申し込みを取消された場合は、割引を終了し、それまでの割引額をUQ mobileのご利用料金に合算し請求する場合があります。
+                割引額は、月末時点で加入しているUQ mobileの料金プランにより判定します。月末時点で条件を満たさない月は、割引は適用されません。
+                対象サービスを解約された場合、割引の適用は解約月の前月をもって終了します。
+                インターネットコース
+                「インターネットコース」適用中のお客さまがauへ番号移行し、「auスマートバリュー」の適用条件を満たした場合、番号移行月の翌月より「auスマートバリュー」が自動で適用されます。
+                auで「auスマートバリュー」適用中のお客さまがUQ mobileに番号移行し、「インターネットコース」の適用条件を満たした場合、番号移行の翌月より「インターネットコース」が自動で適用されます。
+                ビッグローブ・KDDIが実施する他の施策とは併用できない場合があります。
+                くりこしプラン +5G
+                本プランはスマートフォン(5G)向けプランです。スマートフォン(4G LTE)でもご契約できますが、その場合4G LTE通信でのご利用となります。
+                データ容量の消費は、くりこし分→月間データ容量(増量データ容量含む)→追加チャージ購入分の順番に行われます。くりこし上限は、前月の基本データ残容量分までで、当月末まで利用可能です。「くりこしプラン +5G」内で月途中にプラン変更が適用される場合、適用月の月間データ容量は、プラン変更前後でデータ容量の大きい方のプランのデータ容量となります。
+                新規契約または機種変更と同時にお申し込みの場合、料金プランは加入日または変更日当日から適用となります。プラン変更の場合は、翌月から適用となります。
+                月の途中でのご解約などの場合、基本料は日割とはならず満額かかります。
+                「おしゃべりプラン」「ぴったりプラン」「データ高速＋音声通話プラン」「データ無制限＋音声通話プラン」「スマホプラン」「くりこしプラン」(以下、「旧プラン」)から本プランへ契約移行する場合、旧プランの各種データ容量(くりこし分／月間データ容量／追加購入データ容量)の引継ぎは行いませんが、月の途中に本プランへ契約移行する場合も、本プランの月間データ容量をご利用いただけます。
+                「旧プラン」から本プランに契約移行する場合、契約解除料はかかりません。また、現在適用中の各種割引(UQ学割、UQ家族割、ギガMAX月割など)、各種オプションなどが終了する場合があります。本プランにご加入後、「旧プラン」へのプラン変更はできません。
+                UQ mobile通信サービスはau通信サービスのエリア内でご利用いただけます。
+                別途機種代金、契約事務手数料(3,300円)、ユニバーサルサービス料および電話リレーサービス料などがかかります。
+                auおよびpovo1.0/povo2.0からの番号移行の場合、auの契約解除料、UQ mobileの契約事務手数料はかかりません。(KDDI・沖縄セルラー間のMNPは対象外です。)
+                データ通信
+                海外にて「世界データ定額」をご利用の場合、国内の月間データ容量から消費されます。「海外ダブル定額」をご利用の場合には、海外でご利用の通信に対して課金され、国内の月間データ容量の利用対象外です。
+                世界データ定額についてはこちら
+                海外ダブル定額についてはこちら
+                通信速度制限
+                ネットワーク混雑回避のために、直近3日間に6GB以上のご利用があったお客さまの通信速度を、翌日にかけて制限させていただきます。
+                各プランのデータ容量を超過後は、国内データ通信は、くりこしプランS +5Gでは最大300kbps、くりこしプランM +5G、くりこしプランL +5Gでは最大1Mbpsに通信速度を制限します。
+                国際ローミングデータ通信は、最大128kbpsに通信速度を制限します(本プラン共通)。
+                ベストエフォート型サービスです。記載の速度は技術規格上の最大値であり、実使用速度を示すものではありません。エリア内であってもお客さまのご利用環境、回線の状況などにより大幅に低下する場合があります。また、最大通信速度は対応機種により異なります。
+                共通注意事項
+                受付時期により、内容が変更となる場合があります。
+                新規契約または機種変更と同時にお申し込みの場合、料金プランは加入日または変更日当日から適用となります。プラン変更の場合は、翌月から適用となります。
+                auおよびpovo2.0への番号移行の場合、基本料および当社所定の割引サービス、オプションサービス料金等は番号移行の完了日の前日までの日割りとなりますが、当面の間、全額を一旦ご請求した上で、番号移行の翌月以降に差額を調整します。ただし、沖縄セルラーへのMNPは対象外です。
+                ビッグローブ・KDDIが実施する他の施策とは併用できない場合があります。
+                掲載の内容は2022年7月1日現在の情報です。
                 </p>
 
             </div>

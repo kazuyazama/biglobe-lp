@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {IoIosArrowForward} from "react-icons/io"
 
@@ -45,21 +46,23 @@ const Campaign = () => {
 
         <div className="md:flex justify-center space-y-5 md:space-y-0 md:space-x-5 pt-5">
 
-          <div className="basis-1/3 ">
-
-
-                
-        <div className="card bg-base-100 shadow-xl ">
-          <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
-        <figure><img src="/images/main/IPv6.svg" alt="Shoes" className="w-full hover:opacity-75" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">IPv6ルーター月額料金無料特典</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-            <button className="relative btn btn-secondary px-8"> 
+        <div className="basis-1/3 ">
+      
+        <div className="card card-compact bg-base-100 shadow-xl ">
+          <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料</div>
+        <Link href="/campaignDetail">
+        <Image src="/images/main/IPv6-2.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        </Link>
+        <div className="card-body border-t border-primary">
+            <h2 className="card-title ">IPv6ルーター月額料金無料特典</h2>
+            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <div className="card-actions justify-end pt-3">
+            <Link href="/campaignDetail">
+            <button className="relative btn btn-secondary btn-sm px-8 "> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>
+            </Link>
             </div>
         </div>
         </div>
@@ -67,40 +70,51 @@ const Campaign = () => {
 
         <div className="basis-1/3">
 
-       
-        <div className="card bg-base-100 shadow-xl">
-        <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full hover:opacity-75" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">auスマートバリュー</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-            <button 
-                className="btn btn-secondary before:content-['詳しく見る'] relative px-8">
+        <div className="card card-compact bg-base-100 shadow-xl ">
+          <div className="bg-accent text-xl font-semibold py-2 text-center">auスマートバリュー</div>
+        <Link href="/campaignDetail">
+        <Image src="/images/main/auスマートバリュー3.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        </Link>
+        <div className="card-body border-t border-primary">
+            <h2 className="card-title ">auスマートバリュー</h2>
+            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <div className="card-actions justify-end pt-3">
+            <Link href="/campaignDetail">
+            <button className="relative btn btn-secondary btn-sm px-8 "> 
+                <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>
+            </Link>
             </div>
         </div>
         </div>
+
+          
+
+      
         </div>
 
         <div className="basis-1/3">
 
-
-        <div className="card bg-base-100 shadow-xl">
-        <div className="bg-accent text-xl py-3 text-center">ipV6ルーター無料</div>
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" className="w-full hover:opacity-75" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">UQモバイル自宅セット割</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-            <button 
-                className="btn btn-secondary before:content-['詳しく見る']  relative px-8">
-                <span className="absolute right-1"><IoIosArrowForward /></span>
+        <div className="card card-compact bg-base-100 shadow-xl ">
+          <div className="bg-accent text-xl font-semibold py-2 text-center">UQモバイル自宅セット割</div>
+        <Link href="/campaignDetail">
+        <Image src="/images/main/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        </Link>
+        <div className="card-body border-t border-primary">
+            <h2 className="card-title ">UQモバイル自宅セット割</h2>
+            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <div className="card-actions justify-end pt-3">
+            <Link href="/campaignDetail">
+            <button className="relative btn btn-secondary btn-sm px-8 "> 
+                <span className="">詳しく見る</span>
+                <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>
+            </Link>
             </div>
         </div>
         </div>
+
 
         </div>
         </div>

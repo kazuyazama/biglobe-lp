@@ -11,6 +11,7 @@ import { ContactType } from "../../../types/contact";
 const web :NextPageWithLayout= () => {
     const router = useRouter();
     const isConfirm = router.query.confirm;
+    console.log(isConfirm);
    
 
     const methods = useForm<ContactType>({
