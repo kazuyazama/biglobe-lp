@@ -34,8 +34,8 @@ const Strong = () => {
             <figure className="bg-gradient-to-r from-cyan-500 to-blue-500"><Image src="/images/main/お得.svg" alt="Shoes" width={200} height={250} /></figure>
 
             <div className="card-body">
-                <h2 className="card-title">最大29,800円オトク！</h2>
-                <p>当サイトからお申し込み頂くと、当サイト限定キャンペーンとキャリア公式キャンペーンが併用できますので最大29,800円お得に利用できます。
+                <h2 className="card-title">最大35,000円オトク！</h2>
+                <p>当サイトからお申し込み頂くと、当サイト限定キャンペーンとキャリア公式キャンペーンが併用できますので最大35,000円お得に利用できます。
                 </p>
                 
             </div>

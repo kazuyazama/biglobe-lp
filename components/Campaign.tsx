@@ -25,9 +25,9 @@ const Campaign = () => {
 
             <div className="card-body ">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
-                <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大30,000円)または
-                  工事費無料+キャッシュバックキャンペーン(最大15,000円)のどちらかをお選びいただけるキャンペーンです！
-                  両方ともに高速wifiルーターは付いてきます。</p>
+                <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または
+                  工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！
+                </p>
                 <div className="card-actions justify-center md:justify-end">
                 <Link href='/campaignDetail'>
                 <button 
@@ -49,12 +49,12 @@ const Campaign = () => {
         <div className="basis-1/3 ">
       
         <div className="card card-compact bg-base-100 shadow-xl ">
-          <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料</div>
+          <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料特典</div>
         <Link href="/campaignDetail">
         <Image src="/images/main/IPv6-2.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
-            <h2 className="card-title ">IPv6ルーター月額料金無料特典</h2>
+            <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>
             <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
@@ -76,8 +76,8 @@ const Campaign = () => {
         <Image src="/images/main/auスマートバリュー3.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
-            <h2 className="card-title ">auスマートバリュー</h2>
-            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <h2 className="card-title ">auの携帯料金がお得に！</h2>
+            <p>ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
             <button className="relative btn btn-secondary btn-sm px-8 "> 
@@ -102,8 +102,8 @@ const Campaign = () => {
         <Image src="/images/main/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
-            <h2 className="card-title ">UQモバイル自宅セット割</h2>
-            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <h2 className="card-title ">UQモバイルの携帯料金がお得に！</h2>
+            <p>ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
             <button className="relative btn btn-secondary btn-sm px-8 "> 
