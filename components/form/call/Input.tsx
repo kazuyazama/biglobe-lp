@@ -3,6 +3,8 @@ import { useFormContext, SubmitHandler, } from "react-hook-form"; // SubmitHandl
 import { ErrorMessage } from "@hookform/error-message";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { CallContactType } from "../../../types/CallContactType";
+
 
 
 const Input = () => {
@@ -13,9 +15,12 @@ const Input = () => {
         register, //inputなどに入力された値を参照するために使う
         handleSubmit,
         formState:{errors,isValid},
-    } = useFormContext();
+    } = useFormContext<CallContactType>();
 
-    const onSubmit = async (data: any) => {
+   
+
+    const onSubmit:SubmitHandler<CallContactType> = async (data) => {
+        console.log(data)
        //ここでバリデーション用APIを叩くなど処理をする想定
         router.push(`/form/call/?confirm=check`)
     }

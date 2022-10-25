@@ -6,11 +6,12 @@ export type ContactType = {
     email:string;
     tel:number;
     tatemono:string;
-    zip:number;
+    zip:string;
     address:string;
-    address2:boolean;
-    time:any;
-    week:any;
-    question:string
-  };
+    address2?:boolean;
+    time?:Array<string>;
+    week?:Array<string>;
+    question?:string
+    privacy:string
+};
   

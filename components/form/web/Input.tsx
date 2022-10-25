@@ -6,15 +6,11 @@ import Link from "next/link"
 import { usePostalJp } from 'use-postal-jp'
 
 import type { ContactType } from "../../../types/contact";
+import type { Adress} from "../../../types/PostalJP";
 
-type Adress = {
-  prefectureCode: string; // 都道府県コード
-  prefecture: string; // 都道府県
-  address1: string; // 市区町村
-  address2: string; // 市区町村配下
-}
 
-  
+
+ 
 const Input = () => {
     const router = useRouter();
 
@@ -33,12 +29,12 @@ const Input = () => {
         register, //inputなどに入力された値を参照するために使う
         handleSubmit,
         formState:{errors,isValid},
-    } = useFormContext();
+    } = useFormContext<ContactType>();
 
     const onSubmit:SubmitHandler<ContactType>  = async (data) => {
         console.log(data)
        //ここでバリデーション用APIを叩くなど処理をする想定
-        router.push(`/form/web/?confirm=check`)
+        await router.push(`/form/web/?confirm=check`)
     }
 
     return (

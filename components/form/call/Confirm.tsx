@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useFormContext, SubmitHandler } from "react-hook-form"; // SubmitHandlerは、submitイベントに関する関数の型宣言に使う
 import {init,send} from '@emailjs/browser';
 import Link from "next/link";
-import type { ContactType } from "../../../types/contact";
+import type { CallContactType } from "../../../types/CallContactType";
 
 const Confirm = () => {
 
@@ -13,7 +13,7 @@ const Confirm = () => {
         getValues,
         reset,
         formState:{isValid} //form内の入力の有無や送信の状態などを取得 isValid以外にも色々ある
-    } = useFormContext<ContactType>();
+    } = useFormContext<CallContactType>();
 
    const values = getValues();
    
@@ -22,7 +22,7 @@ const Confirm = () => {
     router.push(`/form/call`)
    }
 
-   const onSubmit:SubmitHandler<ContactType> = async (data) => {
+   const onSubmit:SubmitHandler<CallContactType> = async (data) => {
       //emailjsに送信する処理
       const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
@@ -44,6 +44,7 @@ const Confirm = () => {
           alert('送信出来ませんでした');
           })
           reset({week:"",time:""}); //{}の中はリセット後、underfinedになるのを防ぐ処理
+          
       }
     
    }
@@ -135,6 +136,7 @@ const Confirm = () => {
           <div className="md:flex items-center"> 
             <p className="basis-1/3">お電話ご希望日時</p> 
             <p className="basis-full">{values.week + values.time && `${values.week}の${values.time}`}</p> 
+          
        
     
           </div>
