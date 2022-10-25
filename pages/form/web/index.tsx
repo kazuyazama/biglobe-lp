@@ -8,12 +8,12 @@ import Confirm from "../../../components/form/web/Confirm";
 import { ContactType } from "../../../types/contact";
 
 
-const web :NextPageWithLayout= () => {
+const Web :NextPageWithLayout= () => {
     const router = useRouter();
-    const isConfirm = router.query.confirm;
-    console.log(isConfirm);
-   
 
+    const isConfirm = router.query.confirm;
+    // console.log(isConfirm);
+   
     const methods = useForm<ContactType>({
         mode:"onChange",
         criteriaMode:"all"
@@ -34,7 +34,7 @@ const web :NextPageWithLayout= () => {
     );
 }
 
-web.getLayout = (page:ReactElement) =>  {
+Web.getLayout = (page:ReactElement) =>  {
     return (
       <FormLayout>
         {page}
@@ -42,4 +42,4 @@ web.getLayout = (page:ReactElement) =>  {
     )
 }
 
-export default web;
+export default Web;

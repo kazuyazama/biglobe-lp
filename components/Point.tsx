@@ -4,6 +4,7 @@ import {BsHouse} from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const Point = () => {
     return (
         <>
@@ -63,7 +64,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                <Image src="/images/main/コミコミ_ol.svg" alt="" width={800} height={500}  />
+                <Image src="/images/main/コミコミ_ol.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={800} height={500}  />
                 
             </div>
 

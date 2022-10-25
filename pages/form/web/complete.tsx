@@ -5,12 +5,13 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useState } from "react";
 
-const complete:NextPageWithLayout = () => {
-    
+const Complete:NextPageWithLayout = () => {
+  
+  const [isDisplay,setIsDisplay] = useState('');
+  
     // 直アクセスのリダイレクト処理
     const router = useRouter();
 
-    const [isDisplay,setIsDisplay] = useState('');
     useEffect(() => {
       if(router.isReady) {
         if (router.query.display === 'ok') 
@@ -59,7 +60,7 @@ const complete:NextPageWithLayout = () => {
     );
 };
 
-complete.getLayout = (page:ReactElement) =>  {
+Complete.getLayout = (page:ReactElement) =>  {
     return (
       <FormLayout>
         {page}
@@ -67,4 +68,4 @@ complete.getLayout = (page:ReactElement) =>  {
     )
 }
   
-  export default complete;
+  export default Complete;
