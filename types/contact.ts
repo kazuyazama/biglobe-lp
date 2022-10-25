@@ -9,8 +9,8 @@ export type ContactType = {
     zip:string;
     address:string;
     address2?:boolean;
-    time?:Array<string>;
-    week?:Array<string>;
+    time:Array<string>;
+    week:Array<string>;
     question?:string
     privacy:string
 };

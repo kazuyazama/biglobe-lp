@@ -8,14 +8,15 @@ import Point from '../components/Point';
 import Strong from '../components/Strong';
 import Crosing from '../components/Crosing';
 import type { NextPageWithLayout } from './_app'
+import { NextSeo } from 'next-seo';
+
 
 const Home: NextPageWithLayout = () => {
   
   return (
-
-    <>   
+    <> 
+    <NextSeo noindex={true} />
     <div className='overflow-x-hidden'>
-
       {/* topimage */}
       <section className='container pt-20' id='top'>
         {/* <div className='bg-top-background w-screen bg-cover bg-left'> */}
@@ -149,7 +150,7 @@ const Home: NextPageWithLayout = () => {
       
       
     </div>
-    </>
+  </>
    
   )
 }

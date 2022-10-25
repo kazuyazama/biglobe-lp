@@ -6,7 +6,7 @@ import Link from "next/link"
 import { usePostalJp } from 'use-postal-jp'
 
 import type { ContactType } from "../../../types/contact";
-import type { Adress} from "../../../types/PostalJP";
+import type { Adress } from "../../../types/PostalJP";
 
 
 

@@ -418,7 +418,7 @@ const Campaign:NextPageWithLayout = () => {
             </div> */}
             <div className="-mt-10">
 
-            <Image src="/images/main/auスマートバリュー2.svg" width={500} height={250} layout="responsive"   /> 
+            <Image src="/images/main/auスマートバリュー2.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
             </div>
             
             
