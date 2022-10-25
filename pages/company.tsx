@@ -1,11 +1,19 @@
-import type { NextPageWithLayout } from "./_app";
 import type { ReactElement } from "react";
-import FormLayout from "../components/form/Layout";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
+
+import type { NextPageWithLayout } from "./_app";
+import FormLayout from "../components/form/Layout";
 
 const Company:NextPageWithLayout = () => {
     return (
         <>
+         <NextSeo
+        title="会社情報"
+        openGraph={{
+            url:"http://localhost:3000/company",
+        }}
+        />
 
         <div className="overflow-x-hidden pb-20">
         <section className='container mx-auto md:px-20 px-5'>

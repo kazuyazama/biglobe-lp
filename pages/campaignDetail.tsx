@@ -6,11 +6,18 @@ import { Link as Scroll } from "react-scroll";
 import Link from "next/link";
 import {HiPlus} from "react-icons/hi"
 import {GoArrowDown} from "react-icons/go"
+import { NextSeo } from "next-seo";
 
 const Campaign:NextPageWithLayout = () => {
     return (
         <>
         {/* 参考ページ：https://www.biglobe-hikari.net/campaign/ */}
+         <NextSeo
+        title="キャンペーン一覧"
+        openGraph={{
+            url:"http://localhost:3000/campaignDetail",
+        }}
+        />
         
         <div className="overflow-x-hidden pb-20">
         <section className='container mx-auto md:px-20 px-5'>

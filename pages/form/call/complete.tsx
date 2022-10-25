@@ -1,9 +1,10 @@
-import FormLayout from "../../../components/form/Layout";
-import type { NextPageWithLayout } from "../../_app";
 import { ReactElement, useEffect, useState } from "react"; 
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
+import type { NextPageWithLayout } from "../../_app";
+import FormLayout from "../../../components/form/Layout";
 
 const Complete:NextPageWithLayout = () => {
 
@@ -26,6 +27,12 @@ const Complete:NextPageWithLayout = () => {
     
     return (
       <>
+       <NextSeo
+        title="電話折り返しフォーム"
+        openGraph={{
+            url:"http://localhost:3000/form/web",
+        }}
+        />
       {isDisplay && (
        <div className="overflow-x-hidden pb-20">
 

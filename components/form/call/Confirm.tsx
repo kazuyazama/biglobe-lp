@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useFormContext, SubmitHandler } from "react-hook-form"; // SubmitHandlerは、submitイベントに関する関数の型宣言に使う
 import {init,send} from '@emailjs/browser';
 import Link from "next/link";
+
 import type { CallContactType } from "../../../types/CallContactType";
 
 const Confirm = () => {
@@ -51,6 +52,7 @@ const Confirm = () => {
   
     return (
         <>
+        
         <div className="overflow-x-hidden pb-20">
    
 

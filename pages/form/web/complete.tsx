@@ -1,14 +1,16 @@
-import FormLayout from "../../../components/form/Layout";
-import type { NextPageWithLayout } from "../../_app";
 import { ReactElement, useEffect } from "react"; 
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useState } from "react";
+import { NextSeo } from "next-seo";
+
+import type { NextPageWithLayout } from "../../_app";
+import FormLayout from "../../../components/form/Layout";
 
 const Complete:NextPageWithLayout = () => {
   
   const [isDisplay,setIsDisplay] = useState('');
-  
+
     // 直アクセスのリダイレクト処理
     const router = useRouter();
 
@@ -26,6 +28,12 @@ const Complete:NextPageWithLayout = () => {
     return (
 
       <>
+      <NextSeo
+      title="ビッグローブ光 お申し込みフォーム"
+      openGraph={{
+          url:"http://localhost:3000/form/web",
+      }}
+      />
       <div className="overflow-x-hidden pb-20">
       
       <div className="container mx-auto px-40 text-center ">
