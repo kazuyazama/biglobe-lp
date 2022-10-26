@@ -51,7 +51,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料特典</div>
         <Link href="/campaignDetail">
-        <Image src="/images/main/IPv6-2.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image src="/main/campaign/ipv6.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
             <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>
@@ -73,7 +73,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">auスマートバリュー</div>
         <Link href="/campaignDetail">
-        <Image src="/images/main/auスマートバリュー3.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image src="/main/campaign/au-smart-value.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
             <h2 className="card-title ">auの携帯料金がお得に！</h2>
@@ -99,7 +99,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">UQモバイル自宅セット割</div>
         <Link href="/campaignDetail">
-        <Image src="/images/main/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image src="/main/campaign/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
             <h2 className="card-title ">UQモバイルの携帯料金がお得に！</h2>

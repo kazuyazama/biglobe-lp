@@ -28,8 +28,8 @@ const Campaign:NextPageWithLayout = () => {
         </ul>
         </div>
         <div className="text-center ">
-            <h1 className="text-2xl">BIGLOBE 光 キャンペーンのご案内</h1>
-            <p>
+            <h1 className="text-2xl pb-5">BIGLOBE 光 キャンペーンのご案内</h1>
+            <p className="">
             ビッグローブ光ならお得がいっぱい！
             現在開催中のお得なキャンペーンや割引をご紹介します。
             </p>
@@ -39,14 +39,14 @@ const Campaign:NextPageWithLayout = () => {
 
         <div className="grid grid-cols-6 justify-items-center">
 
-            <div className="col-span-6">
+            <div className="col-span-6 pb-10">
             当サイトからお申し込みでお得なキャンペーンが適用されます！
             下記2つからお好きなキャンペーンをお選びいただけます。
             </div>
-            <div className="col-span-3">高額キャッシュバック</div>
-            <div className="col-span-3">工事費割引+キャッシュバック</div>
+            <div className="col-span-3 pb-10">高額キャッシュバック</div>
+            <div className="col-span-3 pb-10">工事費割引+キャッシュバック</div>
 
-            <div className="col-span-6">
+            <div className="col-span-6 ">
                 <h1>選べるキャンペーン【その1】高額キャッシュバックキャンペーン</h1>
                 <div>特典１の内容</div>
                 <p>特典１の詳細</p>
@@ -242,7 +242,7 @@ const Campaign:NextPageWithLayout = () => {
 
              <div className="col-span-6">
                 <h1>無線LAN付IPv6対応ルータ月額料金無料特典</h1>
-                <div><Image src="/images/main/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div><Image src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -302,7 +302,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="au-sv">
                 <h1>auスマートバリュー</h1>
-                <div><Image src="/images/main/auスマートバリュー.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div><Image src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -397,7 +397,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="uq-set">
                 <h1>UQ mobile 自宅セット割</h1>
-                <div className="text-center"><Image src="/images/main/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div className="text-center"><Image src="/main/campaign/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>ビッグローブ光インターネットとビッグローブ光電話のご利用で、UQ mobileの対象プランにご加入の方はUQ mobileのご利用料金を割引いたします。（ UQ mobileへのお申込みが必要です。）</p>
             </div>
@@ -408,11 +408,11 @@ const Campaign:NextPageWithLayout = () => {
 
                 <div className="flex items-center justify-around relative space-x-2">
                 <div className="basis-full">
-                <Image src="/images/main/auスマートバリュー2.svg" width={250} height={200} layout="responsive" />
+                <Image src="/main/campaign/UQmobile.svg" width={250} height={200} layout="responsive" />
                 </div>
                 <HiPlus className="text-6xl"   />
                 <div className="basis-full">
-                <Image src="/images/main/auスマートバリュー2.svg" width={250} height={200}  layout="responsive"  />
+                <Image src="/main/campaign/UQmobile.svg" width={250} height={200}  layout="responsive"  />
                 </div>
                 </div>   
             </div>
@@ -425,7 +425,7 @@ const Campaign:NextPageWithLayout = () => {
             </div> */}
             <div className="-mt-10">
 
-            <Image src="/images/main/auスマートバリュー2.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
+            <Image src="/main/campaign/UQmobile.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
             </div>
             
             

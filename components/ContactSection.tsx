@@ -14,8 +14,8 @@ const ContactSection = () => {
          <div className="md:flex flex-row justify-center md:space-x-5">
          
             <div className="pb-5 md:pb-0 md:text-2xl font-semibold flex flex-col items-center">
-                <h1>当社限定キャンペーンなら最大29,800円おトク！</h1>
-                <h1 className="text-primary">WEB申込は２４時間受付！</h1>
+                <h1>当サイトからのお申し込みで最大<span className="text-secondary font-bold">35,000円</span>おトク！</h1>
+                <h1 className="text-primary">WEBお申し込みは２４時間受付中です。</h1>
             </div>
 
             <div className="flex space-x-3 md:space-x-5 justify-center">

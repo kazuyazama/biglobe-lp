@@ -26,7 +26,7 @@ const Home: NextPageWithLayout = () => {
           
         <div className='container mx-auto sm:px-20'>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
-          <figure><Image src="/images/main/lp_pc.png" alt="topimage" width={600} height={400} layout="responsive" /></figure>
+          <figure className='pt-10 '><Image src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"  /></figure>
        
         </div>
 
