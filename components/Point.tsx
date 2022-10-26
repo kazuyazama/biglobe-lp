@@ -41,7 +41,7 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
+            <div className="card card-side bg-base-100 shadow-2xl items-center border-4 border-primary">
             <div className="pl-4 md:pl-10"><FaRegBuilding  className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
@@ -53,7 +53,7 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-base-100 shadow-xl items-center border border-primary">
+            <div className="card card-side bg-base-100 shadow-2xl items-center border-4 border-primary">
             <div className="pl-4 md:pl-10"><BsHouse className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
@@ -157,12 +157,26 @@ const Point = () => {
 
 
             <div className="col-span-2">
-            <p>IPv6とは説明亜エフェfエフェげふぇ</p>
+            {/* <Image src="/main/campaign/ipv6.svg" width={500} height={150} /> */}
+            ipv6の説明画像
             </div>
 
             <div className="col-span-2">
-            <Image src="/sample/ipv6比較.webp" width={500} height={150} />
+            <p>回線速度はフレッツ光と同じ最大1Gbpsで快適です。</p>
             </div>
+
+            <div className="col-span-2">
+            フレッツ光画像
+            </div>
+
+            <div className="col-span-2">
+            <p>※ お住まいによっては、最大200Mbps、または100Mbpsの回線タイプとなることがあります。
+            ビッグローブ光はベストエフォート型のサービスです。最大1Gbpsとは理論上の最大速度となり、
+            お客さまのご利用環境や回線状況などにより、低下する場合があります。
+            </p>
+            </div>
+
+            
        
             <div className="col-span-2">
                 <p className="text-sm text-justify leading-relaxed">

@@ -14,7 +14,7 @@ const Nagare = () => {
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl h-96 ">
                 
-            <figure className="bg-primary"><Image src="/main/nagare/web申し込み.svg" alt="お申し込み" width={300} height={200} /></figure>
+            <figure className="bg-primary h-48"><Image src="/main/nagare/web申し込み2.svg" alt="お申し込み" width={250} height={150} /></figure>
             
             <div className="card-body items-center text-center">
                 <h2 className="card-title">お申し込み</h2>
@@ -36,7 +36,7 @@ const Nagare = () => {
 
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl h-96">
-            <figure className="bg-primary"><Image src="/main/nagare/内容確認連絡.svg" alt="確認" width={300} height={200} /></figure>
+            <figure className="bg-primary h-48"><Image src="/main/nagare/内容確認連絡.svg" alt="確認" width={300} height={200} /></figure>
           
             <div className="card-body items-center text-center">
                 <h2 className="card-title">確認</h2>
@@ -52,7 +52,7 @@ const Nagare = () => {
         
             <div className="basis-1/5">
             <div className="card card-compact bg-base-100 shadow-xl  h-96">
-            <figure className="bg-primary"><Image src="/main/nagare/工事.svg" alt="開通工事" width={300} height={200} /></figure>
+            <figure className="bg-primary h-48"><Image src="/main/nagare/工事.svg" alt="開通工事" width={300} height={200} /></figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">開通工事</h2>
                 <p>工事業者がご自宅にお伺いし、回線の開通に必要な工事を実地致します。</p>
@@ -64,7 +64,7 @@ const Nagare = () => {
             <div className="basis-1/5">
 
             <div className="card card-compact bg-base-100 shadow-xl h-96">
-            <figure className="bg-primary"><Image src="/main/nagare/開通.svg" alt="利用開始" width={300} height={200} /></figure>
+            <figure className="bg-primary h-48"><Image src="/main/nagare/開通2.svg" alt="利用開始" width={250} height={150} /></figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">利用開始</h2>
                 <p>接続設定をしていただいた後、インターネットをお使いいただけます。</p>
