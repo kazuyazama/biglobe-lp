@@ -157,8 +157,8 @@ const Point = () => {
 
             <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 ">
           
-            <Image loader={({src}) => src} src="/main/Point/IPv4ver.svg" width={800} height={500}  />
-            <Image loader={({src}) => src} src="/main/Point/IPv6ver.svg" width={800} height={500}  />
+            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={800} height={500}  />
+            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={800} height={500}  />
             </div>
             {/* <div>
             <Image loader={({src}) => src} src="/main/Point/IPv6ver.svg" width={600} height={350} />
