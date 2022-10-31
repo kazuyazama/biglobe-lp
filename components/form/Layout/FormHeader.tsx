@@ -12,7 +12,7 @@ const FormHeader = () => {
             <div className="basis-2/3 md:basis-auto">
             <Link href="/">
             <a className="normal-case flex">
-                <Image loader={({src}) => src} src="/BIGLOBE_logo_A-01.png" width={160} height={80} alt="BIGLOBE"  />
+                <Image loader={({src}) => src} src="/logo/BIGLOBE_logo_A-01.png" width={160} height={80} alt="BIGLOBE"  />
             </a>
             </Link>
             </div>
