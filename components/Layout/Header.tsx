@@ -39,7 +39,7 @@ const Header = () => {
                 <div className='normal-case '>
                 <Link href="/">
                 <a className="flex w-40 pl-1 pr-4 md:pl-1 md:pr-0 ">
-                <Image src="/hikari_01.png" width={180} height={35} alt="" />
+                <Image loader={({src}) => src} src="/hikari_01.png" width={180} height={35} alt="" />
                 </a>
                 </Link>
                 </div>
