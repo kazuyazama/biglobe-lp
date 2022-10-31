@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { useFormContext, SubmitHandler, } from "react-hook-form"; // SubmitHandlerは、submitイベントに関する関数の型宣言に使う
 import { ErrorMessage } from "@hookform/error-message";
 import { useRouter } from "next/router";
 import Link from "next/link"
 import { usePostalJp } from 'use-postal-jp'
 
-
 import type { ContactType } from "../../../types/contact";
 import type { Adress } from "../../../types/PostalJP";
 
+import TimeCpn from "./components/TimeCpn";
+import WeekCpn from "./components/WeekCpn";
+import AddressCpns from "./components/AddressCpns";
+
+//inputの簡単なやつだけコンポーネント化 後で戻すかも
+import InputCpn from "./components/InputCpn";
 
 
- 
-const Input = () => {
+const Input:FC = () => {
     const router = useRouter();
 
     //郵便番号入れたら自動入力する為の処理
@@ -40,7 +44,7 @@ const Input = () => {
 
     return (
         <>
-         <div className="overflow-x-hidden pb-20">
+        <div className="overflow-x-hidden pb-20">
     
         <div className="container mx-auto px-5 md:px-40 ">
         <div className="text-sm breadcrumbs pb-10">
@@ -70,7 +74,7 @@ const Input = () => {
         <hr />
 
         {/* お名前入力欄 */}
-        <div className="py-3 space-y-3">
+        {/* <div className="py-3 space-y-3">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -92,10 +96,17 @@ const Input = () => {
               message ? <p className="text-error">{message}</p> : null
             }
           />
-        </div>
+        </div> */}
+
+        <InputCpn title='お名前(フルネーム)' type="text" placeholder="山田太郎" register={register("name", {
+              required:`お名前は必須項目です。` 
+            })} errorname="name"
+            />
+
+     
 
         {/* フリガナ入力欄 */}
-        <div className="pb-3 space-y-3">
+        {/* <div className="pb-3 space-y-3">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -117,7 +128,11 @@ const Input = () => {
               message ? <p className="text-error">{message}</p> : null
             }
           />
-        </div>
+        </div> */}
+
+        <InputCpn title='フリガナ(フルネーム)' type="text" placeholder="ヤマダタロウ" register={register("furigana", {
+              required:`フリガナは必須項目です。` 
+            })} errorname="furigana" />
 
          {/* 性別 */}
 
@@ -167,9 +182,11 @@ const Input = () => {
               }
           />
           </div>
+
+ 
         
         {/* 生年月日入力欄 */}
-        <div className="pb-3 space-y-3">
+        {/* <div className="pb-3 space-y-3">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -178,7 +195,7 @@ const Input = () => {
           <input
             type="date"
             className="input w-full  input-bordered "
-            placeholder="ヤマダタロウ"
+            placeholder="1993/12/13"
             {...register("birthday", {
               required: "生年月日は必須項目です。"
             })}
@@ -191,13 +208,17 @@ const Input = () => {
               message ? <p className="text-error">{message}</p> : null
             }
           />
-        </div>
+        </div> */}
+
+        <InputCpn title='生年月日' type="date" placeholder="1993/12/13" register={register("birthday", {
+              required:`お名前は必須項目です。` 
+            })} errorname="birthday" />
 
            
 
         {/* メールアドレス入力欄 */}
 
-        <div className="pb-3 space-y-3">
+        {/* <div className="pb-3 space-y-3">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -219,10 +240,14 @@ const Input = () => {
               message ? <p className="text-error">{message}</p> : null
             }
           />
-        </div>
+        </div> */}
+
+        <InputCpn title='メールアドレス' type="email" placeholder="yamada@gmail.com" register={register("email", {
+              required:`メールアドレスは必須項目です。` 
+            })} errorname="email" />
 
         {/* 折り返し電話番号入力欄 */}
-        <div className="pb-3 space-y-3">
+        {/* <div className="pb-3 space-y-3">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -244,162 +269,25 @@ const Input = () => {
               message && <p className="text-error">{message}</p> 
             }
           />
-        </div>
+        </div> */}
+
+        <InputCpn title='折り返し電話番号' type="tel" placeholder="09011112222" register={register("tel", {
+              required:`電話番号は必須項目です。` 
+            })} errorname="tel" />
 
 
         <p className="pt-5 text-xl text-primary font-bold">設置先情報</p>
         <hr />
 
-        {/* 建物のタイプ入力欄 */}
-
-        <div className="py-3">
-
-        <div className="md:flex items-center space-y-3 md:space-y-0">
-        <div className="basis-1/3 space-x-2">
-        <div className="badge badge-secondary">必須</div>
-        <span>建物のタイプ</span>
-        </div>
-
-        <div className="basis-full">
-        <div className="form-control">
-          <label className="label cursor-pointer self-start space-x-2">
-            <input type="radio" 
-            value="集合住宅" 
-            className="radio checked:bg-primary" 
-            {...register("tatemono", {
-              required: "建物タイプは必須項目です。",
-              onChange: (e) => setHandleTatemono(e.target.value)
-            })}
-            checked={handleTatemono === '集合住宅'}
-            />
-            <p className="label-text">集合住宅</p> 
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer self-start space-x-2">
-            <input type="radio" 
-            value="戸建" 
-            className="radio checked:bg-secondary" 
-            {...register("tatemono", {
-              required: "建物タイプは必須項目です。",
-              onChange: (e) => setHandleTatemono(e.target.value),
-            })}
-            checked={handleTatemono === '戸建'}
-             />
-            <span className="label-text">戸建</span> 
-          </label>
-         
-        </div>
-        </div>
-      
-        </div>
-        <ErrorMessage
-            errors={errors}
-            name="tatemono"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
+        {/* 建物のタイプ入力欄 */}  {/* 設置先郵便番号入力欄 */}  {/* 設置先ご住所入力欄 */} {/* 番地入力欄 */}
+       
+        <AddressCpns 
+        handleTatemono={handleTatemono} 
+        setHandleTatemono={setHandleTatemono}
+        setValue={setValue} 
+        address={address}
+        error={error}
         />
-        </div>
-
-        {/* 設置先郵便番号入力欄 */}
-        <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-              <span>設置先郵便番号</span>
-            </div>
-          <input
-            type="text"
-            className="input w-full input-bordered  "
-            placeholder="1112222"
-            {...register("zip", {
-              required: {
-                value:true,
-                message:"郵便番号は必須項目です。",
-              },
-              onChange: (e) => setValue(e.target.value) ,
-            }) }
-          
-          /> 
-          </label>
-          <div className="flex">
-          <div className="md:basis-1/3">
-          <ErrorMessage
-            errors={errors}
-            name="zip"
-            render={({ message }) =>
-              message ? <p className="text-error ">{message}</p> : null
-            }
-          />
-          </div>
-           <p className="basis-full text-primary">※入力後に住所が自動入力されます</p>
-           </div>
-          
-        </div>
-
-
-        
-
-        {/* 設置先ご住所入力欄 */}
-        <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-            <span>設置先ご住所</span>
-            </div>
-          <input
-            type="text"
-            className="input w-full input-bordered"
-            defaultValue={!error ? `${address ? address.prefecture : ''}${address ? address.address1 : ''}${address ? address.address2 : ''}`: '住所が所得できませんでした'}
-            placeholder="東京都町田市森野"
-            {...register("address", {
-              required: {
-                value:true,
-                message:"設置先住所は必須項目です。",
-              },
-              
-            })}
-   
-          /> 
-    
-    
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="address"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
-          />
-        </div>
-
-        {/* 番地入力欄 */}
-        {handleTatemono === '集合住宅' ? (
-        <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-              <div className="badge badge-secondary">必須</div>
-              <span>建物名・部屋番号</span>
-            </div>
-          <input
-            type="text"
-            className="input w-full "
-            placeholder="横山第二ビル 2-A"
-            {...register("address2", {
-              required: "番地は必須項目です。"
-            })}
-          /> 
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="address2"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
-          />
-        </div>
-        ) : null}
 
         <p className="pt-5 text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
         <hr />
@@ -407,7 +295,7 @@ const Input = () => {
 
         {/* 確認お電話ご希望時間帯入力欄 */}
 
-        <div className="py-6">
+        {/* <div className="py-6">
 
         <div className="md:flex items-center space-y-3 md:space-y-0">
 
@@ -490,7 +378,7 @@ const Input = () => {
             <span className="label-text">20時〜21時</span> 
           </label>
         </div>
-        </div>
+        </div> 
 
         </div>
         <div className="flex">
@@ -505,11 +393,13 @@ const Input = () => {
         </div>
         <p className="basis-full text-primary">※複数選択可能</p> 
         </div>
-        </div>
+        </div> */}
+        <TimeCpn />
+
 
         {/* 確認お電話希望曜日入力欄 */}
 
-        <div className="py-6">
+        {/* <div className="py-6">
 
         <div className="md:flex items-center space-y-3 md:space-y-0">
 
@@ -611,7 +501,8 @@ const Input = () => {
         </div>
          <p className="basis-full text-primary ">※複数選択可能</p> 
          </div>
-        </div>
+        </div> */}
+        <WeekCpn />
 
 
         {/* ご質問など入力欄 */}

@@ -11,7 +11,7 @@ export type ContactType = {
     address2?:boolean;
     time:Array<string>;
     week:Array<string>;
-    question?:string
-    privacy:string
+    question?:string;
+    privacy:string;
 };
   

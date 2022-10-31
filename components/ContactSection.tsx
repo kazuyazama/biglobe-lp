@@ -13,7 +13,7 @@ const ContactSection = () => {
         <>
          <div className="md:flex flex-row justify-center md:space-x-5">
          
-            <div className="pb-5 md:pb-0 md:text-2xl font-semibold flex flex-col items-center">
+            <div className="pb-5 md:pb-0 md:text-xl 2xl:text-2xl font-semibold flex flex-col items-center">
                 <h1>当サイトからのお申し込みで最大<span className="text-secondary font-bold text-lg md:text-3xl">35,000円</span>おトク!</h1>
                 <h1 className="text-primary md:text-xl">WEBお申し込みは２４時間受付中です。</h1>
             </div>

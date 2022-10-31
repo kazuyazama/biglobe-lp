@@ -7,8 +7,11 @@ import { NextPageWithLayout } from "../../_app";
 import FormLayout from "../../../components/form/Layout";
 import Input from "../../../components/form/web/Input";
 import Confirm from "../../../components/form/web/Confirm";
+// import InputCpn from "../../../components/form/web/component/InputComponent";
 
 import type { ContactType } from "../../../types/contact";
+
+
 
 
 const Web :NextPageWithLayout= () => {
@@ -32,7 +35,9 @@ const Web :NextPageWithLayout= () => {
         />
          <FormProvider {...methods}>
                 {!isConfirm ? (
+                    <>
                     <Input />
+                    </>
                 ) : (
                     <Confirm />
                 )}

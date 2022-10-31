@@ -38,14 +38,13 @@ const Point = () => {
             </div>
 
 
-
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
             <div className="card card-side bg-base-100 shadow-2xl items-center border-4 border-primary">
             <div className="pl-4 md:pl-10"><FaRegBuilding  className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
-                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
+                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4,378円</span>円 / 月</h1>
             
             </div>
             </div>
@@ -57,7 +56,7 @@ const Point = () => {
             <div className="pl-4 md:pl-10"><BsHouse className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
-                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4378円</span>円 / 月</h1>
+                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">5,478円</span>円 / 月</h1>
 
             </div>
             </div>
@@ -156,11 +155,16 @@ const Point = () => {
             </div>
 
 
-            <div className="col-span-2">
-            {/* <Image src="/main/campaign/ipv6.svg" width={500} height={150} /> */}
-            ipv6の説明画像
+            <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 ">
+          
+            <Image src="/main/Point/IPv4ver.svg" width={800} height={500}  />
+            <Image src="/main/Point/IPv6ver.svg" width={800} height={500}  />
             </div>
-
+            {/* <div>
+            <Image src="/main/Point/IPv6ver.svg" width={600} height={350} />
+            </div> */}
+            
+           
             <div className="col-span-2">
             <p>回線速度はフレッツ光と同じ最大1Gbpsで快適です。</p>
             </div>

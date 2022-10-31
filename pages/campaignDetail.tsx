@@ -7,6 +7,7 @@ import Link from "next/link";
 import {HiPlus} from "react-icons/hi"
 import {GoArrowDown} from "react-icons/go"
 import { NextSeo } from "next-seo";
+import List from "../components/campaignDetailComponent";
 
 const Campaign:NextPageWithLayout = () => {
     return (
@@ -54,34 +55,17 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6 w-full ">
 
-            <ul className="outline outline-primary rounded-2xl">
-
-            <li className="flex flex-row justify-center">
-                <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                    <p className="">新規お申込み</p>
-                </div>
-                <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                    <p><span className="text-secondary font-bold">35,000円</span> 現金キャッシュバック</p>
-                </div>
-            </li>
-            <li className="flex flex-row justify-center">
-                <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                    <p className="">他社から転用</p>
-                </div>
-                <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
-                </div>
-            </li>
-            <li className="flex flex-row justify-center">
-                <div className="basis-1/2 bg-yellow-100 text-center py-3">
-                    <p className="">事業者変更</p>
-                </div>
-                <div className="basis-1/2 text-center  bg-red-50 py-3">
-                <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
-                </div>
-            </li>
-
-            </ul>
+            <List 
+            title1='新規お申込み' 
+            title2='他社から転用' 
+            title3='事業者変更'  
+            price1='35,000円'
+            price2='15,000円'
+            price3='15,000円'
+            discription1='現金キャッシュバック'
+            discription2='現金キャッシュバック'
+            discription3='現金キャッシュバック'
+            />
 
             </div>
 
@@ -96,55 +80,23 @@ const Campaign:NextPageWithLayout = () => {
                 </p>
             </div>
 
-            {/* <div className="col-span-6 w-full ">
-                <div className="outline outline-primary rounded-2xl flex-col items-center justify-evenly my-20 ">
-
-                <div className="flex justify-center space-x-10 border-b-2 py-5 bg-amber-200">
-                    <div> 新規お申込み</div>
-                    <div>37,000円 現金キャッシュバック+工事費無料</div>
-                </div>
-                <div className="flex justify-center space-x-10 border-b-2 py-5">
-                    <div>他社から転用</div>
-                    <div>37,000円 現金キャッシュバック+工事費無料</div>
-                </div>
-                <div className="flex justify-center space-x-10 py-5">
-                    <div>  事業者変更</div>
-                    <div>37,000円 現金キャッシュバック+工事費無料</div>
-                </div>
-
-                </div>
-             </div> */}
+         
 
             <div className="col-span-6 w-full py-5">
 
-                <ul className="outline outline-primary rounded-2xl">
+            <List 
+            title1='新規お申込み' 
+            title2='他社から転用' 
+            title3='事業者変更'  
+            price1='10,000円'
+            price2='15,000円'
+            price3='15,000円'
+            discription1='現金キャッシュバック+工事費無料'
+            discription2='現金キャッシュバック'
+            discription3='現金キャッシュバック'
+            />
 
-                <li className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">新規お申込み</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                    <p><span className="text-secondary font-bold">10,000円</span> 現金キャッシュバック+工事費無料</p>
-                    </div>
-                </li>
-                <li className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">他社から転用</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                    <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
-                    </div>
-                </li>
-                <li className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3">
-                        <p className="">事業者変更</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3">
-                    <p><span className="text-secondary font-bold">15,000円</span> 現金キャッシュバック</p>
-                    </div>
-                </li>
-
-                </ul>
+               
             
              </div>
 
@@ -251,34 +203,17 @@ const Campaign:NextPageWithLayout = () => {
 
                 <h1>特典適用後の料金詳細</h1>
 
-                <div className="outline outline-primary rounded-2xl">
-
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className=""></p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>特典適用後料金</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">機器利用料</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3">
-                        <p className="">機器返送手数料</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
-
-                </div>
+               
+            <List 
+            title1='' 
+            title2='機器利用料' 
+            title3='機器返送手数料'  
+            price1=''
+            price2=''
+            discription1='特典適用後料金'
+            discription2='6カ月間 0円/月'
+            discription3='6カ月間 0円/月'
+            />
 
             </div>
 
@@ -311,36 +246,20 @@ const Campaign:NextPageWithLayout = () => {
 
                 <h1>割引額と対象の料金プラン</h1>
 
-                <div className="outline outline-primary rounded-2xl">
 
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">料金プラン</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>毎月の割引額</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">使い放題MAX 5G</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3">
-                        <p className="">ピタットプラン 5G</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
+                <List 
+                title1='料金プラン' 
+                title2='使い放題MAX 5G' 
+                title3='ピタットプラン 5G'  
+                price1=''
+                price2='1,000円'
+                price3='500円'
+                discription1='毎月の割引額'
+                discription2='(税込1,100円)永年割引'
+                discription3='(税込550円)永年割引'
+                />
 
-                </div>
-
-                <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
+            <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
                
             </div>
 
@@ -445,34 +364,18 @@ const Campaign:NextPageWithLayout = () => {
 
                 <h1>割引額と対象の料金プラン</h1>
 
-                <div className="outline outline-primary rounded-2xl">
-
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">料金プラン</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>毎月の割引額</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-                        <p className="">使い放題MAX 5G</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
-                <div className="flex flex-row justify-center">
-                    <div className="basis-1/2 bg-yellow-100 text-center py-3">
-                        <p className="">ピタットプラン 5G</p>
-                    </div>
-                    <div className="basis-1/2 text-center  bg-red-50 py-3">
-                        <p>6カ月間 0円/月</p>
-                    </div>
-                </div>
-
-                </div>
+        
+            <List 
+            title1='料金プラン' 
+            title2='くりこしプランS+5G & くりこしプランM+5' 
+            title3='くりこしプランL+5G'  
+            price1=''
+            price2='580円'
+            price3='780円'
+            discription1='毎月の割引額'
+            discription2='(税込638円)割引'
+            discription3='(税込858円)割引'
+            />
 
                 <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
                

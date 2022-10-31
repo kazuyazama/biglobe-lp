@@ -16,6 +16,7 @@ const Confirm = () => {
     } = useFormContext<ContactType>();
 
    const values = getValues();
+   console.log(values);
 
    if(!isValid) {
     router.push(`/form/web`)
