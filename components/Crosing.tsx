@@ -11,7 +11,7 @@ const Crosing = () => {
                 <Image src="/main/crosing/footer.svg" width={600} height={170} layout='responsive'  />
             </div> */}
             <div className="basis-full">
-                <Image src="/main/crosing/不安を解消.svg" width={600} height={170} layout='responsive'  />
+                <Image loader={({src}) => src} src="/main/crosing/不安を解消.svg" width={600} height={170} layout='responsive'  />
             </div>
           
         </div>

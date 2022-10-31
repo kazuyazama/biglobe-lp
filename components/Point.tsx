@@ -63,7 +63,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                <Image src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={800} height={500}  />
+                <Image loader={({src}) => src} src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={800} height={500}  />
                 
             </div>
 
@@ -122,7 +122,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                 <Image src="/main/point/point-au-smart-value.svg" width={600} height={300}  />
+                 <Image loader={({src}) => src} src="/main/point/point-au-smart-value.svg" width={600} height={300}  />
             </div>
        
     
@@ -157,11 +157,11 @@ const Point = () => {
 
             <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 ">
           
-            <Image src="/main/Point/IPv4ver.svg" width={800} height={500}  />
-            <Image src="/main/Point/IPv6ver.svg" width={800} height={500}  />
+            <Image loader={({src}) => src} src="/main/Point/IPv4ver.svg" width={800} height={500}  />
+            <Image loader={({src}) => src} src="/main/Point/IPv6ver.svg" width={800} height={500}  />
             </div>
             {/* <div>
-            <Image src="/main/Point/IPv6ver.svg" width={600} height={350} />
+            <Image loader={({src}) => src} src="/main/Point/IPv6ver.svg" width={600} height={350} />
             </div> */}
             
            

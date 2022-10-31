@@ -1,5 +1,6 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
-import Campaign from '../components/Campaign';
+import Campaign from '../components/campaign';
 import ContactSection from '../components/ContactSection';
 import Faq from '../components/Faq';
 import Nagare from '../components/Nagare';
@@ -7,8 +8,8 @@ import Onayami from '../components/Onayami';
 import Point from '../components/Point';
 import Strong from '../components/Strong';
 import Crosing from '../components/Crosing';
+
 import type { NextPageWithLayout } from './_app'
-import { NextSeo } from 'next-seo';
 
 
 const Home: NextPageWithLayout = () => {
@@ -26,7 +27,7 @@ const Home: NextPageWithLayout = () => {
           
         <div className='container mx-auto sm:px-20'>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
-          <figure className='pt-10 '><Image src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"  /></figure>
+          <figure className='pt-10 '><Image loader={({src}) => src} src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"  /></figure>
        
         </div>
 

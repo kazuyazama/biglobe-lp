@@ -5,12 +5,12 @@ import { useRouter } from "next/router";
 import Link from "next/link"
 import { usePostalJp } from 'use-postal-jp'
 
-import type { ContactType } from "../../../types/contact";
-import type { Adress } from "../../../types/PostalJP";
-
 import TimeCpn from "./components/TimeCpn";
 import WeekCpn from "./components/WeekCpn";
 import AddressCpns from "./components/AddressCpns";
+
+import type { ContactType } from "../../../types/contact";
+import type { Adress } from "../../../types/PostalJP";
 
 //inputの簡単なやつだけコンポーネント化 後で戻すかも
 import InputCpn from "./components/InputCpn";
@@ -182,6 +182,8 @@ const Input:FC = () => {
               }
           />
           </div>
+
+  
 
  
         

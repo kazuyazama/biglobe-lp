@@ -7,7 +7,7 @@ import Link from "next/link";
 import {HiPlus} from "react-icons/hi"
 import {GoArrowDown} from "react-icons/go"
 import { NextSeo } from "next-seo";
-import List from "../components/campaignDetailComponent";
+import List from "../components/campaign/ListCpn";
 
 const Campaign:NextPageWithLayout = () => {
     return (
@@ -194,7 +194,7 @@ const Campaign:NextPageWithLayout = () => {
 
              <div className="col-span-6">
                 <h1>無線LAN付IPv6対応ルータ月額料金無料特典</h1>
-                <div><Image src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div><Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -237,7 +237,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="au-sv">
                 <h1>auスマートバリュー</h1>
-                <div><Image src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div><Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -316,7 +316,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="uq-set">
                 <h1>UQ mobile 自宅セット割</h1>
-                <div className="text-center"><Image src="/main/campaign/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div className="text-center"><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>ビッグローブ光インターネットとビッグローブ光電話のご利用で、UQ mobileの対象プランにご加入の方はUQ mobileのご利用料金を割引いたします。（ UQ mobileへのお申込みが必要です。）</p>
             </div>
@@ -327,11 +327,11 @@ const Campaign:NextPageWithLayout = () => {
 
                 <div className="flex items-center justify-around relative space-x-2">
                 <div className="basis-full">
-                <Image src="/main/campaign/UQmobile.svg" width={250} height={200} layout="responsive" />
+                <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" width={250} height={200} layout="responsive" />
                 </div>
                 <HiPlus className="text-6xl"   />
                 <div className="basis-full">
-                <Image src="/main/campaign/UQmobile.svg" width={250} height={200}  layout="responsive"  />
+                <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" width={250} height={200}  layout="responsive"  />
                 </div>
                 </div>   
             </div>
@@ -344,7 +344,7 @@ const Campaign:NextPageWithLayout = () => {
             </div> */}
             <div className="-mt-10">
 
-            <Image src="/main/campaign/UQmobile.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
+            <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
             </div>
             
             
