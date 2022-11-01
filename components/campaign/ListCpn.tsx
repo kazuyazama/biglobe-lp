@@ -13,32 +13,96 @@ type Props = {
 const List = ({title1,title2,title3,discription1,discription2,discription3,price1,price2,price3}:Props) => {
     return (
     <>
-        <ul className="outline outline-primary rounded-2xl">
-        <li className="flex flex-row justify-center">
-        <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-            <p className="">{title1}</p>
-        </div>
-        <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-            <p><span className="text-secondary font-bold ">{price1}</span> {discription1}</p>
-        </div>
+
+        {/* <div className="outline outline-primary rounded-2xl">
+       
+        <ul className="grid grid-cols-2 items-center">
+        <li className=" border-b-2 bg-yellow-100 text-center py-5 h-24 md:h-20 ">
+            <p className="md:text-lg translate-y-3 md:translate-y-1">{title1}</p> 
         </li>
-        <li className="flex flex-row justify-center">
-        <div className="basis-1/2 bg-yellow-100 text-center py-3 border-b-2">
-            <p className="">{title2}</p>
-        </div>
-        <div className="basis-1/2 text-center  bg-red-50 py-3 border-b-2">
-        <p><span className="text-secondary font-bold">{price2}</span> {discription2}</p>
-        </div>
+        <li className=" text-center  bg-red-50 py-5 border-b-2 h-24 md:h-20">
+        <p className="-translate-y-1 md:translate-y-1">
+            <span className="text-secondary font-bold block md:inline">{price1}</span> {discription1}
+        </p>
         </li>
-        <li className="flex flex-row justify-center">
-        <div className="basis-1/2 bg-yellow-100 text-center py-3">
-            <p className="">{title3}</p>
-        </div>
-        <div className="basis-1/2 text-center  bg-red-50 py-3">
-        <p><span className="text-secondary font-bold">{price3}</span> {discription3}</p>
-        </div>
+        <li className="border-b-2 bg-yellow-100 text-center py-5 h-20">
+            <p className="md:text-lg  translate-y-2 md:translate-y-1">{title2}</p> 
+        </li>      
+      
+        <li className="text-center  bg-red-50 py-5 border-b-2 h-20 ">
+        <p className="-translate-y-1 md:translate-y-1">
+            <span className="text-secondary font-bold block md:inline">{price2}</span> {discription2}
+        </p>
         </li>
+
+        <li className="border-b-2 bg-yellow-100 text-center py-5 h-20">
+            <p className=" translate-y-2 md:translate-y-1">{title3}</p> 
+        </li>      
+      
+        <li className=" text-center  bg-red-50 py-3 border-b-2 h-20">
+        <p className="translate-y-1 md:translate-y-1 md:leading-10">
+            <span className="text-secondary font-bold block md:inline">{price3}</span> {discription3}
+        </p>
+        </li>
+
+
         </ul>
+        </div> */}
+
+        <table className="table-auto w-full outline outline-primary rounded-2xl border-collapse ">
+      
+            <tbody>
+                <tr className="">
+                <td className="w-1/2 bg-yellow-100 border-b-2 ">
+                <div className="text-center py-5">
+                 <p className="md:text-lg ">{title1}</p> 
+                </div>
+                </td>
+                <td className="w-1/2 bg-red-50 border-b-2">
+                <div className=" text-center  py-5 ">
+                <p className="">
+                    <span className="text-secondary font-bold block md:inline">{price1}</span> {discription1}
+                </p>
+                </div>
+                </td>
+         
+                </tr>
+                <tr>
+                <td className="w-1/2 bg-yellow-100 border-b-2 ">
+                <div className="text-center py-5">
+                 <p className="md:text-lg ">{title2}</p> 
+                </div>
+                </td>
+                <td className="w-1/2 bg-red-50 border-b-2">
+                <div className=" text-center  py-5 ">
+                <p className="">
+                    <span className="text-secondary font-bold block md:inline">{price2}</span> {discription2}
+                </p>
+                </div>
+                </td>
+         
+                </tr>
+                <tr className="">
+                <td className="w-1/2 bg-yellow-100 border-b-2 ">
+                <div className="text-center py-5">
+                 <p className="md:text-lg ">{title3}</p> 
+                </div>
+                </td>
+                <td className="w-1/2 bg-red-50 border-b-2">
+                <div className=" text-center  py-5 ">
+                <p className="">
+                    <span className="text-secondary font-bold block md:inline">{price3}</span> {discription3}
+                </p>
+                </div>
+                </td>
+         
+                </tr>
+            </tbody>
+        </table>
+
+
+    
+    
     </>
     );
 }

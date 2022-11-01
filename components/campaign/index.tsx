@@ -19,9 +19,9 @@ const Campaign = () => {
              当サイト限定！選べるキャンペーン
             </div>
             <div className="card md:card-side  rounded-t-none">
-            <figure className="w-full "><img src="https://placeimg.com/400/225/arch" 
-            alt="Shoes" className="w-full hover:opacity-75" />
-            </figure>
+            <Link href="/campaignDetail">
+            <figure className="w-full p-2"><Image loader={({src}) => src} src="/main/campaign/限定キャンペーン.svg" alt="ipV6ルーター無料" width={800} height={500} className="hover:scale-105 w-full hover:opacity-60" /></figure>
+             </Link>
 
             <div className="card-body ">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
@@ -51,7 +51,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料特典</div>
         <Link href="/campaignDetail">
-        <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ipV6ルーター無料" width={350} height={124} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary">
             <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>

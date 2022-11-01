@@ -31,7 +31,7 @@ const Point = () => {
 
 
             <div className="col-span-2 ">
-                <h2 className="text-center text-lg">
+                <h2 className="text-center text-">
                 BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！
                 回線とプロバイダ料金込みなのでとってもおトクです！
                 </h2>
@@ -40,11 +40,11 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-base-100 shadow-2xl items-center border-4 border-primary">
+            <div className="card card-side bg-sky-50 shadow-2xl items-center outline outline-primary card-compact md:py-2">
             <div className="pl-4 md:pl-10"><FaRegBuilding  className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
-                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">4,378円</span>円 / 月</h1>
+                <h1 className="font-semibold self-center"><span className="text-2xl md:text-5xl text-secondary pr-2">4,378円</span>円 / 月</h1>
             
             </div>
             </div>
@@ -52,25 +52,26 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-base-100 shadow-2xl items-center border-4 border-primary">
+            <div className="card card-side bg-sky-50 shadow-2xl items-center outline outline-primary card-compact md:py-2">
             <div className="pl-4 md:pl-10"><BsHouse className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
-                <h1 className="font-semibold self-center"><span className="text-3xl md:text-5xl text-secondary pr-2">5,478円</span>円 / 月</h1>
+                <h1 className="font-semibold self-center"><span className="text-2xl md:text-5xl text-secondary pr-2">5,478円</span>円 / 月</h1>
 
             </div>
             </div>
             </div>
 
             <div className="col-span-2">
+                <div className="w-full">
                 <Image loader={({src}) => src} src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={800} height={500}  />
-                
+                </div>
             </div>
 
 
             <div className="col-span-2">
 
-                <p className="text-sm text-justify leading-relaxed">
+                <p className="text-xs text-justify leading-relaxed">
                 特に注記のない限り、記載の金額は全て税込金額です。消費税計算の都合上、実際の請求額とは異なる場合があります。
                 1 集合住宅にお住まいでも、東日本エリアでは3戸以下、西日本エリアでは5戸以下の集合住宅の場合、ファミリータイプの料金となります。
                 2 東日本エリアでギガビットに対応したWi-Fiルータ（1ギガ対応無線LANルータ）をレンタルでご利用される場合、別途機器利用料550円/月がかかります。
@@ -122,7 +123,9 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                 <Image loader={({src}) => src} src="/main/point/point-au-smart-value.svg" width={600} height={300}  />
+                <div className="shadow-lg outline outline-primary bg-sky-50 rounded-xl ">
+                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={200} />     
+                </div>
             </div>
        
     

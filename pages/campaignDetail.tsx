@@ -38,19 +38,22 @@ const Campaign:NextPageWithLayout = () => {
 
       
 
-        <div className="grid grid-cols-6 justify-items-center">
+        <div className="grid grid-cols-6 justify-items-center gap-10">
 
-            <div className="col-span-6 pb-10">
+            <div className="col-span-6 ">
             当サイトからお申し込みでお得なキャンペーンが適用されます！
             下記2つからお好きなキャンペーンをお選びいただけます。
             </div>
-            <div className="col-span-3 pb-10">高額キャッシュバック</div>
-            <div className="col-span-3 pb-10">工事費割引+キャッシュバック</div>
-
             <div className="col-span-6 ">
-                <h1>選べるキャンペーン【その1】高額キャッシュバックキャンペーン</h1>
-                <div>特典１の内容</div>
-                <p>特典１の詳細</p>
+                <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="選べるキャンペーン" width={1000} height={500}  /></figure>
+            </div>
+      
+
+            <div className="col-span-6 space-y-5 text-center">
+                <h1>【特典A】高額キャッシュバックキャンペーン</h1>
+             <figure><Image loader={({src}) => src} src="/main/campaign/キャンペーン特典A.svg" alt="選べるキャンペーン" width={600} height={350}  /></figure>
+                <div className="md:mx-20">当サイト（お申込みフォーム、電話からのお申込み）から新規お申し込みまたは、他社からの転用、事業者変更をしていただいたお客さま限定で、最大35,000円をキャッシュバックする限定キャンペーンを実施中です！</div>
+               
             </div>
 
             <div className="col-span-6 w-full ">
@@ -72,7 +75,7 @@ const Campaign:NextPageWithLayout = () => {
 
 
 
-             <div className="col-span-6">
+             <div className="col-span-6 ">
                 <h1>選べるキャンペーン【その2】工事費無料+キャッシュバックキャンペーン</h1>
                 <div>特典2の内容</div>
                 <p>特典2の詳細
@@ -82,7 +85,7 @@ const Campaign:NextPageWithLayout = () => {
 
          
 
-            <div className="col-span-6 w-full py-5">
+            <div className="col-span-6 w-full ">
 
             <List 
             title1='新規お申込み' 
@@ -100,8 +103,9 @@ const Campaign:NextPageWithLayout = () => {
             
              </div>
 
-             <div className="col-span-6 justify-self-start w-full pt-4">
-                <h2 className="text-xl">当社キャッシュバックの特徴</h2>
+             <div className="col-span-6 justify-self-start w-full ">
+               
+                <h2 className="border-b-2 border-secondary "><span className="text-xl">当社キャッシュバックの特徴</span></h2>
                 <hr />
                 <ul className="list-disc list-inside space-y-2 py-3">
                     <li>
@@ -116,7 +120,7 @@ const Campaign:NextPageWithLayout = () => {
                 </ul>
              </div>
 
-             <div className="col-span-6 justify-self-start w-full pt-4">
+             <div className="col-span-6 justify-self-start w-full ">
                 <h2 className="border-b-2 border-secondary "><span className="text-xl">対象者</span></h2>
                 <ul className="list-disc list-inside space-y-2 py-3 ">
                     <li>上記キャンペーン期間中に当サイト（お申込みフォームまたは、電話によるお申込み）からお申し込みいただいた方。</li>
@@ -128,8 +132,8 @@ const Campaign:NextPageWithLayout = () => {
             
              
 
-             <div className="col-span-6 justify-self-start w-full pt-4">
-                <h2 className="text-xl">適用条件</h2>
+             <div className="col-span-6 justify-self-start w-full">
+             <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
                 <hr />
                 <ul className="list-disc list-inside space-y-2 ">
                     <li>
@@ -152,7 +156,7 @@ const Campaign:NextPageWithLayout = () => {
                 </ul>
              </div>
 
-             <div className="col-span-6 justify-self-start w-full pt-4">
+             <div className="col-span-6 justify-self-start w-full">
                 <h2 className="text-xl">注意事項</h2>
                 <hr />
                 <ul className="list-disc list-inside space-y-2 border p-3 rounded">
@@ -209,10 +213,11 @@ const Campaign:NextPageWithLayout = () => {
             title2='機器利用料' 
             title3='機器返送手数料'  
             price1=''
-            price2=''
+            price2='無料'
+            price3='無料'
             discription1='特典適用後料金'
-            discription2='6カ月間 0円/月'
-            discription3='6カ月間 0円/月'
+            discription2='(6カ月間)'
+            discription3='(6カ月以内)'
             />
 
             </div>
@@ -279,17 +284,21 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
             <div className="col-span-6 w-full">
-                <h3 className="text-xl border-b pt-4">適用条件</h3>
+                <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
                 <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
-                <ul className="list-disc list-inside space-y-2">      
+                <ul className="list-disc list-inside space-y-2 ">      
                     <li>auスマートフォン(5G)、auスマートフォン(4G)、auケータイ、4G LTEタブレットで対象の料金プランにご加入している方</li>
                     <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
                 <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
                 </ul>
+            </div>
 
-                <h3 className="text-xl border-b pt-4">お申し込みについて</h3>
+            <div className="col-span-6 w-full">
+
+                <h2 className="border-b-2 border-secondary "><span className="text-xl">お申し込みについて</span></h2>
                 <p className="py-3">ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。</p>
-                
+            </div>
+            <div className="col-span-6 w-full">   
                 <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
 
                 <p className="border p-3 rounded" id="notes">
@@ -367,7 +376,7 @@ const Campaign:NextPageWithLayout = () => {
         
             <List 
             title1='料金プラン' 
-            title2='くりこしプランS+5G & くりこしプランM+5' 
+            title2='くりこしプランS,M+5G' 
             title3='くりこしプランL+5G'  
             price1=''
             price2='580円'
@@ -397,21 +406,28 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
             <div className="col-span-6 w-full">
-                <h3 className="text-xl border-b pt-4">適用条件</h3>
+            <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
                 <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
                 <ul className="list-disc list-inside space-y-2">      
                     <li>UQ mobileの対象プラン(S/M/L)にご加入している方</li>
                     <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
                 <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
                 </ul>
+            </div>
 
-                <h3 className="text-xl border-b pt-4">お申し込みについて</h3>
+            <div className="col-span-6 w-full">
+
+                <h2 className="border-b-2 border-secondary "><span className="text-xl">お申し込みについて</span></h2>
                 <p className="py-3">
                 対象サービス契約者のご家族がUQ mobileをご利用の場合
                 ビッグローブ光のお申し込みと、対象サービス契約者のご家族であることの登録が必要です。ご家族であることの登録は、UQスポット、au Style、auショップおよびUQ mobileお客さまセンターにてお手続き可能です。
                 </p>
+            </div>
+
+            <div className="col-span-6 w-full">
                 
                 <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
+                
 
                 <p className="border p-3 rounded" id="notes">
                 対象サービス1契約につき、UQ mobile回線合計10回線(BIGLOBE WiMAX +5Gの場合、サービス1回線につき、UQ mobile合計9回線)までとなります。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります(au回線は⾃宅セット割の割引対象外です)。対象サービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。ただし、50歳以上のご家族の場合は対象サービスにご契約している住所と別住所でもお申し込みできます。別姓やUQ mobile回線が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。
