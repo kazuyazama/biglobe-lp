@@ -40,7 +40,7 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-sky-50 shadow-2xl items-center outline outline-primary card-compact md:py-2">
+            <div className="card card-side bg-sky-50 shadow-2xl items-center border-2 border-primary card-compact md:py-2">
             <div className="pl-4 md:pl-10"><FaRegBuilding  className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">マンションタイプ</h2>
@@ -52,7 +52,7 @@ const Point = () => {
 
             <div className="col-span-2 md:col-span-1 w-full md:w-5/6 ">
 
-            <div className="card card-side bg-sky-50 shadow-2xl items-center outline outline-primary card-compact md:py-2">
+            <div className="card card-side bg-sky-50 shadow-2xl items-center border-2 border-primary card-compact md:py-2">
             <div className="pl-4 md:pl-10"><BsHouse className="text-4xl md:text-7xl" /></div>
             <div className="card-body items-center px-0">
                 <h2 className="card-title">戸建タイプ</h2>
@@ -123,7 +123,7 @@ const Point = () => {
 
             <div className="col-span-2 space-y-5 text-center">
                 <h1 className="text-lg md:text-2xl font-semibold">auスマートバリュー</h1>
-                <div className="shadow-lg outline outline-primary bg-sky-50 rounded-xl ">
+                <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl ">
                  <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={200} />     
                 </div>
             </div>

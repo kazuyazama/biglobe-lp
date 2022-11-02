@@ -49,16 +49,16 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
         </ul>
         </div> */}
 
-        <table className="table-auto w-full outline outline-primary rounded-2xl border-collapse ">
+        <table className="table-auto w-full border-2 border-primary rounded-lg border-separate ">
       
             <tbody>
                 <tr className="">
-                <td className="w-1/2 bg-yellow-100 border-b-2 ">
+                <td className="w-1/2 bg-yellow-100 border-b-2 rounded-tl-lg">
                 <div className="text-center py-5">
                  <p className="md:text-lg ">{title1}</p> 
                 </div>
                 </td>
-                <td className="w-1/2 bg-red-50 border-b-2">
+                <td className="w-1/2 bg-red-50 border-b-2 rounded-tr-lg">
                 <div className=" text-center  py-5 ">
                 <p className="">
                     <span className="text-secondary font-bold block md:inline">{price1}</span> {discription1}
@@ -83,12 +83,12 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
          
                 </tr>
                 <tr className="">
-                <td className="w-1/2 bg-yellow-100 border-b-2 ">
+                <td className="w-1/2 bg-yellow-100 border-b-2 rounded-bl-lg ">
                 <div className="text-center py-5">
                  <p className="md:text-lg ">{title3}</p> 
                 </div>
                 </td>
-                <td className="w-1/2 bg-red-50 border-b-2">
+                <td className="w-1/2 bg-red-50 border-b-2 rounded-br-lg">
                 <div className=" text-center  py-5 ">
                 <p className="">
                     <span className="text-secondary font-bold block md:inline">{price3}</span> {discription3}

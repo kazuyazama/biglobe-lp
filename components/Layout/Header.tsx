@@ -83,7 +83,7 @@ const Header = () => {
             </div>
             <div className="navbar-end flex ">
                 <Link href="/form/web">
-                <a className=" btn btn-secondary btn-circle w-[150px] md:w-48 lg:w-52 md:px-3  drop-shadow-lg outline outline-1 outline-offset-1 outline-pink-500 ">
+                <a className=" btn btn-secondary rounded-full w-[150px] md:w-48 lg:w-52 md:px-3 drop-shadow-lg border-double border-4 border-base-100 ">
                     <div className="inline-flex items-center space-x-1 lg:space-x-2 ">
                     <AiOutlineForm className='md:text-xl' />
                     <span>Webお申し込み</span>
