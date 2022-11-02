@@ -22,15 +22,15 @@ const ContactSection = () => {
                 <h1 className="text-primary text-xs md:text-xl">WEBお申し込みは２４時間受付中!</h1>
             </div>
 
-            <div className="flex space-x-2 md:space-x-5 justify-center">
+            <div className="flex space-x-3 md:space-x-5 justify-center">
 
             <div className="">
             <Link href="/form/web">
-            <button className="btn btn-secondary md:btn-wide md:btn-md lg:btn-lg rounded-2xl space-x-1 md:space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out relative drop-shadow-xl outline outline-2 outline-offset-1 outline-pink-500">
+            <button className="w-full px-2 btn btn-secondary  md:btn-wide md:btn-md lg:btn-lg btn-circle  space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative drop-shadow-xl outline outline-2 outline-offset-1 outline-pink-500 ">
          
                 <AiOutlineForm className="text-xl md:text-3xl md:absolute left-6" />
     
-                <span className="md:text-xl">webお申し込み</span>
+                <span className=" md:text-xl">webお申し込み</span>
                
                 <IoIosArrowDroprightCircle className="text-xl md:text-2xl md:absolute right-3" />
                
@@ -39,7 +39,7 @@ const ContactSection = () => {
             </div>
             <div className="">
             <Link href="/form/call">
-            <button className="btn btn-primary md:btn-wide md:btn-md lg:btn-lg rounded-2xl space-x-1 md:space-x-2 hover:scale-105 hover:transition duration-300 ease-in-out relative  outline-2  drop-shadow-xl outline outline-offset-1 outline-blue-500" >
+            <button className="w-full px-2 btn btn-primary md:btn-wide md:btn-md lg:btn-lg btn-circle space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative  outline-2  drop-shadow-xl outline outline-offset-1 outline-blue-500" >
                 <FiPhoneCall className="text-xl md:text-3xl text-slate-100 md:absolute left-9"  />
                 <span className="text-slate-100 md:text-xl ">でんわで相談</span> 
                 <IoIosArrowDroprightCircle className="text-xl md:text-2xl text-slate-100 md:absolute right-3 "/>

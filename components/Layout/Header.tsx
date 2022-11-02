@@ -81,12 +81,14 @@ const Header = () => {
     
                 </ul>
             </div>
-            <div className="navbar-end flex">
+            <div className="navbar-end flex ">
                 <Link href="/form/web">
-                <a className="btn btn-secondary rounded-xl space-x-1 px-1 md:px-3 drop-shadow-lg outline outline-2 outline-offset-1 outline-pink-500">
+                <a className=" btn btn-secondary btn-circle w-[150px] md:w-48 lg:w-52 md:px-3  drop-shadow-lg outline outline-1 outline-offset-1 outline-pink-500 ">
+                    <div className="inline-flex items-center space-x-1 lg:space-x-2 ">
                     <AiOutlineForm className='md:text-xl' />
                     <span>Webお申し込み</span>
                     <IoIosArrowDroprightCircle className='md:text-xl '/>
+                    </div>
                 </a>
                 </Link>
             </div>

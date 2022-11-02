@@ -22,7 +22,7 @@ const Point = () => {
 
         <div className="flex flex-col ">
 
-        <div className="flex items-center space-x-5 ">
+        <div className="flex items-center space-x-3 md:space-x-5 ">
         <p className="text-4xl md:text-5xl font-extrabold text-accent">01</p>  
         <h1 className="text-xl md:text-2xl font-semibold">月額料金が安い</h1>
         </div>
@@ -101,9 +101,9 @@ const Point = () => {
 
         </div>
 
-        <div className="flex items-center space-x-5 pt-10 ">
+        <div className="flex items-center space-x-3 md:space-x-5 pt-10 ">
         <p className="text-4xl md:text-5xl font-extrabold text-accent">02</p>  
-        <h1 className="text-xl md:text-2xl font-semibold">スマホとセットでよりお得に！</h1>
+        <h1 className="text-xl md:text-2xl font-semibold whitespace-nowrap">スマホとセットでよりお得に!</h1>
         </div>
 
         
@@ -118,24 +118,45 @@ const Point = () => {
                 <h2 className="text-center">
                 auひかりなどに対応していない集合住宅や地域の方でも安心です。BIGLOBE光ならauひかりサービスと同様のauスマートバリューがご利用できます。
                 </h2>
-
-        
+            
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-2 space-y-5 text-center">
+                <h1 className="text-lg md:text-2xl font-semibold">auスマートバリュー</h1>
                 <div className="shadow-lg outline outline-primary bg-sky-50 rounded-xl ">
                  <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={200} />     
                 </div>
             </div>
+
+            <div className="col-span-2 ">
+
+          
+
+            </div>
        
     
-            <div className="col-span-2">
-            ひとりでも、家族でもおトク！画像
+            
+
+            <div className="col-span-2 text-center space-y-5 ">
+
+            <h1 className="text-lg md:text-2xl font-semibold">ひとりでも家族でもお得！</h1>   
+
+            <div className="">
+            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={800} height={250} />     
             </div>
+
+            <p className="text-start md:px-20">
+            一人でも家族でも、同居家族が割引き対象です。
+            さらに50歳以上なら離れて暮らす家族も割引き対象に。
+            最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。
+            </p>
+
+            </div>
+
 
             <div className="col-span-2">
             <Link href="campaignDetail/#au-sv">
-            <a className="btn">詳細</a>
+            <a className="btn btn-wide btn-primary rounded-xl text-slate-100">詳細</a>
             </Link>
             </div>
 
@@ -143,12 +164,12 @@ const Point = () => {
 
        
 
-        <div className="flex items-center space-x-5 pt-10">
+        <div className="flex items-center space-x-3 md:space-x-5 pt-10">
         <p className="text-4xl md:text-5xl font-extrabold text-accent">03</p>  
         <h1 className="text-xl md:text-2xl font-semibold">IPv6対応で速度が速い</h1>
         </div>
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100  ">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 rounded-xl  ">
 
             <div className="col-span-2 ">
 
@@ -158,10 +179,19 @@ const Point = () => {
             </div>
 
 
-            <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 ">
-          
+            <div className="col-span-2 ">
+
+            <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 justify-center ">
+            <div className="basis-1/3 ">
             <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={600} height={400}  />
+            </div>
+            <div className="basis-1/3">
+
             <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={600} height={400}  />
+            </div>
+        
+            </div>
+
             </div>
             {/* <div>
             <Image loader={({src}) => src} src="/main/Point/IPv6ver.svg" width={600} height={350} />
@@ -194,13 +224,13 @@ const Point = () => {
 
         </div>
 
-        <div className="flex items-center space-x-5 pt-10">
-        <p className="text-4xl md:text-5xl font-extrabold text-accent">03</p>  
-        <h1 className="text-xl md:text-2xl font-semibold">引っ越しも安心の移転費用永年無料</h1>
+        <div className="flex items-center space-x-3 md:space-x-5 pt-10">
+        <p className="text-4xl md:text-5xl font-extrabold text-accent">04</p>  
+        <h1 className="text-xl md:text-2xl font-semibold whitespace-nowrap">引っ越しも安心!移転費用無料</h1>
         </div>
 
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 ">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 rounded-xl ">
 
             <div className="col-span-2 ">
 

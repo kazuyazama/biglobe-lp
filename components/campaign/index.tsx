@@ -31,7 +31,7 @@ const Campaign = () => {
                 <div className="card-actions justify-center md:justify-end">
                 <Link href='/campaignDetail'>
                 <button 
-                className="btn btn-secondary btn-wide before:content-['詳しく見る'] before:text-lg relative">
+                className="btn btn-secondary btn-wide before:content-['詳しく見る'] before:text-lg relative rounded-xl">
                 <span className="text-xl absolute right-2"><IoIosArrowForward /></span>
                 </button>
                 </Link>
@@ -58,7 +58,7 @@ const Campaign = () => {
             <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
-            <button className="relative btn btn-secondary btn-sm px-8 "> 
+            <button className="relative btn btn-secondary btn-sm px-8 rounded-xl "> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>
@@ -80,7 +80,7 @@ const Campaign = () => {
             <p>ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
-            <button className="relative btn btn-secondary btn-sm px-8 "> 
+            <button className="relative btn btn-secondary btn-sm px-8 rounded-xl"> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>
@@ -106,7 +106,7 @@ const Campaign = () => {
             <p>ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</p>
             <div className="card-actions justify-end pt-3">
             <Link href="/campaignDetail">
-            <button className="relative btn btn-secondary btn-sm px-8 "> 
+            <button className="relative btn btn-secondary btn-sm px-8 rounded-xl"> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
             </button>

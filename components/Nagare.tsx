@@ -19,13 +19,17 @@ const Nagare = () => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">お申し込み</h2>
                 <p>お電話またはwebフォームよりお申し込みください。</p>
-                <div className="card-actions justify-center ">
-                <a href="tel:0120-197-802" className="btn btn-primary btn-sm 2xl:btn-md  text-slate-100 before:content-['電話する'] relative">
-                <span className="absolute right-0 2xl:right-0.5"><IoIosArrowForward /></span>
+                <div className="card-actions ">
+                <div className="flex justify-center mx-3 space-x-1">
+                <a href="tel:0120-197-802" className=" btn btn-primary  text-slate-100 before:content-['電話する'] relative btn-circle w-1/2 px-2">
+                <span className="absolute right-0 2xl:right-0"><IoIosArrowForward /></span>
                 </a>
-                <a className="btn btn-secondary btn-sm 2xl:btn-md  before:content-['webフォーム'] relative ">
-                <span className="absolute right-0 2xl:right-0.5"><IoIosArrowForward /></span>
+                <a className=" btn btn-secondary  before:content-['webフォーム'] relative btn-circle  w-3/4 px-2">
+                <span className="absolute right-0 2xl:right-"><IoIosArrowForward /></span>
                 </a>
+                </div>
+
+                 
             
                 </div>
             </div>

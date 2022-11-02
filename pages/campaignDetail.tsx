@@ -242,7 +242,8 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6" id="au-sv">
                 <h1>auスマートバリュー</h1>
-                <div><Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                <div>
+                    <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
                 <p>特典１の詳細</p>
             </div>
@@ -269,18 +270,20 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
 
-            <div className="col-span-6">
+            <div className="col-span-6 text-2xl font-semibold">
             ひとりでも、家族でもおトク！
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-3 self-center">
             一人でも家族でも、同居家族が割引き対象です。
             さらに50歳以上なら離れて暮らす家族も割引き対象に。
-            最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。
+            最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。<br />
             <Scroll to="notes" smooth={true} duration={600}>割引適用についての注意事項はこちら</Scroll>
             </div>
             <div className="col-span-3">
-                画像
+                <div>
+                    <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                </div>
             </div>
 
             <div className="col-span-6 w-full">

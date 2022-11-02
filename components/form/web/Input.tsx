@@ -556,7 +556,7 @@ const Input:FC = () => {
 
 
           <div className="">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary rounded-xl text-slate-100">
               入力内容を確認する
             </button>
           </div>
