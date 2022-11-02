@@ -10,7 +10,7 @@ type Props = {
     discription3?:string;
 }
 
-const List = ({title1,title2,title3,discription1,discription2,discription3,price1,price2,price3}:Props) => {
+const Table = ({title1,title2,title3,discription1,discription2,discription3,price1,price2,price3}:Props) => {
     return (
     <>
 
@@ -61,7 +61,7 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
                 <td className="w-1/2 bg-red-50 border-b-2 rounded-tr-lg">
                 <div className=" text-center  py-5 ">
                 <p className="">
-                    <span className="text-secondary font-bold block md:inline">{price1}</span> {discription1}
+                    <span className="text-secondary font-bold block md:inline md:text-lg">{price1}</span> {discription1}
                 </p>
                 </div>
                 </td>
@@ -76,7 +76,7 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
                 <td className="w-1/2 bg-red-50 border-b-2">
                 <div className=" text-center  py-5 ">
                 <p className="">
-                    <span className="text-secondary font-bold block md:inline">{price2}</span> {discription2}
+                    <span className="text-secondary font-bold block md:inline md:text-lg">{price2}</span> {discription2}
                 </p>
                 </div>
                 </td>
@@ -91,7 +91,7 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
                 <td className="w-1/2 bg-red-50 border-b-2 rounded-br-lg">
                 <div className=" text-center  py-5 ">
                 <p className="">
-                    <span className="text-secondary font-bold block md:inline">{price3}</span> {discription3}
+                    <span className="text-secondary font-bold block md:inline md:text-lg">{price3}</span> {discription3}
                 </p>
                 </div>
                 </td>
@@ -107,4 +107,4 @@ const List = ({title1,title2,title3,discription1,discription2,discription3,price
     );
 }
 
-export default List;
+export default Table;

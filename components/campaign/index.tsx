@@ -8,31 +8,31 @@ const Campaign = () => {
         <>
 
         <div className="pt-20 relative">
-        <h1 className="text-center text-2xl md:text-3xl font-semibold  before:content-['Campaign'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">キャンペーン</h1>
+        <h1 className="text-center text-2xl tracking-widest md:text-3xl font-semibold  before:content-['Campaign'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-0 before:opacity-10">キャンペーン</h1>
         <div className="flex justify-center pt-20 ">
 
           <div className="basis-full ">
 
 
-            <div className="card bg-base-100 shadow-xl">
-            <div className="bg-accent text-xl text-center py-3">
+            <div className="card card-compact md:card-normal bg-base-100 shadow-xl">
+            <h2 className="font-semibold bg-accent text-xl text-center py-3">
              当サイト限定！選べるキャンペーン
-            </div>
+            </h2>
             <div className="card md:card-side  rounded-t-none">
             <Link href="/campaignDetail">
             <figure className="w-full p-2"><Image loader={({src}) => src} src="/main/campaign/限定キャンペーン.svg" alt="ipV6ルーター無料" width={800} height={500} className="hover:scale-105 w-full hover:opacity-60" /></figure>
              </Link>
 
-            <div className="card-body ">
+            <div className="card-body border-t border-primary">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
                 <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または
                   工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！
                 </p>
-                <div className="card-actions justify-center md:justify-end">
+                <div className="card-actions justify-end">
                 <Link href='/campaignDetail'>
                 <button 
-                className="btn btn-secondary btn-wide before:content-['詳しく見る'] before:text-lg relative rounded-xl">
-                <span className="text-xl absolute right-2"><IoIosArrowForward /></span>
+                className="btn btn-secondary w-1/2 before:content-['詳しく見る'] before:text-lg relative rounded-xl">
+                <span className="text-xl absolute right-0.5 md:right-2"><IoIosArrowForward /></span>
                 </button>
                 </Link>
                 </div>

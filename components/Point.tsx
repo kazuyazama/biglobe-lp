@@ -16,7 +16,7 @@ const Point = () => {
     
         </div>
         </div> */}
-        <h1 className="text-center text-2xl md:text-3xl pb-10 pt-16 md:pt-32 md:pb-20 font-semibold before:content-['Point'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">ビッグローブ光なら解決！４つのポイント</h1>
+        <h1 className="text-center text-xl tracking-widest md:text-3xl pb-10 pt-16 md:pt-32 md:pb-20 font-bold before:content-['Point'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">ビッグローブ光なら解決！４つのポイント</h1>
 
       
 

@@ -10,7 +10,7 @@ const Onayami = () => {
         <div>
             
 
-            <h1 className="text-center text-2xl md:text-3xl py-20 font-semibold before:content-['Problem'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">
+            <h1 className="text-center text-xl tracking-widest md:text-3xl py-20 font-bold before:content-['Problem'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">
                 こんなお悩みありませんか？
             </h1>
 

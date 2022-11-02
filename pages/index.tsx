@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Campaign from '../components/campaign';
 import ContactSection from '../components/ContactSection';
 import Faq from '../components/Faq';
-import Nagare from '../components/Nagare';
+import Flow from '../components/Flow';
 import Onayami from '../components/Onayami';
 import Point from '../components/Point';
 import Strong from '../components/Strong';
@@ -111,7 +111,7 @@ const Home: NextPageWithLayout = () => {
       <section className='bg-sky-200 pb-20' id='nagare'>
       <div className='container mx-auto px-5 md:px-20 '>
 
-         <Nagare />
+         <Flow />
 
       </div>
 

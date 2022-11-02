@@ -7,12 +7,12 @@ import Link from "next/link";
 import {HiPlus} from "react-icons/hi"
 import {GoArrowDown} from "react-icons/go"
 import { NextSeo } from "next-seo";
-import List from "../components/campaign/ListCpn";
+import Table from "../components/campaign/Detail/TableCpn";
+import ListCpn from "../components/campaign/Detail/ListCpn";
 
 const Campaign:NextPageWithLayout = () => {
     return (
         <>
-        {/* 参考ページ：https://www.biglobe-hikari.net/campaign/ */}
          <NextSeo
         title="キャンペーン一覧"
         openGraph={{
@@ -28,37 +28,39 @@ const Campaign:NextPageWithLayout = () => {
             <li><a>キャンペーン詳細</a></li> 
         </ul>
         </div>
-        <div className="text-center ">
-            <h1 className="text-2xl pb-5">BIGLOBE 光 キャンペーンのご案内</h1>
-            <p className="">
-            ビッグローブ光ならお得がいっぱい！
-            現在開催中のお得なキャンペーンや割引をご紹介します。
-            </p>
+        <div className="text-center pb-10">
+            <h1 className="text-xl md:text-2xl pb-5 font-semibold">BIGLOBE 光 キャンペーンのご案内</h1>
+            <h2 className="md:text-lg pb-2">ビッグローブ光ならお得がいっぱい！現在開催中のお得なキャンペーンや割引をご紹介します。</h2>
+            <div className="divider"></div> 
         </div>
-
-      
+   
 
         <div className="grid grid-cols-6 justify-items-center gap-10">
 
-            <div className="col-span-6 ">
-            当サイトからお申し込みでお得なキャンペーンが適用されます！
-            下記2つからお好きなキャンペーンをお選びいただけます。
-            </div>
-            <div className="col-span-6 ">
-                <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="選べるキャンペーン" width={1000} height={500}  /></figure>
+           
+            <div className="col-span-6 space-y-3 text-center md:text-start" id='original'>
+                <h1 className="text-xl md:text-xl font-semibold">当サイト限定選べるキャンペーン</h1>
+                <h2 className="md:text-lg">当サイトからお申し込みでお得なキャンペーンが適用されます！下記2つからお好きなキャンペーンをお選びいただけます。</h2>
+                <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="選べるキャンペーン" width={1000} height={350}  /></figure>
             </div>
       
 
             <div className="col-span-6 space-y-5 text-center">
-                <h1>【特典A】高額キャッシュバックキャンペーン</h1>
+                <h1 className="text-lg md:text-xl font-semibold">【特典A】高額キャッシュバックキャンペーン</h1>
              <figure><Image loader={({src}) => src} src="/main/campaign/キャンペーン特典A.svg" alt="選べるキャンペーン" width={600} height={350}  /></figure>
-                <div className="md:mx-20">当サイト（お申込みフォーム、電話からのお申込み）から新規お申し込みまたは、他社からの転用、事業者変更をしていただいたお客さま限定で、最大35,000円をキャッシュバックする限定キャンペーンを実施中です！</div>
+             <div className="md:text-lg text-start md:text-center">キャッシュバック金額はなんと最大35,000円！とにかくキャッシュバックを多く受け取り方向けのキャンペーンです。<br/> 
+             詳細は下記のキャッシュバック金額一覧表をご覧ください。
+             
+              </div>
+                
                
             </div>
 
             <div className="col-span-6 w-full ">
 
-            <List 
+            <div className="">キャッシュバック金額一覧表</div>
+
+            <Table 
             title1='新規お申込み' 
             title2='他社から転用' 
             title3='事業者変更'  
@@ -73,21 +75,25 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
 
-
-
-             <div className="col-span-6 ">
-                <h1>選べるキャンペーン【その2】工事費無料+キャッシュバックキャンペーン</h1>
-                <div>特典2の内容</div>
-                <p>特典2の詳細
-                    他社からの転用・事業者変更の方は原則工事がない為、特典１と特典２は同じ内容となります。
-                </p>
+            <div className="col-span-6 space-y-5 text-center">
+                <h1 className="text-lg md:text-xl font-semibold">【特典B】工事費無料+キャッシュバックキャンペーン</h1>
+             <figure><Image loader={({src}) => src} src="/main/campaign/キャンペーン特典B.svg" alt="選べるキャンペーン" width={600} height={350}  /></figure>
+             <div className="md:text-lg text-start md:text-center">工事費を無料にしたい方向けのキャンペーンです。<br/> 
+             詳細は下記のキャッシュバック金額一覧表をご覧ください。
+             </div>
+             
+                
+               
             </div>
 
          
 
             <div className="col-span-6 w-full ">
 
-            <List 
+
+            <div className="pl-2 ">キャッシュバック金額一覧表</div>
+
+            <Table 
             title1='新規お申込み' 
             title2='他社から転用' 
             title3='事業者変更'  
@@ -99,83 +105,43 @@ const Campaign:NextPageWithLayout = () => {
             discription3='現金キャッシュバック'
             />
 
+            <p className="text-sm">他社からの転用・事業者変更の方は原則工事がない為、特典１と特典２は同じ内容となります。 </p>
+
                
             
              </div>
 
-             <div className="col-span-6 justify-self-start w-full ">
-               
-                <h2 className="border-b-2 border-secondary "><span className="text-xl">当社キャッシュバックの特徴</span></h2>
-                <hr />
-                <ul className="list-disc list-inside space-y-2 py-3">
-                    <li>
-                        開通したら最短で２ヵ月後に現金でお振込いたします！
-                        ※公式キャッシュバックは12カ月後にお振込みとなります。
-                    </li>
-                    <li>
-                        キャッシュバック時期になりましたら弊社からお電話でご連絡をしますので、キャッシュバックの申請モレは一切なし！
-                        キャッシュバック還元率１００％です！（電話に応答しない方を除く）
-                    </li>
-                    <li>不必要なオプションには一切入る必要はありません！</li>
-                </ul>
-             </div>
+        
+             <ListCpn 
+             title={'当社キャッシュバックの特徴'}
+             list1={' 開通したら最短で２ヵ月後に現金でお振込いたします！※公式キャッシュバックは12カ月後にお振込みとなります。'}
+             list2={'キャッシュバック時期になりましたら弊社からお電話でご連絡をしますので、キャッシュバックの申請モレは一切なし！キャッシュバック還元率１００％です！（電話に応答しない方を除く）'}
+             list3={'不必要なオプションには一切入る必要はありません！'}
+              />
 
-             <div className="col-span-6 justify-self-start w-full ">
-                <h2 className="border-b-2 border-secondary "><span className="text-xl">対象者</span></h2>
-                <ul className="list-disc list-inside space-y-2 py-3 ">
-                    <li>上記キャンペーン期間中に当サイト（お申込みフォームまたは、電話によるお申込み）からお申し込みいただいた方。</li>
-                    <li>ご利用確認時にキャンペーン対象の光回線の利用を継続されている方。</li>
-                    <li>お申し込み月を含む6ヵ月後の月末日までに対象サービスを開通された方。</li>
-                </ul>
-             </div>
+         
+             <ListCpn 
+             title={'対象者'}
+             list1={'上記キャンペーン期間中に当サイト（お申込みフォームまたは、電話によるお申込み）からお申し込みいただいた方。'}
+             list2={['ご利用確認時にキャンペーン対象の光回線の利用を継続されている方。']}
+             list3={['お申し込み月を含む6ヵ月後の月末日までに対象サービスを開通された方。。']}
+              />
 
-            
-             
+            <ListCpn 
+            title={'適用条件'}
+            list1={'※キャッシュバックは2回に分けて振り込まれます。2回目のキャッシュバックには受取手続が必要です。'}
+            list2={['【1回目(最大5,000円)：2カ月後】', <br/>,'新規申込の場合は、2カ月後に5000円がキャッシュバックされます。他社転用・事業者変更の場合も、2カ月後に15,000円がキャッシュバックされます。']}
+            list3={['【2回目(30,000円)：開通月を1カ月目として12カ月目】※新規の方のみ',<br/>,'開通月を1カ月目として12カ月目が適用月となり、適用月の月初2日～45日間以内にBIGLOBEのマイページからの受け取り手続きが必要となります。適用月にBIGLOBEより、BIGLOBEメール、BIGLOBEにご登録の連絡先メールアドレス宛にメールが送信されます。受け取り手続きが完了後、数日以内にご指定の口座にキャッシュバックされます。※期間内に受け取り手続きされない場合は特典をお受け取りいただくことが出来ません。※受け取り期間前に退会、コース変更、移転をされたお客さまはキャンペーン適用外となります。']}
+             />
+
+
+
 
              <div className="col-span-6 justify-self-start w-full">
-             <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
+                <h2 className="text-lg md:text-xl">注意事項</h2>
                 <hr />
-                <ul className="list-disc list-inside space-y-2 ">
-                    <li>
-                    ※キャッシュバックは2回に分けて振り込まれます。2回目のキャッシュバックには受取手続が必要です。
-                    </li>
-                    <li>
-                    【1回目(最大5,000円)：2カ月後】<br/>
-                    新規申込の場合は、2カ月後に5000円がキャッシュバックされます。
-                    他社転用・事業者変更の場合も、2カ月後に15,000円がキャッシュバックされます。
-                    </li>
-                    <li>
-                    【2回目(30,000円)：開通月を1カ月目として12カ月目】※新規の方のみ<br/>
-                    開通月を1カ月目として12カ月目が適用月となり、適用月の月初2日～45日間以内にBIGLOBEのマイページからの受け取り手続きが必要となります。
-                    適用月にBIGLOBEより、BIGLOBEメール、BIGLOBEにご登録の連絡先メールアドレス宛にメールが送信されます。受け取り手続きが完了後、数日以内にご指定の口座にキャッシュバックされます。
-                    ※期間内に受け取り手続きされない場合は特典をお受け取りいただくことが出来ません。
-                    ※受け取り期間前に退会、コース変更、移転をされたお客さまはキャンペーン適用外となります。
-                    </li>
-                  
-            
-                </ul>
-             </div>
-
-             <div className="col-span-6 justify-self-start w-full">
-                <h2 className="text-xl">注意事項</h2>
-                <hr />
-                <ul className="list-disc list-inside space-y-2 border p-3 rounded">
+                <ul className=" list-disc list-inside space-y-2 border p-3 rounded">
                 
-                    <li>
-                    ※キャッシュバックは2回に分けて振り込まれます。2回目のキャッシュバックには受取手続が必要です。
-                    </li>
-                    <li>
-                    【1回目(最大5,000円)：2カ月後】<br/>
-                    新規申込の場合は、2カ月後に5000円がキャッシュバックされます。
-                    他社転用・事業者変更の場合も、2カ月後に15,000円がキャッシュバックされます。
-                    </li>
-                    <li>
-                    【2回目(30,000円)：開通月を1カ月目として12カ月目】※新規の方のみ<br/>
-                    開通月を1カ月目として12カ月目が適用月となり、適用月の月初2日～45日間以内にBIGLOBEのマイページからの受け取り手続きが必要となります。
-                    適用月にBIGLOBEより、BIGLOBEメール、BIGLOBEにご登録の連絡先メールアドレス宛にメールが送信されます。受け取り手続きが完了後、数日以内にご指定の口座にキャッシュバックされます。
-                    ※期間内に受け取り手続きされない場合は特典をお受け取りいただくことが出来ません。
-                    ※受け取り期間前に退会、コース変更、移転をされたお客さまはキャンペーン適用外となります。
-                    </li>
                     <li>
                     本キャンペーンは対象のサービスを8カ月以上継続して利用していただく事が条件となります。
                     上記期間内の解約（お引越し等による解約や引越し先エリア外継続利用不可も含む）や料金不払いによる強制解約となった場合、本キャンペーンの違約金としてキャッシュバック金額を全額ご請求させていただきます。
@@ -196,19 +162,19 @@ const Campaign:NextPageWithLayout = () => {
 
 
 
-             <div className="col-span-6">
-                <h1>無線LAN付IPv6対応ルータ月額料金無料特典</h1>
-                <div><Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
-                </div>
-                <p>特典１の詳細</p>
+             <div className="col-span-6 space-y-3 text-center">
+                <h1 className="text-lg md:text-xl font-semibold">無線LAN付IPv6対応ルータ月額料金無料特典</h1>
+                <h2 className="md:text-lg">ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に!</h2>
+                <div><Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} /></div>
+  
             </div>
 
             <div className="col-span-6 w-full ">
 
-                <h1>特典適用後の料金詳細</h1>
+                <h1 className="">特典適用後の料金詳細</h1>
 
                
-            <List 
+            <Table 
             title1='' 
             title2='機器利用料' 
             title3='機器返送手数料'  
@@ -223,7 +189,7 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
             <div className="col-span-6">
-                <h1>注意事項</h1> 
+                <h1 className="text-lg md:text-xl">注意事項</h1> 
                 <p className="border p-3 rounded">
                 機器解約時には、返送手数料（解約手数料）として1,430円（機器返却送料含む）がかかりますが特典により無料となります。解約から1カ月を過ぎても機器が返却されない場合、端末代金相当額としてAterm WG1200HS3の場合は 6,600円が請求されます。
                 接続機器（無線LAN付き）は概ね以下日程で発送されます。
@@ -240,8 +206,9 @@ const Campaign:NextPageWithLayout = () => {
                 </p>
             </div>
 
-            <div className="col-span-6" id="au-sv">
-                <h1>auスマートバリュー</h1>
+            <div className="col-span-6 space-y-3 text-center" id="au-sv">
+                <h1 className="text-lg md:text-xl font-semibold">auスマートバリュー</h1>
+                <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</h2>
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
@@ -253,7 +220,7 @@ const Campaign:NextPageWithLayout = () => {
                 <h1>割引額と対象の料金プラン</h1>
 
 
-                <List 
+                <Table 
                 title1='料金プラン' 
                 title2='使い放題MAX 5G' 
                 title3='ピタットプラン 5G'  
@@ -265,29 +232,30 @@ const Campaign:NextPageWithLayout = () => {
                 discription3='(税込550円)永年割引'
                 />
 
-            <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
+            <div className="text-sm">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
                
             </div>
 
 
-            <div className="col-span-6 text-2xl font-semibold">
+            <div className="col-span-6 text-lg md:text-xl font-semibold">
             ひとりでも、家族でもおトク！
+            
             </div>
 
-            <div className="col-span-3 self-center">
+            <div className="col-span-6 md:col-span-3  self-center">
             一人でも家族でも、同居家族が割引き対象です。
             さらに50歳以上なら離れて暮らす家族も割引き対象に。
             最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。<br />
             <Scroll to="notes" smooth={true} duration={600}>割引適用についての注意事項はこちら</Scroll>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-6 md:col-span-3">
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
             </div>
 
             <div className="col-span-6 w-full">
-                <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
+                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">適用条件</span></h2>
                 <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
                 <ul className="list-disc list-inside space-y-2 ">      
                     <li>auスマートフォン(5G)、auスマートフォン(4G)、auケータイ、4G LTEタブレットで対象の料金プランにご加入している方</li>
@@ -296,13 +264,15 @@ const Campaign:NextPageWithLayout = () => {
                 </ul>
             </div>
 
+             
+
             <div className="col-span-6 w-full">
 
-                <h2 className="border-b-2 border-secondary "><span className="text-xl">お申し込みについて</span></h2>
+                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">お申し込みについて</span></h2>
                 <p className="py-3">ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。</p>
             </div>
             <div className="col-span-6 w-full">   
-                <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
+                <h3 className="text-lg md:text-xl pt-4">割引適用についての注意事項</h3>
 
                 <p className="border p-3 rounded" id="notes">
                 ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット含む)合計10回線までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービスとau携帯電話(タブレット含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です。
@@ -326,11 +296,12 @@ const Campaign:NextPageWithLayout = () => {
 
 
 
-            <div className="col-span-6" id="uq-set">
-                <h1>UQ mobile 自宅セット割</h1>
-                <div className="text-center"><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+            <div className="col-span-6 space-y-3 text-center" id="uq-set">
+                <h1 className="text-lg md:text-xl font-semibold">UQ mobile 自宅セット割</h1>
+                <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</h2>
+                <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="" width={800} height={300} />
                 </div>
-                <p>ビッグローブ光インターネットとビッグローブ光電話のご利用で、UQ mobileの対象プランにご加入の方はUQ mobileのご利用料金を割引いたします。（ UQ mobileへのお申込みが必要です。）</p>
+   
             </div>
 
 
@@ -361,7 +332,7 @@ const Campaign:NextPageWithLayout = () => {
             
             
 
-            <p>
+            <p className="text-sm">
             別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
             ビッグローブ光 auひかり BIGLOBE WiMAX+5G
             自宅セット割 インターネットコースはお申し込みが必要です。
@@ -377,7 +348,7 @@ const Campaign:NextPageWithLayout = () => {
                 <h1>割引額と対象の料金プラン</h1>
 
         
-            <List 
+            <Table 
             title1='料金プラン' 
             title2='くりこしプランS,M+5G' 
             title3='くりこしプランL+5G'  
@@ -389,27 +360,27 @@ const Campaign:NextPageWithLayout = () => {
             discription3='(税込858円)割引'
             />
 
-                <div className="alert shadow-lg">割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
+                <div>割引額は対象の料金プランによって異なりますので、auサイトをご確認ください。</div>
                
             </div>
 
 
-            <div className="col-span-6">
-            家族もおトク！最大10回線＊まで割引対象
+            <div className="col-span-6 text-lg md:text-xl font-semibold">
+            家族もおトク！最大10回線まで割引対象
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-6 md:col-span-3">
             BIGLOBE WiMAX+5Gの場合、合計9回線。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります。
             対象のご自宅のインターネットサービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。
             au回線は自宅セット割の割引対象外です
             <Scroll to="notes" smooth={true} duration={600}>割引適用についての注意事項はこちら</Scroll>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-6 md:col-span-3">
                 画像
             </div>
 
             <div className="col-span-6 w-full">
-            <h2 className="border-b-2 border-secondary "><span className="text-xl">適用条件</span></h2>
+            <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">適用条件</span></h2>
                 <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
                 <ul className="list-disc list-inside space-y-2">      
                     <li>UQ mobileの対象プラン(S/M/L)にご加入している方</li>
@@ -420,7 +391,7 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6 w-full">
 
-                <h2 className="border-b-2 border-secondary "><span className="text-xl">お申し込みについて</span></h2>
+                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">お申し込みについて</span></h2>
                 <p className="py-3">
                 対象サービス契約者のご家族がUQ mobileをご利用の場合
                 ビッグローブ光のお申し込みと、対象サービス契約者のご家族であることの登録が必要です。ご家族であることの登録は、UQスポット、au Style、auショップおよびUQ mobileお客さまセンターにてお手続き可能です。
@@ -429,10 +400,10 @@ const Campaign:NextPageWithLayout = () => {
 
             <div className="col-span-6 w-full">
                 
-                <h3 className="text-xl pt-4">割引適用についての注意事項</h3>
+                <h3 className="text-lg md:text-xl">割引適用についての注意事項</h3>
                 
 
-                <p className="border p-3 rounded" id="notes">
+                <p className="text-sm md:text-md border p-3 rounded" id="notes">
                 対象サービス1契約につき、UQ mobile回線合計10回線(BIGLOBE WiMAX +5Gの場合、サービス1回線につき、UQ mobile合計9回線)までとなります。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります(au回線は⾃宅セット割の割引対象外です)。対象サービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。ただし、50歳以上のご家族の場合は対象サービスにご契約している住所と別住所でもお申し込みできます。別姓やUQ mobile回線が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。
                 自宅セット割
                 お申し込み翌月以降、条件を満たした月のご利用分から割引を適用します。

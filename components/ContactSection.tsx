@@ -26,7 +26,7 @@ const ContactSection = () => {
 
             <div className="">
             <Link href="/form/web">
-            <button className="w-full px-2 btn btn-secondary md:btn-wide lg:btn-lg rounded-full space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative drop-shadow-xl border-4 border-double border-base-100">
+            <button className="w-full px-2 btn btn-secondary md:btn-wide lg:btn-lg rounded-full space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative shadow-xl">
          
                 <AiOutlineForm className="text-xl md:text-3xl md:absolute left-6" />
     
@@ -39,7 +39,7 @@ const ContactSection = () => {
             </div>
             <div className="">
             <Link href="/form/call">
-            <button className="w-full px-2 btn btn-primary md:btn-wide lg:btn-lg rounded-full space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative drop-shadow-xl border-4 border-double border-base-100" >
+            <button className="w-full px-2 btn btn-primary md:btn-wide lg:btn-lg rounded-full space-x-2 md:space-x-5 hover:scale-105 hover:transition duration-300 ease-in-out relative shadow-xl " >
                 <FiPhoneCall className="text-xl md:text-3xl text-slate-100 md:absolute left-9"  />
                 <span className="text-slate-100 md:text-xl ">でんわで相談</span> 
                 <IoIosArrowDroprightCircle className="text-xl md:text-2xl text-slate-100 md:absolute right-3 "/>

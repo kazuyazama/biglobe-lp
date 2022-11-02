@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Link as Scroll } from 'react-scroll';
 import {IoIosArrowDroprightCircle} from "react-icons/io"
 import {AiOutlineForm} from "react-icons/ai"
+import {FiMenu} from "react-icons/fi"
 
 
 const Header = () => {
@@ -11,10 +12,13 @@ const Header = () => {
         <div className="navbar bg-base-100 md:px-20 md:py-3 ">
             <div className="navbar-start ">
                 <div className="dropdown">
-                <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <label tabIndex={0} className="btn btn-ghost lg:hidden px-0">
+                    <div className='border p-2 bg-primary rounded-lg'>
+                    <FiMenu size={25} className='text-white' />
+                    </div>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg> */}
                 </label>
-                <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabIndex={0} className="menu dropdown-content mt-3 p-2 shadow bg-sky-100 rounded-box w-56 hover-bordered ">
                     <li>
                         <Scroll to="top" smooth={true} duration={600}>HOME</Scroll>
                     </li>
@@ -38,7 +42,7 @@ const Header = () => {
 
                 <div className='normal-case '>
                 <Link href="/">
-                <a className="flex w-40 pl-1 pr-4 md:pl-1 md:pr-0 ">
+                <a className="flex w-40 px-3 md:px-0 ">
                 <Image loader={({src}) => src} src="/logo/hikari_01.png" width={180} height={35} alt="" />
                 </a>
                 </Link>
@@ -83,11 +87,11 @@ const Header = () => {
             </div>
             <div className="navbar-end flex ">
                 <Link href="/form/web">
-                <a className=" btn btn-secondary rounded-full w-[150px] md:w-48 lg:w-52 md:px-3 drop-shadow-lg border-double border-4 border-base-100 ">
-                    <div className="inline-flex items-center space-x-1 lg:space-x-2 ">
+                <a className=" btn btn-secondary rounded-full w-[160px] md:w-48 lg:w-52 md:px-3 border-double border-4 border-base-100 ">
+                    <div className="inline-flex items-center space-x-1 lg:space-x-2 justify-between  ">
                     <AiOutlineForm className='md:text-xl' />
-                    <span>Webお申し込み</span>
-                    <IoIosArrowDroprightCircle className='md:text-xl '/>
+                    <span className='whitespace-nowrap'>Webお申し込み</span>
+                    <IoIosArrowDroprightCircle className='md:text-xl'/>
                     </div>
                 </a>
                 </Link>

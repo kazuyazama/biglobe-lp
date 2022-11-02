@@ -3,7 +3,7 @@ import Link from "next/link";
 const Faq = () => {
     return (
         <>
-        <div className="text-center text-2xl font-semibold py-20 before:content-['Faq'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">よくある質問</div>
+        <div className="text-center text-xl tracking-widest font-bold py-20 before:content-['Faq'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">よくある質問</div>
 
         <div className="flex flex-col space-y-6">
 

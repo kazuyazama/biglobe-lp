@@ -4,7 +4,7 @@ import Image from "next/image";
 const Strong = () => {
     return (
         <div>
-        <h1 className="text-center text-2xl md:text-3xl py-20 font-semibold before:content-['Strong'] before:text-7xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">当サイトが選ばれる理由</h1>
+        <h1 className="text-center tracking-widest text-xl md:text-3xl py-20 font-bold before:content-['Strong'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-2 before:opacity-10">当サイトが選ばれる理由</h1>
 
         <div className="flex-col md:flex md:flex-row justify-evenly space-y-10 md:space-y-0 md:space-x-10 ">
 
