@@ -20,23 +20,26 @@ const Campaign:NextPageWithLayout = () => {
         }}
         />
         
-        <div className="overflow-x-hidden pb-20">
-        <section className='container mx-auto md:px-20 px-5'>
-        <div className="text-sm breadcrumbs pb-10">
+        <div className="overflow-x-hidden ">
+        <section className='mx-auto'>
+        <div className="text-sm breadcrumbs pb-10 px-5 md:px-20 mx-auto">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
             <li><a>キャンペーン詳細</a></li> 
         </ul>
         </div>
-        <div className="text-center pb-10">
+        <div className="text-center ">
             <h1 className="text-xl md:text-2xl pb-5 font-semibold">BIGLOBE 光 キャンペーンのご案内</h1>
             <h2 className="md:text-lg pb-2">ビッグローブ光ならお得がいっぱい！現在開催中のお得なキャンペーンや割引をご紹介します。</h2>
-            <div className="divider"></div> 
+            <div className="divider mb-0"></div> 
         </div>
-   
 
-        <div className="grid grid-cols-6 justify-items-center gap-10">
 
+
+            
+        <div className=" bg-yellow-50 pt-10">
+
+        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
            
             <div className="col-span-6 space-y-3 text-center md:text-start" id='original'>
                 <h1 className="text-xl md:text-xl font-semibold">当サイト限定選べるキャンペーン</h1>
@@ -138,12 +141,14 @@ const Campaign:NextPageWithLayout = () => {
 
 
 
-             <div className="col-span-6 justify-self-start w-full">
-                <h2 className="text-lg md:text-xl">注意事項</h2>
-                <hr />
-                <ul className=" list-disc list-inside space-y-2 border p-3 rounded">
+             <div  className="col-span-6 justify-self-start w-full ">
+                <div tabIndex={0} className="collapse collapse-arrow">
+
+                <h2 className="text-lg md:text-xl collapse-title border border-secondary hover:bg-red-50">その他注意事項</h2>
+        
+                <ul className="collapse-content list-disc list-inside space-y-2 border-b border-l border-r">
                 
-                    <li>
+                    <li className="pt-3">
                     本キャンペーンは対象のサービスを8カ月以上継続して利用していただく事が条件となります。
                     上記期間内の解約（お引越し等による解約や引越し先エリア外継続利用不可も含む）や料金不払いによる強制解約となった場合、本キャンペーンの違約金としてキャッシュバック金額を全額ご請求させていただきます。
                     お引越し先で継続利用をしていただければ本キャンペーン違約金の対象外となります。
@@ -159,8 +164,17 @@ const Campaign:NextPageWithLayout = () => {
                     <li>サイト内に記載の当社キャッシュバック還元率は、設備の提供状況やお客様都合によるキャンセルなどで、ビッグローブ光を開通されなかった場合を除きます。</li>
                     <li>キャンペーン提供主体：株式会社リスターツ</li>
                 </ul>
+                </div>
              </div>
 
+        
+
+        </div>
+        </div>
+
+        <div className="bg-base-100 pt-10">
+
+        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
 
 
              <div className="col-span-6 space-y-3 text-center">
@@ -207,6 +221,14 @@ const Campaign:NextPageWithLayout = () => {
                 </p>
             </div>
 
+        </div>
+        </div>
+
+        <div className="bg-yellow-50 pt-10">
+
+        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+
+        
             <div className="col-span-6 space-y-3 text-center" id="au-sv">
                 <h1 className="text-lg md:text-xl font-semibold">auスマートバリュー</h1>
                 <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</h2>
@@ -255,15 +277,6 @@ const Campaign:NextPageWithLayout = () => {
                 </div>
             </div>
 
-            {/* <div className="col-span-6 w-full">
-                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">適用条件</span></h2>
-                <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
-                <ul className="list-disc list-inside space-y-2 ">      
-                    <li>auスマートフォン(5G)、auスマートフォン(4G)、auケータイ、4G LTEタブレットで対象の料金プランにご加入している方</li>
-                    <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
-                <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
-                </ul>
-            </div> */}
 
             <ListCpn 
              title={'適用条件'}
@@ -273,17 +286,10 @@ const Campaign:NextPageWithLayout = () => {
              others={'その他注意事項は割引適用についての注意事項をご覧ください'}
               />
 
-             
-
-            {/* <div className="col-span-6 w-full">
-
-                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">お申し込みについて</span></h2>
-                <p className="py-3">ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)。</p>
-            </div> */}
-
+            
             <ListCpn 
              title={'お申し込みについて'}
-             list1={'ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)'}
+             discription={'ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット・PC含む)合計10回線(またはau ホームルーター 5G/au スマートポートなどの対象のルーターサービスの場合1回線につき、au携帯電話合計9回線)までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービス(au ホームルーター 5G/au スマートポートなどの対象のルーターサービス含む)とau携帯電話(タブレット・PC含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット・PC含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です(別住所で50歳以上はご家族の証明書のみ)'}
              
               />
 
@@ -292,7 +298,7 @@ const Campaign:NextPageWithLayout = () => {
             <div className="col-span-6 w-full">   
                 <h3 className="text-lg md:text-xl pt-4">割引適用についての注意事項</h3>
 
-                <p className="border p-3 rounded" id="notes">
+                <p className="text-sm border p-3 rounded" id="notes">
                 ご契約はご自宅のインターネットサービス1回線につき、au携帯電話(タブレット含む)合計10回線までです。「auスマートバリュー」をご契約の回線が「家族割プラス」グループまたはUQ mobileの「自宅セット割」グループにも加入している場合、各グループにご加入のau/UQ携帯電話も回線数のカウントに含まれます。ご自宅のインターネットサービスとau携帯電話(タブレット含む)のご契約者が同一姓・同一住所の場合、お申し込みできます。50歳以上のご家族の場合は、対象のご自宅のインターネットサービス(「ネット＋電話」、「ネット＋テレビ」 、「テレビ＋電話」 )にご契約している住所と別住所でもお申し込みできます。別姓やau携帯電話(タブレット含む)が累計5回線以上の場合はご家族・同一住所であることの証明書が必要です。
                 auスマートバリューのお申し込み翌月以降から割引適用となります。
                 スマホセット割ご加入の方がauスマートバリューを申し込みされた場合、自動的にauスマートバリューの割引に切り替わります。ただしauスマートバリュー適用前にスマホセット割を廃止した場合、前月末をもってスマホセット割は終了となり、auスマートバリューは翌月から割引が適用となります。
@@ -312,50 +318,39 @@ const Campaign:NextPageWithLayout = () => {
 
             </div>
 
+        </div>
+
+        </div>
+
+        <div className="bg-base-100 pt-10">
+
+        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+
 
 
             <div className="col-span-6 space-y-3 text-center" id="uq-set">
                 <h1 className="text-lg md:text-xl font-semibold">UQ mobile 自宅セット割</h1>
                 <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</h2>
-                <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="" width={800} height={300} />
-                </div>
+                <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="" width={800} height={300} /></div>
+              
+            </div>
+
+
+
+            <div className="col-span-6 w-full space-y-3">
+
+           
+            <Image loader={({src}) => src} src="/main/campaign/UQmobile自宅セット割.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
+            <p className="text-sm px-20">
+                別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
+                ビッグローブ光 auひかり BIGLOBE WiMAX+5G
+                自宅セット割 インターネットコースはお申し込みが必要です。
+                現在「くりこしプラン」ご契約中のお客さまは、「くりこしプラン +5G」へのプラン変更で、自宅セット割をご利用いただけます。
+            </p> 
+                    
+     
+
    
-            </div>
-
-
-
-            <div className="col-span-6 w-full">
-
-                <div className="flex items-center justify-around relative space-x-2">
-                <div className="basis-full">
-                <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" width={250} height={200} layout="responsive" />
-                </div>
-                <HiPlus className="text-6xl"   />
-                <div className="basis-full">
-                <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" width={250} height={200}  layout="responsive"  />
-                </div>
-                </div>   
-            </div>
-
-            <div className="col-span-6 w-full relative ">
-                {/* <span className="border-t-[50px] border-l-[100px] border-r-[100px] border-b-transparent border-r-transparent border-l-transparent"></span> */}
-            <GoArrowDown className="md:text-6xl lg:text-8xl absolute inset-x-1/2 -translate-x-1/2 -translate-y-28"  />
-            {/* <div className="flex justify-center text-8xl -mt-20">
-            <GoArrowDown  />
-            </div> */}
-            <div className="-mt-10">
-
-            <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
-            </div>
-            
-            
-
-            <p className="text-sm">
-            別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
-            ビッグローブ光 auひかり BIGLOBE WiMAX+5G
-            自宅セット割 インターネットコースはお申し込みが必要です。
-            現在「くりこしプラン」ご契約中のお客さまは、「くりこしプラン +5G」へのプラン変更で、自宅セット割をご利用いただけます。
-            </p>   
             </div>
         
 
@@ -387,6 +382,8 @@ const Campaign:NextPageWithLayout = () => {
             家族もおトク！最大10回線まで割引対象
             </div>
 
+          
+
             <div className="col-span-6 md:col-span-3">
             BIGLOBE WiMAX+5Gの場合、合計9回線。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります。
             対象のご自宅のインターネットサービスとUQ mobileのご契約者が同一姓・同一住所の場合、お申し込みできます。
@@ -397,24 +394,20 @@ const Campaign:NextPageWithLayout = () => {
                 画像
             </div>
 
-            <div className="col-span-6 w-full">
-            <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">適用条件</span></h2>
-                <p className="py-3">以下の条件を両方満たす方がauスマートバリューにお申し込みできます。</p>
-                <ul className="list-disc list-inside space-y-2">      
-                    <li>UQ mobileの対象プラン(S/M/L)にご加入している方</li>
-                    <li>「ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方</li>
-                <Scroll to="notes" smooth={true} duration={600}><p className="py-2">その他の注意事項はこちらをご覧ください</p></Scroll>
-                </ul>
-            </div>
+            <ListCpn 
+             title={'適用条件'}
+             discription={'以下の条件を両方満たす方がUQMobileセット割にお申し込みできます。'}
+             list1={'UQ mobileの対象プラン(S/M/L)にご加入している方'}
+             list2={'ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方'}
+             others={'その他の注意事項は割引適用についての注意事項をご覧ください'}
+              />
 
-            <div className="col-span-6 w-full">
 
-                <h2 className="border-b-2 border-secondary "><span className="text-lg md:text-xl">お申し込みについて</span></h2>
-                <p className="py-3">
-                対象サービス契約者のご家族がUQ mobileをご利用の場合
-                ビッグローブ光のお申し込みと、対象サービス契約者のご家族であることの登録が必要です。ご家族であることの登録は、UQスポット、au Style、auショップおよびUQ mobileお客さまセンターにてお手続き可能です。
-                </p>
-            </div>
+            <ListCpn 
+             title={'お申し込みについて'}
+             discription={'対象サービス契約者のご家族がUQ mobileをご利用の場合ビッグローブ光のお申し込みと、対象サービス契約者のご家族であることの登録が必要です。ご家族であることの登録は、UQスポット、au Style、auショップおよびUQ mobileお客さまセンターにてお手続き可能です。'}
+              />
+
 
             <div className="col-span-6 w-full">
                 
@@ -465,40 +458,7 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
         </div>
-
-          
-
-
-
-            
-
-
-
-
-
-            
-
-                
-       
-
-
-
-
-
-
-
-   
-
-
-
-
-
-            
-
-      
-
-
-       
+        </div>
 
         
 

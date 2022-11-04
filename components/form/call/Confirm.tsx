@@ -82,11 +82,11 @@ const Confirm = () => {
         <div className="basis-full">
 
         <form onSubmit={handleSubmit(onSubmit)}>
-        <p className="pt-5 text-xl text-primary font-bold">お客様情報</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">お客様情報</p>
+      
 
         {/* お名前入力欄 */}
-        <div className="py-3 space-y-3">
+        <div className="py-3 ">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">お名前（フルネーム）</p> 
             <p className="basis-full">{values.name}</p> 
@@ -94,7 +94,7 @@ const Confirm = () => {
         </div>
 
         {/* フリガナ入力欄 */}
-        <div className="py-3 space-y-3">
+        <div className="py-3 ">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">フリガナ（フルネーム）</p> 
             <p className="basis-full">{values.furigana}</p> 
@@ -107,7 +107,7 @@ const Confirm = () => {
 
         {/* メールアドレス入力欄 */}
 
-        <div className="py-3 space-y-3">
+        <div className="py-3 ">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">メールアドレス</p> 
             <p className="basis-full">{values.email}</p> 
@@ -116,7 +116,7 @@ const Confirm = () => {
 
 
         {/* 折り返し電話番号入力欄 */}
-        <div className="py-3 space-y-3">
+        <div className="py-3 ">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">電話番号</p> 
             <p className="basis-full">{values.tel}</p> 
@@ -126,15 +126,15 @@ const Confirm = () => {
 
      
 
-        <p className="pt-5 text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
+    
 
 
         {/* 確認お電話ご希望時間帯入力欄 */}
 
-        <div className="py-6">
+     
 
-        <div className="py-3 space-y-3">
+        <div className="py-3">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">お電話ご希望日時</p> 
             <p className="basis-full">{values.week + values.time && `${values.week}の${values.time}`}</p> 
@@ -144,7 +144,7 @@ const Confirm = () => {
           </div>
         </div>
 
-        </div>
+    
       
 
       
@@ -154,7 +154,7 @@ const Confirm = () => {
         {/* ご質問など入力欄 */}
 
 
-        <div className="py-3 space-y-3">
+        <div className="py-3 ">
           <div className="md:flex items-center"> 
             <p className="basis-1/3">ご質問など</p> 
             <p className="basis-full ">{values.question}</p> 
@@ -162,7 +162,7 @@ const Confirm = () => {
         </div>
 
 
-        <div className="form-control py-5">
+        <div className="form-control py-6">
           <label className="label cursor-pointer self-center space-x-2">
             <input type="checkbox" 
             value="個人情報のお取り扱いに同意する" 

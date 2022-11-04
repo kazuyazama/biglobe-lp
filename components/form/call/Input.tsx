@@ -58,11 +58,11 @@ const Input = () => {
         <div className="basis-full">
 
         <form onSubmit={handleSubmit(onSubmit)}>
-        <p className="pt-5 text-xl text-primary font-bold">お客様情報</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">お客様情報</p>
+     
 
         {/* お名前入力欄 */}
-        <div className="py-3 space-y-3">
+        <div className="pb-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -87,7 +87,7 @@ const Input = () => {
         </div>
 
         {/* フリガナ入力欄 */}
-        <div className="pb-3 space-y-3">
+        <div className="pb-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -115,7 +115,7 @@ const Input = () => {
   
         {/* メールアドレス入力欄 */}
 
-        <div className="pb-3 space-y-3">
+        <div className="pb-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -140,7 +140,7 @@ const Input = () => {
         </div>
 
         {/* 折り返し電話番号入力欄 */}
-        <div className="pb-3 space-y-3">
+        <div className="pb-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
@@ -166,14 +166,12 @@ const Input = () => {
     
       
 
-        <p className="pt-5 text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
 
-      
 
         {/* 確認お電話ご希望時間帯入力欄 */}
 
-        <div className="py-6">
+        <div className="pb-3">
 
         <div className="md:flex items-center space-y-3 md:space-y-0">
 
@@ -183,7 +181,7 @@ const Input = () => {
        
         </div>
 
-        <div className="basis-full md:flex space-x-0 md:space-x-2">
+        <div className="basis-full flex space-x-0 md:space-x-2">
       
         <div className="form-control">
         <label className="label cursor-pointer self-start space-x-2">
@@ -233,7 +231,7 @@ const Input = () => {
 
        
         {/* ご質問など入力欄 */}
-        <div className="pb-3 space-y-3">
+        <div className="py-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2 ">
             <div className="badge badge-primary ">任意</div>
@@ -249,7 +247,7 @@ const Input = () => {
         
         </div>
 
-        <div className="form-control py-5">
+        <div className="form-control py-3 md:py-5 ">
           <label className="label cursor-pointer self-center space-x-2">
             <input type="checkbox" 
             value="個人情報のお取り扱いに同意する" 
@@ -273,14 +271,14 @@ const Input = () => {
         <div className="basis-full text-center ">
           {!isValid && (
             <>
-              <p className="py-5 text-error">
+              <p className="pb-3 md:pb-5 text-error">
                 まだ全ての必須項目の入力が完了していません。
               </p>
             </>
           )}
 
 
-          <div className="">
+          <div className="pt-3" >
             <button type="submit" className="btn btn-primary">
               入力内容を確認する
             </button>

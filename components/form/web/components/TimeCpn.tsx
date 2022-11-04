@@ -9,7 +9,7 @@ const TimeCpn = () => {
         formState:{errors},
     } = useFormContext<ContactType>();
     return (
-      <div className="py-6">
+      <div className="py-3">
 
         <div className="md:flex items-center space-y-3 md:space-y-0">
 

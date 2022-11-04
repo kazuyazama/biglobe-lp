@@ -1,7 +1,7 @@
 type Props = {
     title:string; 
     discription?:string;
-    list1:string;
+    list1?:string;
     list2?:string | Array<string|JSX.Element>;
     list3?:string | Array<string|JSX.Element>;
     others?:string;
@@ -16,9 +16,7 @@ const ListCpn = ({title,list1,list2,list3,discription,others}:Props) => {
             ( <p className="py-3">{discription}</p> ) 
            }
            <ul className="list-disc list-inside space-y-2 pt-3 ">
-               <li>
-               {list1}
-               </li>
+               {list1 && (<li>{list1}</li> ) }  
                {list2 && (<li>{list2}</li> ) }  
                {list3 && (<li>{list3}</li> ) }
                {others && (<p className="py-2">{others}</p> )}  

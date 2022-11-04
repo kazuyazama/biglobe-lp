@@ -18,7 +18,7 @@ const InputCpn = ({title,placeholder,type,register,errorname}:Props) => {
         formState:{errors},
     } = useFormContext<ContactType>();
     return (
-        <div className="pb-3 space-y-3">
+        <div className="py-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>

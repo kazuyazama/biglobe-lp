@@ -10,7 +10,7 @@ const FormLayout = ({children}:LayoutProps) => {
     return (
         <>
         <FormHeader />
-        <main>
+        <main className="bg-sky-50">
         <div>
         {children}
         </div>

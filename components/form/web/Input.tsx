@@ -70,8 +70,8 @@ const Input:FC = () => {
         <div className="basis-full">
 
         <form onSubmit={handleSubmit(onSubmit)}>
-        <p className="pt-5 text-xl text-primary font-bold">お客様情報</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">お客様情報</p>
+      
 
         {/* お名前入力欄 */}
         {/* <div className="py-3 space-y-3">
@@ -98,12 +98,14 @@ const Input:FC = () => {
           />
         </div> */}
 
+
         <InputCpn title='お名前(フルネーム)' type="text" placeholder="山田太郎" register={register("name", {
               required:`お名前は必須項目です。` 
             })} errorname="name"
             />
 
-     
+    
+
 
         {/* フリガナ入力欄 */}
         {/* <div className="pb-3 space-y-3">
@@ -278,8 +280,8 @@ const Input:FC = () => {
             })} errorname="tel" />
 
 
-        <p className="pt-5 text-xl text-primary font-bold">設置先情報</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">設置先情報</p>
+       
 
         {/* 建物のタイプ入力欄 */}  {/* 設置先郵便番号入力欄 */}  {/* 設置先ご住所入力欄 */} {/* 番地入力欄 */}
        
@@ -291,8 +293,8 @@ const Input:FC = () => {
         error={error}
         />
 
-        <p className="pt-5 text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
-        <hr />
+        <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
+      
 
 
         {/* 確認お電話ご希望時間帯入力欄 */}
@@ -508,7 +510,7 @@ const Input:FC = () => {
 
 
         {/* ご質問など入力欄 */}
-        <div className="pb-3 space-y-3">
+        <div className="py-3 ">
           <label className="md:flex items-center space-y-3 md:space-y-0">
             <div className="basis-1/3 space-x-2 ">
             <div className="badge badge-primary ">任意</div>
@@ -548,14 +550,14 @@ const Input:FC = () => {
         <div className="basis-full text-center ">
           {!isValid && (
             <>
-              <p className="py-5 text-error">
+              <p className="pb-3 md:pb-5 text-error">
                 まだ全ての必須項目の入力が完了していません。
               </p>
             </>
           )}
 
 
-          <div className="">
+          <div className="pt-3">
             <button type="submit" className="btn btn-primary rounded-xl text-slate-100">
               入力内容を確認する
             </button>
