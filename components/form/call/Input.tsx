@@ -3,7 +3,10 @@ import { useFormContext, SubmitHandler, } from "react-hook-form"; // SubmitHandl
 import { ErrorMessage } from "@hookform/error-message";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { CallContactType } from "../../../types/CallContactType";
+import type { CallContactType } from "../../../types/CallContactType";
+
+import InputCpn from "../call/components/InputCpn";
+import TimeWeek from "./components/TimeWeek";
 
 
 
@@ -62,108 +65,36 @@ const Input = () => {
      
 
         {/* お名前入力欄 */}
-        <div className="pb-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-              <span>お名前(フルネーム)</span>
-            </div>
-          <input
-            type="text"
-            className="input w-full input-bordered "
-            placeholder="山田太郎"
-            {...register("name", {
-              required: "お名前は必須項目です。"
-            })}
-          /> 
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="name"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
-          />
-        </div>
+
+        <InputCpn title='お名前(フルネーム)' type="text" placeholder="山田太郎" register={register("name", {
+              required:`お名前は必須項目です。` 
+            })} errorname="name"
+            />
 
         {/* フリガナ入力欄 */}
-        <div className="pb-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-            <span>フリガナ(フルネーム)</span>
-            </div>
-          <input
-            type="text"
-            className="input w-full  input-bordered "
-            placeholder="ヤマダタロウ"
-            {...register("furigana", {
-              required: "フリガナは必須項目です。"
-            })}
-          /> 
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="furigana"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
-          />
-        </div>
+
+
+        <InputCpn title='フリガナ(フルネーム' type="text" placeholder="ヤマダタロウ" register={register("furigana", {
+              required:`フリガナは必須項目です。` 
+            })} errorname="furigana"
+            />
 
         
   
         {/* メールアドレス入力欄 */}
 
-        <div className="pb-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-              <span>メールアドレス</span>
-            </div>
-          <input
-            type="email"
-            className="input w-full  input-bordered "
-            placeholder="yamada@gmail.com"
-            {...register("email", {
-              required: "メールアドレスは必須項目です。"
-            })}
-          /> 
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="email"
-            render={({ message }) =>
-              message ? <p className="text-error">{message}</p> : null
-            }
-          />
-        </div>
+        <InputCpn title='メールアドレス' type="email" placeholder="yamada@gmail.com" register={register("email", {
+              required:`メールアドレスは必須項目です。` 
+            })} errorname="email"
+            />
+
 
         {/* 折り返し電話番号入力欄 */}
-        <div className="pb-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
-            <div className="basis-1/3 space-x-2">
-            <div className="badge badge-secondary">必須</div>
-              <span>折り返し電話番号</span>
-            </div>
-          <input
-            type="tel"
-            className="input w-full  input-bordered "
-            placeholder="09011112222"
-            {...register("tel", {
-              required: "電話番号は必須項目です。"
-            })}
-          /> 
-          </label>
-          <ErrorMessage
-            errors={errors}
-            name="tel"
-            render={({ message }) =>
-              message && <p className="text-error">{message}</p> 
-            }
-          />
-        </div>
-    
+
+        <InputCpn title='折り返し電話番号' type="tel" placeholder="09011112222"  errors={errors} register={register("tel", {
+              required:`電話番号は必須項目です。` 
+            })} errorname="tel"
+            />    
       
 
         <p className="pt-5 mb-5 border-b text-xl text-primary font-bold">確認のご連絡日時のご希望</p>
@@ -171,7 +102,14 @@ const Input = () => {
 
         {/* 確認お電話ご希望時間帯入力欄 */}
 
-        <div className="pb-3">
+        <TimeWeek 
+        time={'曜日'} 
+        week={'時間帯'} 
+        registerWeek={register("week")} 
+        registerTime={register("time")}
+            />
+
+        {/* <div className="pb-3">
 
         <div className="md:flex items-center space-y-3 md:space-y-0">
 
@@ -222,12 +160,13 @@ const Input = () => {
 
 
         </div>
+
         <div className="flex">
         <div className="md:basis-1/3">
         </div >
         <p className="basis-full text-error">※ご希望の時間に添えない場合もございます。予めご了承ください。</p> 
         </div>
-        </div>
+        </div> */}
 
        
         {/* ご質問など入力欄 */}

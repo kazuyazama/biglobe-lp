@@ -25,9 +25,10 @@ const Home: NextPageWithLayout = () => {
     
         
           
-        <div className='container mx-auto sm:px-20'>
+        <div className='container mx-auto sm:px-20 '>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
-          <figure className='pt-10 '><Image loader={({src}) => src} src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"  /></figure>
+          <figure className='pt-10 hidden md:block'><Image loader={({src}) => src} src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"   /></figure>
+          <figure className='pt-5 block md:hidden'><Image loader={({src}) => src} src="/main/top/mainVisual(SPver).svg" alt="topimage" width={470} height={650} layout="responsive" className='w-full' /></figure>
        
         </div>
 

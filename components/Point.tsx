@@ -202,8 +202,8 @@ const Point = () => {
             <p>回線速度はフレッツ光と同じ最大1Gbpsで快適です。</p>
             </div>
 
-            <div className="col-span-2">
-            フレッツ光画像
+            <div className="col-span-2 container">
+            <Image loader={({src}) => src} src="/main/Point/フレッツ光と同じ速度.svg" width={600} height={200} layout='responsive'/>   
             </div>
 
             <div className="col-span-2">
@@ -240,13 +240,15 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                引っ越し無料の画像
+            <Image loader={({src}) => src} src="/main/Point/引っ越し無料.svg" width={600} height={250} layout='intrinsic'  /> 
             </div>
 
        
-            <div className="col-span-2">
+            <div className="col-span-2 ">
                 <p className="text-sm text-justify leading-relaxed">
-                    詳細
+                ※引っ越し先で継続利用されることが条件です。
+                土曜日、日曜日、祝日（国民の祝日に関する法律に定める休日）に工事を行う場合は、3,300円の追加費用がかかります。
+                追加オプション工事やビッグローブ光テレビ等のオプションサービスの工事費は別途かかります。
             
                 </p>
             </div> 
