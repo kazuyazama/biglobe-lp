@@ -202,8 +202,8 @@ const Point = () => {
             <p>回線速度はフレッツ光と同じ最大1Gbpsで快適です。</p>
             </div>
 
-            <div className="col-span-2 container">
-            <Image loader={({src}) => src} src="/main/Point/フレッツ光と同じ速度.svg" width={600} height={200} layout='responsive'/>   
+            <div className="col-span-2">
+            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={600} height={250} />   
             </div>
 
             <div className="col-span-2">
@@ -240,7 +240,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-            <Image loader={({src}) => src} src="/main/Point/引っ越し無料.svg" width={600} height={250} layout='intrinsic'  /> 
+            <Image loader={({src}) => src} src="/main/point/引っ越し無料.svg" width={600} height={250}   /> 
             </div>
 
        
