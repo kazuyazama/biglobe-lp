@@ -91,7 +91,7 @@ const Input = () => {
 
         {/* 折り返し電話番号入力欄 */}
 
-        <InputCpn title='折り返し電話番号' type="tel" placeholder="09011112222"  errors={errors} register={register("tel", {
+        <InputCpn title='折り返し電話番号' type="tel" placeholder="09011112222" register={register("tel", {
               required:`電話番号は必須項目です。` 
             })} errorname="tel"
             />    

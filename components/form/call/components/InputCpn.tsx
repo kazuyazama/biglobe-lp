@@ -1,6 +1,6 @@
 //名前、フリガナ、生年月日、メールアドレス、折り返し電話番号　入力欄だけコンポーネント化
 
-import { useFormContext, UseFormRegisterReturn, } from "react-hook-form"; 
+import { FieldErrorsImpl, useFormContext, UseFormRegisterReturn, } from "react-hook-form"; 
 import { ErrorMessage } from "@hookform/error-message";
 import type { CallContactType } from "../../../../types/CallContactType";
 
