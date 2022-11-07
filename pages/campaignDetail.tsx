@@ -223,7 +223,7 @@ const Campaign:NextPageWithLayout = () => {
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
-                <p>特典１の詳細</p>
+                {/* <p>特典１の詳細</p> */}
             </div>
 
             <div className="col-span-6 w-full ">
@@ -271,7 +271,6 @@ const Campaign:NextPageWithLayout = () => {
              discription={'以下の条件を両方満たす方がauスマートバリューにお申し込みできます。'}
              list1={'auスマートフォン(5G)、auスマートフォン(4G)、auケータイ、4G LTEタブレットで対象の料金プランにご加入している方'}
              list2={'ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方'}
-             others={'その他注意事項は割引適用についての注意事項をご覧ください'}
               />
 
             
@@ -316,21 +315,27 @@ const Campaign:NextPageWithLayout = () => {
 
 
 
-            <div className="col-span-6 w-full space-y-3">
+            <div className="col-span-6 w-full space-y-3 -my-10 md:-my-0">
 
-           
+           <div className="hidden md:block">
             <Image loader={({src}) => src} src="/main/campaign/UQmobile自宅セット割.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
-            <p className="text-sm px-20">
+           </div>
+           <div className="block md:hidden">
+            <Image loader={({src}) => src} src="/main/campaign/UQmobile自宅セット割.svg" alt="UQmobile自宅セット割" width={500} height={450} layout="responsive"   /> 
+           </div>
+     
+            </div>
+
+            <div className="col-span-6 w-full ">
+            <p className="text-sm md:px-20">
                 別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
                 ビッグローブ光 auひかり BIGLOBE WiMAX+5G
                 自宅セット割 インターネットコースはお申し込みが必要です。
                 現在「くりこしプラン」ご契約中のお客さまは、「くりこしプラン +5G」へのプラン変更で、自宅セット割をご利用いただけます。
             </p> 
-                    
-     
-
-   
             </div>
+
+
         
 
            
@@ -378,7 +383,7 @@ const Campaign:NextPageWithLayout = () => {
              discription={'以下の条件を両方満たす方がUQMobileセット割にお申し込みできます。'}
              list1={'UQ mobileの対象プラン(S/M/L)にご加入している方'}
              list2={'ビッグローブ光」「ビッグローブ光電話」にお申し込みされた方'}
-             others={'その他の注意事項は割引適用についての注意事項をご覧ください'}
+
               />
 
 
