@@ -30,7 +30,7 @@ const ContactSection = () => {
          
                 <AiOutlineForm className="text-xl md:text-3xl md:absolute left-6" />
     
-                <span className=" md:text-xl">webお申し込み</span>
+                <span className="text-slate-100 md:text-xl">webお申し込み</span>
                
                 <IoIosArrowDroprightCircle className="text-xl md:text-2xl md:absolute right-3" />
                

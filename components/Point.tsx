@@ -27,7 +27,7 @@ const Point = () => {
         <h1 className="text-xl md:text-2xl font-semibold">月額料金が安い</h1>
         </div>
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl ">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 py-10 px-4 md:px-10 bg-base-100 rounded-xl ">
 
 
             <div className="col-span-2 ">
@@ -63,9 +63,12 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-                <div className="w-full">
-                <Image loader={({src}) => src} src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={800} height={500}  />
+                <div className="-mx-10 md:-mx-0">
+                <Image loader={({src}) => src} src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={700} height={400}  />
                 </div>
+                {/* <div className="w-full hidden md:block">
+                <Image loader={({src}) => src} src="/main/point/all-in.svg" alt="BIGLOBE 光なら、月額3,980円(税込4,378円)からご利用いただけます！ 回線とプロバイダ料金込みなのでとってもおトクです！" width={700} height={400}  />
+                </div> */}
             </div>
 
 
@@ -81,7 +84,7 @@ const Point = () => {
 
             </div>
 
-            <div className="col-span-2 ">
+            {/* <div className="col-span-2 ">
 
             <div className="text-xl text-center">+</div>
 
@@ -97,7 +100,7 @@ const Point = () => {
 
             <div className="col-span-2">
                 ↑の詳細画像とリンク
-            </div>
+            </div> */}
 
         </div>
 
@@ -110,7 +113,7 @@ const Point = () => {
 
     
  
-        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 p-10 bg-base-100 rounded-xl">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10 border-4 py-10 px-4 md:px-10 bg-base-100 rounded-xl">
 
 
             <div className="col-span-2 ">
@@ -123,7 +126,10 @@ const Point = () => {
 
             <div className="col-span-2 space-y-5 text-center">
                 <h1 className="text-lg md:text-2xl font-semibold">auスマートバリュー</h1>
-                <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl ">
+                <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl md:hidden">
+                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={230} />     
+                </div>
+                <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl hidden md:block">
                  <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={200} />     
                 </div>
             </div>
@@ -141,8 +147,11 @@ const Point = () => {
 
             <h1 className="text-lg md:text-2xl font-semibold">ひとりでも家族でもお得！</h1>   
 
-            <div className="">
-            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={800} height={250} />     
+            <div className="md:hidden">
+            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={700} height={300} />     
+            </div>
+            <div className="hidden md:block">
+            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={700} height={250} />     
             </div>
 
             <p className="text-start md:px-20">
@@ -169,7 +178,7 @@ const Point = () => {
         <h1 className="text-xl md:text-2xl font-semibold">IPv6対応で速度が速い</h1>
         </div>
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 rounded-xl  ">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  py-10 px-4 md:px-10 border-4 bg-base-100 rounded-xl  ">
 
             <div className="col-span-2 ">
 
@@ -182,12 +191,17 @@ const Point = () => {
             <div className="col-span-2 ">
 
             <div className="flex flex-col md:flex-row col-span-2 gap-4 md:gap-0 justify-center ">
-            <div className="basis-1/3 ">
-            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={600} height={400}  />
+            <div className="basis-1/3 block md:hidden">
+            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={600} height={350}  />
             </div>
-            <div className="basis-1/3">
-
-            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={600} height={400}  />
+            <div className="hidden md:block basis-1/3">
+            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={500} height={350}  />
+            </div>
+            <div className="basis-1/3 block md:hidden ">
+            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={600} height={350}  />
+            </div>
+            <div className="hidden md:block basis-1/3 ">
+            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={500} height={350}  />
             </div>
         
             </div>
@@ -203,7 +217,13 @@ const Point = () => {
             </div>
 
             <div className="col-span-2">
-            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={600} height={250} />   
+            <figure className="-mx-3">
+            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={600} height={250}   />   
+            </figure>
+            {/* <figure className="block md:hidden">
+            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={330} height={150} layout='fixed' />   
+            </figure> */}
+     
             </div>
 
             <div className="col-span-2">
@@ -230,7 +250,7 @@ const Point = () => {
         </div>
 
 
-        <div className="grid grid-cols-2 justify-items-center gap-y-10  p-10 border-4 bg-base-100 rounded-xl ">
+        <div className="grid grid-cols-2 justify-items-center gap-y-10  py-10 px-4 md:px-10 border-4 bg-base-100 rounded-xl ">
 
             <div className="col-span-2 ">
 
@@ -239,8 +259,8 @@ const Point = () => {
                 </h3>
             </div>
 
-            <div className="col-span-2">
-            <Image loader={({src}) => src} src="/main/point/引っ越し無料.svg" width={600} height={250}   /> 
+            <div className="col-span-2 -mx-2">
+            <Image loader={({src}) => src} src="/main/point/引っ越し無料.svg" width={600} height={250}  /> 
             </div>
 
        

@@ -27,7 +27,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="いつでも" 
-            className="checkbox checked:bg-red-500" 
+            className="checkbox " 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}
@@ -39,7 +39,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="月曜" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox checked:" 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}
@@ -51,7 +51,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="火曜" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox checked:" 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}
@@ -63,7 +63,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="水曜" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox checked:" 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}
@@ -75,7 +75,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="木曜" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox checked:" 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}
@@ -87,7 +87,7 @@ const WeekCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="金曜" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox checked:" 
             {...register("week", {
               required: "お電話ご希望曜日は必須項目です。"
             })}

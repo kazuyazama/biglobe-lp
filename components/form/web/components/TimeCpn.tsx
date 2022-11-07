@@ -24,7 +24,7 @@ const TimeCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="いつでも" 
-            className="checkbox checked:bg-red-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
@@ -36,19 +36,19 @@ const TimeCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="12時～14時" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
             />
-            <span className="label-text">12時～14時</span> 
+            <span className="label-text">12～14時</span> 
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="14時～16時" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
@@ -60,36 +60,36 @@ const TimeCpn = () => {
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="16時～18時" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
             />
-            <span className="label-text">16時～18時</span> 
+            <span className="label-text">16～18時</span> 
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="18時〜20時" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
             />
-            <span className="label-text">18時〜20時</span> 
+            <span className="label-text">18〜20時</span> 
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
             value="20時〜21時" 
-            className="checkbox checked:bg-blue-500" 
+            className="checkbox " 
             {...register("time", {
               required: "お電話ご希望時間は必須項目です。"
             })}
             />
-            <span className="label-text">20時〜21時</span> 
+            <span className="label-text">20〜21時</span> 
           </label>
         </div>
         </div> 

@@ -64,7 +64,7 @@ const Home: NextPageWithLayout = () => {
 
        
       <section className='bg-sky-200 pb-20' >
-      <div className='container mx-auto px-5 md:px-20'>
+      <div className='container mx-auto px-2 md:px-20'>
 
       <Strong />
        
@@ -73,7 +73,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
       <section className='bg-base-100 '>
-      {/* <div className='container mx-auto px-5 md:px-20'> */}
+      {/* <div className='container mx-auto px-2 md:px-20'> */}
       <div className='container mx-auto md:px-20'>
       <Onayami />
       </div>
@@ -82,7 +82,7 @@ const Home: NextPageWithLayout = () => {
 
 
       <section className='bg-sky-200 pt-20 md:pt-40 pb-20 ' id='cost'>
-      <div className='container mx-auto px-5 md:px-20 '>
+      <div className='container mx-auto px-2 md:px-20 '>
       
 
       <Point />
@@ -93,7 +93,7 @@ const Home: NextPageWithLayout = () => {
      
 
       <section className='bg-yellow-50 pb-20 ' id='campaign'>
-      <div className='container mx-auto px-5 md:px-20 '>
+      <div className='container mx-auto px-2 md:px-20 '>
 
       <Campaign />
          
@@ -110,7 +110,7 @@ const Home: NextPageWithLayout = () => {
       </section>
 
       <section className='bg-sky-200 pb-20' id='nagare'>
-      <div className='container mx-auto px-5 md:px-20 '>
+      <div className='container mx-auto px-2 md:px-20 '>
 
          <Flow />
 
@@ -121,7 +121,7 @@ const Home: NextPageWithLayout = () => {
      
 
       <section className='bg-base-100 pb-20' id='faq'>
-      <div className='container mx-auto px-5 md:px-20 '>
+      <div className='container mx-auto px-2 md:px-20 '>
 
         <Faq />
 
@@ -132,7 +132,7 @@ const Home: NextPageWithLayout = () => {
 
 
       <section className='bg-sky-200 '>
-      <div className='container mx-auto px-5 md:px-20 '>
+      <div className='container mx-auto px-2 md:px-20 '>
 
         <Crosing />
      

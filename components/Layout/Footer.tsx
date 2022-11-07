@@ -11,9 +11,9 @@ const Footer = () => {
             <Link href="/company">
             <a className="link link-hover">運営会社</a>
             </Link> 
-            <Link href="/">
+            {/* <Link href="/">
             <a className="link link-hover">注意事項</a> 
-            </Link>
+            </Link> */}
             <Link href="https://mansion-wifi.net/privacy_policy">
             <a className="link link-hover">プライバシーポリシー</a>
             </Link>

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import {IoIosArrowForward} from "react-icons/io"
+import {Link as Scroll} from "react-scroll"
+
+
 
 
 const Campaign = () => {
@@ -53,11 +56,11 @@ const Campaign = () => {
         <Link href="/campaignDetail">
         <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
-        <div className="card-body border-t border-primary">
+        <div className="card-body border-t border-primary ">
             <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>
             <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
-            <div className="card-actions justify-end pt-3">
-            <Link href="/campaignDetail">
+            <div className="card-actions justify-end pt-5">
+            <Link href="/campaignDetail/#ip-v6">
             <button className="relative btn btn-secondary btn-sm px-8 rounded-xl "> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
@@ -75,11 +78,11 @@ const Campaign = () => {
         <Link href="/campaignDetail">
         <Image loader={({src}) => src}  src="/main/campaign/au-smart-value.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
-        <div className="card-body border-t border-primary">
+        <div className="card-body border-t border-primary ">
             <h2 className="card-title ">auの携帯料金がお得に！</h2>
             <p>ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</p>
-            <div className="card-actions justify-end pt-3">
-            <Link href="/campaignDetail">
+            <div className="card-actions justify-end pt-5 md:pt-0 2xl:pt-5">
+            <Link href="/campaignDetail/#au-sv">
             <button className="relative btn btn-secondary btn-sm px-8 rounded-xl"> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>
@@ -101,11 +104,11 @@ const Campaign = () => {
         <Link href="/campaignDetail">
         <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
-        <div className="card-body border-t border-primary">
+        <div className="card-body border-t border-primary ">
             <h2 className="card-title ">UQモバイルの携帯料金がお得に！</h2>
             <p>ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</p>
-            <div className="card-actions justify-end pt-3">
-            <Link href="/campaignDetail">
+            <div className="card-actions justify-end pt-5">
+            <Link href="/campaignDetail/#uq-set">
             <button className="relative btn btn-secondary btn-sm px-8 rounded-xl"> 
                 <span className="">詳しく見る</span>
                 <span className="text-lg absolute right-1"><IoIosArrowForward /></span>

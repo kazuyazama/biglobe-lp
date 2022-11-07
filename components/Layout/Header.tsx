@@ -13,7 +13,7 @@ const Header = () => {
             <div className="navbar-start ">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden px-0">
-                    <div className='border p-2 bg-primary rounded-lg'>
+                    <div className='border p-3 bg-primary rounded-lg'>
                     <FiMenu size={25} className='text-white' />
                     </div>
                     {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg> */}
@@ -90,7 +90,7 @@ const Header = () => {
                 <a className=" btn btn-secondary rounded-full w-[160px] md:w-48 lg:w-52 md:px-3 border-double border-4 border-base-100 ">
                     <div className="inline-flex items-center space-x-1 lg:space-x-2 justify-between  ">
                     <AiOutlineForm className='md:text-xl' />
-                    <span className='whitespace-nowrap'>Webお申し込み</span>
+                    <span className='text-slate-100 whitespace-nowrap'>Webお申し込み</span>
                     <IoIosArrowDroprightCircle className='md:text-xl'/>
                     </div>
                 </a>
