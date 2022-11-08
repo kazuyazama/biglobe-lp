@@ -11,11 +11,11 @@ const ContactSection = () => {
  
     return (
         <>
-         <div className="md:flex flex-row justify-center md:space-x-5">
+         <div className="lg:flex flex-row justify-center lg:space-x-5">
          
-            <div className="pb-5 md:pb-0 md:text-xl 2xl:text-2xl font-semibold flex flex-col items-center">
+            <div className="pb-5 lg:pb-0 md:text-xl 2xl:text-2xl font-semibold flex flex-col items-center">
                 <h1 className="">当サイトからのお申し込みで
-                <span className="after:content-['35000円'] after:text-secondary after:font-bold after:text-lg after:md:text-3xl " >
+                <span className="after:content-['35000円'] after:text-secondary after:font-bold after:text-lg after:lg:text-3xl " >
                 最大</span>
                 {/* <span className="text-secondary font-bold text-lg md:text-3xl">35,000円</span> */}
                 お得!</h1>
@@ -32,7 +32,7 @@ const ContactSection = () => {
     
                 <span className="text-slate-100 md:text-xl">webお申し込み</span>
                
-                <IoIosArrowDroprightCircle className="text-xl md:text-2xl md:absolute right-3" />
+                <IoIosArrowDroprightCircle className="text-xl md:text-2xl md:absolute right-3 text-slate-100" />
                
             </button>
             </Link>

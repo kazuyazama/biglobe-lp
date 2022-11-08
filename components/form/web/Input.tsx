@@ -46,7 +46,7 @@ const Input:FC = () => {
         <>
         <div className="overflow-x-hidden pb-20">
     
-        <div className="container mx-auto px-5 md:px-40 ">
+        <div className="container mx-auto px-5 lg:px-40 ">
         <div className="text-sm breadcrumbs pb-10">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
@@ -56,8 +56,8 @@ const Input:FC = () => {
 
         <div className="text-center">
 
-          <h1 className="pb-10 text-xl md:text-2xl">ビッグローブ光お申し込みフォーム</h1>
-          <ul className="steps w-full md:w-1/2 ">
+          <h1 className="pb-10 text-xl lg:text-2xl">ビッグローブ光お申し込みフォーム</h1>
+          <ul className="steps w-full lg:w-1/2 ">
           <li className="step step-primary">ご入力</li>
           <li className="step">ご確認</li>
           <li className="step">完了</li>
@@ -75,7 +75,7 @@ const Input:FC = () => {
 
         {/* お名前入力欄 */}
         {/* <div className="py-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>お名前(フルネーム)</span>
@@ -109,7 +109,7 @@ const Input:FC = () => {
 
         {/* フリガナ入力欄 */}
         {/* <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
             <span>フリガナ(フルネーム)</span>
@@ -140,7 +140,7 @@ const Input:FC = () => {
 
          <div className="py-3">
 
-          <div className="md:flex items-center space-y-3 md:space-y-0">
+          <div className="lg:flex items-center space-y-3 lg:space-y-0">
           <div className="basis-1/3 space-x-2">
           <div className="badge badge-secondary">必須</div>
           <span>性別</span>
@@ -191,7 +191,7 @@ const Input:FC = () => {
         
         {/* 生年月日入力欄 */}
         {/* <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
             <span>生年月日</span>
@@ -223,7 +223,7 @@ const Input:FC = () => {
         {/* メールアドレス入力欄 */}
 
         {/* <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>メールアドレス</span>
@@ -252,7 +252,7 @@ const Input:FC = () => {
 
         {/* 折り返し電話番号入力欄 */}
         {/* <div className="pb-3 space-y-3">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
               <span>折り返し電話番号</span>
@@ -301,7 +301,7 @@ const Input:FC = () => {
 
         {/* <div className="py-6">
 
-        <div className="md:flex items-center space-y-3 md:space-y-0">
+        <div className="lg:flex items-center space-y-3 lg:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
@@ -309,7 +309,7 @@ const Input:FC = () => {
        
         </div>
 
-        <div className="basis-full md:flex space-x-0 md:space-x-2">
+        <div className="basis-full lg:flex space-x-0 lg:space-x-2">
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
@@ -386,7 +386,7 @@ const Input:FC = () => {
 
         </div>
         <div className="flex">
-        <div className="md:basis-1/3">
+        <div className="lg:basis-1/3">
         <ErrorMessage
             errors={errors}
             name="time"
@@ -405,7 +405,7 @@ const Input:FC = () => {
 
         {/* <div className="py-6">
 
-        <div className="md:flex items-center space-y-3 md:space-y-0">
+        <div className="lg:flex items-center space-y-3 lg:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
@@ -415,7 +415,7 @@ const Input:FC = () => {
         
 
       
-        <div className="basis-full md:flex space-x-0 md:space-x-2">
+        <div className="basis-full lg:flex space-x-0 lg:space-x-2">
 
 
         <div className="form-control">
@@ -494,7 +494,7 @@ const Input:FC = () => {
 
         </div>
         <div className="flex">
-        <div className="md:basis-1/3" >
+        <div className="lg:basis-1/3" >
         <ErrorMessage
             errors={errors}
             name="week"
@@ -511,7 +511,7 @@ const Input:FC = () => {
 
         {/* ご質問など入力欄 */}
         <div className="py-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2 ">
             <div className="badge badge-primary ">任意</div>
               <span>ご質問など</span>
@@ -550,7 +550,7 @@ const Input:FC = () => {
         <div className="basis-full text-center ">
           {!isValid && (
             <>
-              <p className="pb-3 md:pb-5 text-error">
+              <p className="pb-3 lg:pb-5 text-error">
                 まだ全ての必須項目の入力が完了していません。
               </p>
             </>

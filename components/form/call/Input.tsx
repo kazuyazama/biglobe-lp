@@ -32,7 +32,7 @@ const Input = () => {
         <>
          <div className="overflow-x-hidden pb-20">
       
-        <div className="container mx-auto px-5 md:px-40">
+        <div className="container mx-auto px-5 lg:px-40">
         <div className="text-sm breadcrumbs pb-10">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
@@ -42,13 +42,13 @@ const Input = () => {
 
         <div className="text-center">
 
-          <h1 className="pb-10 text-xl md:text-2xl">折り返し電話お申し込み予約</h1>
+          <h1 className="pb-10 text-xl lg:text-2xl">折り返し電話お申し込み予約</h1>
           <p>
           ご希望の日時に当社専門オペレーターよりお電話を差し上げます。
           お電話で専門オペレーターにご相談・ご質問頂いた上でSoftBank 光をお申し込み頂けます。
           お電話でのお申し込みでも、WEBお申し込みと同様のキャンペーンが適用されます。
           </p>
-          <ul className="steps w-full md:w-1/2 pt-10">
+          <ul className="steps w-full lg:w-1/2 pt-10">
           <li className="step step-primary">ご入力</li>
           <li className="step">ご確認</li>
           <li className="step">完了</li>
@@ -111,7 +111,7 @@ const Input = () => {
 
         {/* <div className="pb-3">
 
-        <div className="md:flex items-center space-y-3 md:space-y-0">
+        <div className="lg:flex items-center space-y-3 lg:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-primary">任意</div>
@@ -119,7 +119,7 @@ const Input = () => {
        
         </div>
 
-        <div className="basis-full flex space-x-0 md:space-x-2">
+        <div className="basis-full flex space-x-0 lg:space-x-2">
       
         <div className="form-control">
         <label className="label cursor-pointer self-start space-x-2">
@@ -162,7 +162,7 @@ const Input = () => {
         </div>
 
         <div className="flex">
-        <div className="md:basis-1/3">
+        <div className="lg:basis-1/3">
         </div >
         <p className="basis-full text-error">※ご希望の時間に添えない場合もございます。予めご了承ください。</p> 
         </div>
@@ -171,7 +171,7 @@ const Input = () => {
        
         {/* ご質問など入力欄 */}
         <div className="py-3 ">
-          <label className="md:flex items-center space-y-3 md:space-y-0">
+          <label className="lg:flex items-center space-y-3 lg:space-y-0">
             <div className="basis-1/3 space-x-2 ">
             <div className="badge badge-primary ">任意</div>
               <span>ご質問など</span>
@@ -186,7 +186,7 @@ const Input = () => {
         
         </div>
 
-        <div className="form-control py-3 md:py-5 ">
+        <div className="form-control py-3 lg:py-5 ">
           <label className="label cursor-pointer self-center space-x-2">
             <input type="checkbox" 
             value="個人情報のお取り扱いに同意する" 
@@ -210,7 +210,7 @@ const Input = () => {
         <div className="basis-full text-center ">
           {!isValid && (
             <>
-              <p className="pb-3 md:pb-5 text-error">
+              <p className="pb-3 lg:pb-5 text-error">
                 まだ全ての必須項目の入力が完了していません。
               </p>
             </>

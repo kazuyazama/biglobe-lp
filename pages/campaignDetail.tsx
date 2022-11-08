@@ -22,16 +22,16 @@ const Campaign:NextPageWithLayout = () => {
         />
         
         <div className="overflow-x-hidden ">
-        <section className='mx-auto'>
-        <div className="text-sm breadcrumbs pb-10 px-5 md:px-20 mx-auto">
+        <section className='mx-auto px-2'>
+        <div className="text-sm breadcrumbs pb-10 lg:px-20 mx-auto">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
             <li><a>キャンペーン詳細</a></li> 
         </ul>
         </div>
         <div className="text-center ">
-            <h1 className="text-xl md:text-2xl pb-5 font-semibold">BIGLOBE 光 キャンペーンのご案内</h1>
-            <h2 className="md:text-lg pb-2">ビッグローブ光ならお得がいっぱい！現在開催中のお得なキャンペーンや割引をご紹介します。</h2>
+            <h1 className="text-xl lg:text-2xl pb-5 font-semibold">BIGLOBE 光 キャンペーンのご案内</h1>
+            <h2 className="lg:text-lg pb-2">ビッグローブ光ならお得がいっぱい！現在開催中のお得なキャンペーンや割引をご紹介します。</h2>
             <div className="divider mb-0"></div> 
         </div>
 
@@ -40,19 +40,19 @@ const Campaign:NextPageWithLayout = () => {
             
         <div className=" bg-yellow-50 pt-10">
 
-        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+        <div className="grid grid-cols-6 justify-items-center gap-10 lg:px-20 container mx-auto pb-20">
     
             <div className="col-span-6 space-y-3 text-center " id='original'>
-                <h1 className="text-xl md:text-xl font-semibold ">当サイト限定選べるキャンペーン</h1>
-                <h2 className="md:text-lg">当サイトからお申し込みでお得なキャンペーンが適用されます！下記2つからお好きなキャンペーンをお選びいただけます。</h2>
+                <h1 className="text-xl lg:text-xl font-semibold ">当サイト限定選べるキャンペーン</h1>
+                <h2 className="lg:text-lg">当サイトからお申し込みでお得なキャンペーンが適用されます！下記2つからお好きなキャンペーンをお選びいただけます。</h2>
                 <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="選べるキャンペーン" width={1000} height={350}  /></figure>
             </div>
       
 
             <div className="col-span-6 space-y-5 text-center">
-                <h1 className="text-lg md:text-xl font-semibold">【特典A】高額キャッシュバックキャンペーン</h1>
+                <h1 className="text-lg lg:text-xl font-semibold">【特典A】高額キャッシュバックキャンペーン</h1>
              {/* <figure><Image loader={({src}) => src} src="/main/campaign/キャンペーン特典A.svg" alt="選べるキャンペーン" width={600} height={350}  /></figure> */}
-             <div className="md:text-lg text-start md:text-center">キャッシュバック金額はなんと最大35,000円！とにかくキャッシュバックを多く受け取り方向けのキャンペーンです。<br/> 
+             <div className="lg:text-lg text-start lg:text-center">キャッシュバック金額はなんと最大35,000円！とにかくキャッシュバックを多く受け取り方向けのキャンペーンです。<br/> 
              詳細は下記のキャッシュバック金額一覧表をご覧ください。
              
               </div>
@@ -80,9 +80,9 @@ const Campaign:NextPageWithLayout = () => {
 
 
             <div className="col-span-6 space-y-5 text-center">
-                <h1 className="text-lg md:text-xl font-semibold">【特典B】工事費無料+キャッシュバックキャンペーン</h1>
+                <h1 className="text-lg lg:text-xl font-semibold">【特典B】工事費無料+キャッシュバックキャンペーン</h1>
              {/* <figure><Image loader={({src}) => src} src="/main/campaign/キャンペーン特典B.svg" alt="選べるキャンペーン" width={600} height={350}  /></figure> */}
-             <div className="md:text-lg text-start md:text-center">工事費を無料にしたい方向けのキャンペーンです。<br/> 
+             <div className="lg:text-lg text-start lg:text-center">工事費を無料にしたい方向けのキャンペーンです。<br/> 
              詳細は下記のキャッシュバック金額一覧表をご覧ください。
              </div>
              
@@ -164,12 +164,12 @@ const Campaign:NextPageWithLayout = () => {
 
         <div className="bg-base-100 pt-10">
 
-        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+        <div className="grid grid-cols-6 justify-items-center gap-10 lg:px-20  container mx-auto pb-20">
 
 
              <div className="col-span-6 space-y-3 text-center" id='ip-v6'>
-                <h1 className="text-lg md:text-xl font-semibold">無線LAN付IPv6対応ルータ月額料金無料特典</h1>
-                <h2 className="md:text-lg">ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に!</h2>
+                <h1 className="text-lg lg:text-xl font-semibold">無線LAN付IPv6対応ルータ月額料金無料特典</h1>
+                <h2 className="lg:text-lg">ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に!</h2>
                 <div><Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} /></div>
   
             </div>
@@ -214,12 +214,12 @@ const Campaign:NextPageWithLayout = () => {
 
         <div className="bg-yellow-50 pt-10">
 
-        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+        <div className="grid grid-cols-6 justify-items-center gap-10 lg:px-20  container mx-auto pb-20">
 
         
             <div className="col-span-6 space-y-3 text-center" id="au-sv">
-                <h1 className="text-lg md:text-xl font-semibold">auスマートバリュー</h1>
-                <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</h2>
+                <h1 className="text-lg lg:text-xl font-semibold">auスマートバリュー</h1>
+                <h2 className="lg:text-lg">ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</h2>
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
@@ -248,18 +248,18 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
 
-            <div className="col-span-6 text-lg md:text-xl font-semibold">
+            <div className="col-span-6 text-lg lg:text-xl font-semibold">
             ひとりでも、家族でもおトク！
             
             </div>
 
-            <div className="col-span-6 md:col-span-3  self-center">
+            <div className="col-span-6 lg:col-span-3  self-center">
             一人でも家族でも、同居家族が割引き対象です。
             さらに50歳以上なら離れて暮らす家族も割引き対象に。
             最大10回線まで、1回線あたりの月々のauスマホなどの月額利用料金が割引きされます。<br />
             <p>割引適用についての注意事項は<Scroll to="au-notes" smooth={true} duration={600}><span className="link">こちら</span></Scroll></p>
             </div>
-            <div className="col-span-6 md:col-span-3">
+            <div className="col-span-6 lg:col-span-3">
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>
@@ -302,32 +302,32 @@ const Campaign:NextPageWithLayout = () => {
 
         <div className="bg-base-100 pt-10">
 
-        <div className="grid grid-cols-6 justify-items-center gap-10 md:px-20 px-5 container mx-auto pb-20">
+        <div className="grid grid-cols-6 justify-items-center gap-10 lg:px-20  container mx-auto pb-20">
 
 
 
             <div className="col-span-6 space-y-3 text-center" id="uq-set">
-                <h1 className="text-lg md:text-xl font-semibold">UQ mobile 自宅セット割</h1>
-                <h2 className="md:text-lg">ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</h2>
+                <h1 className="text-lg lg:text-xl font-semibold">UQ mobile 自宅セット割</h1>
+                <h2 className="lg:text-lg">ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</h2>
                 <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="" width={800} height={300} /></div>
               
             </div>
 
 
 
-            <div className="col-span-6 w-full space-y-3 -my-10 md:-my-0">
+            <div className="col-span-6 w-full space-y-3 -my-10 lg:-my-0">
 
-           <div className="hidden md:block">
+           <div className="hidden lg:block">
             <Image loader={({src}) => src} src="/main/campaign/UQmobile自宅セット割.svg" alt="UQmobile自宅セット割" width={500} height={250} layout="responsive"   /> 
            </div>
-           <div className="block md:hidden">
+           <div className="block lg:hidden">
             <Image loader={({src}) => src} src="/main/campaign/UQmobile自宅セット割.svg" alt="UQmobile自宅セット割" width={500} height={450} layout="responsive"   /> 
            </div>
      
             </div>
 
             <div className="col-span-6 w-full ">
-            <p className="text-sm md:px-20">
+            <p className="text-sm lg:px-20">
                 別途利用料・オプション料等がかかります。インターネットサービス解約時に、ご契約期間に応じて契約解除料が発生する場合があります。詳細は各サービスページをご確認ください。
                 ビッグローブ光 auひかり BIGLOBE WiMAX+5G
                 自宅セット割 インターネットコースはお申し込みが必要です。
@@ -362,17 +362,17 @@ const Campaign:NextPageWithLayout = () => {
             </div>
 
 
-            <div className="col-span-6 text-lg md:text-xl font-semibold">
+            <div className="col-span-6 text-lg lg:text-xl font-semibold">
             家族もおトク！最大10回線まで割引対象
             </div>
 
           
 
-            <div className="col-span-6 md:col-span-3 self-center">
+            <div className="col-span-6 lg:col-span-3 self-center">
             BIGLOBE WiMAX+5Gの場合、合計9回線。「くりこしプラン +5G」でご家族がau回線をお持ちの場合、割引となるUQ mobile回線は、ご家族のau回線と合わせて10回線までとなります。
             <p>割引適用についての注意事項は<Scroll to="uq-notes" smooth={true} duration={600}><span className="link">こちら</span></Scroll></p>
             </div>
-            <div className="col-span-6 md:col-span-3">
+            <div className="col-span-6 lg:col-span-3">
                 <div>
                     <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
                 </div>

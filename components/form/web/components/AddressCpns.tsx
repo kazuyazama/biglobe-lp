@@ -25,7 +25,7 @@ const AddressCpns = ({handleTatemono,setHandleTatemono,setValue,address,error}:P
       <>
       <div className="py-3">
 
-      <div className="md:flex items-center space-y-3 md:space-y-0">
+      <div className="lg:flex items-center space-y-3 lg:space-y-0">
       <div className="basis-1/3 space-x-2">
       <div className="badge badge-secondary">必須</div>
       <span>建物のタイプ</span>
@@ -75,7 +75,7 @@ const AddressCpns = ({handleTatemono,setHandleTatemono,setValue,address,error}:P
 
       {/* 設置先郵便番号入力欄 */}
       <div className="pb-3 space-y-3">
-        <label className="md:flex items-center space-y-3 md:space-y-0">
+        <label className="lg:flex items-center space-y-3 lg:space-y-0">
           <div className="basis-1/3 space-x-2">
           <div className="badge badge-secondary">必須</div>
             <span>設置先郵便番号</span>
@@ -95,7 +95,7 @@ const AddressCpns = ({handleTatemono,setHandleTatemono,setValue,address,error}:P
         /> 
         </label>
         <div className="flex">
-        <div className="md:basis-1/3">
+        <div className="lg:basis-1/3">
         <ErrorMessage
           errors={errors}
           name="zip"
@@ -112,7 +112,7 @@ const AddressCpns = ({handleTatemono,setHandleTatemono,setValue,address,error}:P
 
       {/* 設置先ご住所入力欄 */}
       <div className="pb-3 space-y-3">
-        <label className="md:flex items-center space-y-3 md:space-y-0">
+        <label className="lg:flex items-center space-y-3 lg:space-y-0">
           <div className="basis-1/3 space-x-2">
           <div className="badge badge-secondary">必須</div>
           <span>設置先ご住所</span>
@@ -145,7 +145,7 @@ const AddressCpns = ({handleTatemono,setHandleTatemono,setValue,address,error}:P
       {/* 番地入力欄 */}
       {handleTatemono === '集合住宅' ? (
       <div className="pb-3 space-y-3">
-        <label className="md:flex items-center space-y-3 md:space-y-0">
+        <label className="lg:flex items-center space-y-3 lg:space-y-0">
           <div className="basis-1/3 space-x-2">
             <div className="badge badge-secondary">必須</div>
             <span>建物名・部屋番号</span>

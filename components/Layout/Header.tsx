@@ -9,7 +9,7 @@ import {FiMenu} from "react-icons/fi"
 const Header = () => {
     return (
         <div className="w-full fixed z-50">
-        <div className="navbar bg-base-100 md:px-20 md:py-3 ">
+        <div className="navbar bg-base-100 lg:px-20 lg:py-3 ">
             <div className="navbar-start ">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden px-0">
@@ -42,7 +42,7 @@ const Header = () => {
 
                 <div className='normal-case '>
                 <Link href="/">
-                <a className="flex w-40 px-3 md:px-0 ">
+                <a className="flex w-40 px-3 lg:px-0 ">
                 <Image loader={({src}) => src} src="/logo/hikari_01.png" width={180} height={35} alt="" />
                 </a>
                 </Link>
@@ -87,19 +87,19 @@ const Header = () => {
             </div>
             <div className="navbar-end flex ">
                 <Link href="/form/web">
-                <a className=" btn btn-secondary rounded-full w-[160px] md:w-48 lg:w-52 md:px-3 border-double border-4 border-base-100 ">
+                <a className=" btn btn-secondary rounded-full w-[160px] lg:w-48 lg:w-52 lg:px-3 border-double border-4 border-base-100 ">
                     <div className="inline-flex items-center space-x-1 lg:space-x-2 justify-between  ">
-                    <AiOutlineForm className='md:text-xl' />
+                    <AiOutlineForm className='lg:text-xl' />
                     <span className='text-slate-100 whitespace-nowrap'>Webお申し込み</span>
-                    <IoIosArrowDroprightCircle className='md:text-xl'/>
+                    <IoIosArrowDroprightCircle className='lg:text-xl text-slate-100'/>
                     </div>
                 </a>
                 </Link>
             </div>
         </div>
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-center flex justify-center flex-nowrap md:space-x-4">
-        <span className="text-xs md:text-sm text-white">BIGLOBE正規代理店:株式会社リ・スターツ </span>
-        <span className='text-xs md:text-sm text-white'>届出番号:C2111718</span>
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-center flex justify-center flex-nowrap lg:space-x-4">
+        <span className="text-xs lg:text-sm text-white">BIGLOBE正規代理店:株式会社リ・スターツ </span>
+        <span className='text-xs lg:text-sm text-white'>届出番号:C2111718</span>
        
         </div>
         </div>

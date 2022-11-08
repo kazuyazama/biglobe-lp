@@ -17,6 +17,7 @@ const Notes  = ({title,list1,list2,list3,list4,list5,list6,list7,list8,list9,id}
     return (
         <div  className="col-span-6 justify-self-start w-full" id={id}>
         <div tabIndex={0} className="collapse collapse-arrow md:collapse-open">
+        <input type="checkbox" /> 
 
         <h2 className="text-lg md:text-xl collapse-title border border-secondary  hover:bg-red-50 md:hover:bg-yellow-50">{title}</h2>
 

@@ -51,7 +51,7 @@ const Confirm = () => {
         <>
          <div className="overflow-x-hidden pb-20">
 
-        <div className="container mx-auto px-5 md:px-40">
+        <div className="container mx-auto px-5 lg:px-40">
         <div className="text-sm breadcrumbs pb-10">
         <ul>
             <li><Link href="/"><a>Home</a></Link></li> 
@@ -62,8 +62,8 @@ const Confirm = () => {
 
         <div className="text-center ">
 
-          <h1 className="pb-10 text-xl md:text-2xl">入力内容確認画面</h1>
-          <ul className="steps w-full md:w-1/2">
+          <h1 className="pb-10 text-xl lg:text-2xl">入力内容確認画面</h1>
+          <ul className="steps w-full lg:w-1/2">
           <li className="step step-primary">ご入力</li>
           <li className="step step-primary">ご確認</li>
           <li className="step">完了</li>
@@ -82,7 +82,7 @@ const Confirm = () => {
 
         {/* お名前入力欄 */}
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">お名前（フルネーム）</p> 
             <p className="basis-full">{values.name}</p> 
           </div>
@@ -90,7 +90,7 @@ const Confirm = () => {
 
         {/* フリガナ入力欄 */}
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">フリガナ（フルネーム）</p> 
             <p className="basis-full">{values.furigana}</p> 
           </div>
@@ -98,7 +98,7 @@ const Confirm = () => {
 
         {/* 性別入力欄 */}
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">性別</p> 
             <p className="basis-full">{values.sex}</p> 
           </div>
@@ -106,7 +106,7 @@ const Confirm = () => {
 
         {/* 生年月日入力欄 */}
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">生年月日</p> 
             <p className="basis-full">{values.birthday}</p> 
           </div>
@@ -115,7 +115,7 @@ const Confirm = () => {
         {/* メールアドレス入力欄 */}
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">メールアドレス</p> 
             <p className="basis-full">{values.email}</p> 
           </div>
@@ -124,7 +124,7 @@ const Confirm = () => {
 
         {/* 折り返し電話番号入力欄 */}
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">電話番号</p> 
             <p className="basis-full">{values.tel}</p> 
           </div>
@@ -138,7 +138,7 @@ const Confirm = () => {
 
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">建物のタイプ</p> 
             <p className="basis-full">{values.tatemono}</p> 
           </div>
@@ -148,7 +148,7 @@ const Confirm = () => {
         {/* 設置先郵便番号入力欄 */}
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">設置先郵便番号</p> 
             <p className="basis-full">{values.zip}</p> 
           </div>
@@ -160,7 +160,7 @@ const Confirm = () => {
         {/* 設置先ご住所入力欄 */}
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">設置先ご住所</p> 
             <p className="basis-full">{values.address}</p> 
           </div>
@@ -172,7 +172,7 @@ const Confirm = () => {
 
       
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">建物名・部屋番号（集合住宅の方）</p> 
             <p className="basis-full">{values.address2}</p> 
           </div>
@@ -190,7 +190,7 @@ const Confirm = () => {
   
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">確認お電話ご希望時間帯</p> 
             {/* <p className="basis-full">{`${values.time}`}</p>  */}
             <p className="basis-full">{values.time && values.time.join()}</p> 
@@ -204,7 +204,7 @@ const Confirm = () => {
 
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">確認お電話ご希望曜日</p> 
             <p className="basis-full">{values.week && values.week.join()}</p> 
           </div>
@@ -217,7 +217,7 @@ const Confirm = () => {
 
 
         <div className="py-3 space-y-3">
-          <div className="md:flex items-center"> 
+          <div className="lg:flex items-center"> 
             <p className="basis-1/3">ご質問など</p> 
             <p className="basis-full ">{values.question}</p> 
           </div>

@@ -8,7 +8,7 @@ type Props = {
 const FlowCpn = ({title,image,discription,arrow}:Props) => {
     return (
         <div className="basis-1/5">
-        <div className="card card-compact bg-base-100 shadow-xl h-96 ">
+        <div className="card card-compact bg-base-100 shadow-xl h-96 w-80 md:w-[500px] lg:w-auto">
             
         <figure className="bg-primary h-48">
             {image}
@@ -20,7 +20,7 @@ const FlowCpn = ({title,image,discription,arrow}:Props) => {
         {arrow 
             &&  (
             <div className="card-actions ">
-            <div className="flex justify-center mx-3 space-x-1">
+            <div className="flex justify-center mx-3 space-x-1 md:space-x-5 lg:space-x-1">
             <a href="tel:0120-197-802" className=" btn btn-primary  text-slate-100 before:content-['電話する'] relative btn-circle w-1/2 px-2">
             <span className="absolute right-0 2xl:right-0">{arrow}</span>
             </a>

@@ -11,7 +11,7 @@ const TimeCpn = () => {
     return (
       <div className="py-3">
 
-        <div className="md:flex items-center space-y-3 md:space-y-0">
+        <div className="lg:flex items-center space-y-3 lg:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-secondary">必須</div>
@@ -19,7 +19,7 @@ const TimeCpn = () => {
        
         </div>
 
-        <div className="basis-full md:flex space-x-0 md:space-x-2">
+        <div className="basis-full lg:flex space-x-0 lg:space-x-2">
         <div className="form-control">
           <label className="label cursor-pointer self-start space-x-2">
             <input type="checkbox" 
@@ -96,7 +96,7 @@ const TimeCpn = () => {
 
         </div>
         <div className="flex">
-        <div className="md:basis-1/3">
+        <div className="lg:basis-1/3">
         <ErrorMessage
             errors={errors}
             name="time"

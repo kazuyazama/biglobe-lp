@@ -11,22 +11,22 @@ const Campaign = () => {
         <>
 
         <div className="pt-20 relative">
-        <h1 className="text-center text-2xl tracking-widest md:text-3xl font-semibold  before:content-['Campaign'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-0 before:opacity-10">キャンペーン</h1>
+        <h1 className="text-center text-2xl tracking-widest lg:text-3xl font-semibold  before:content-['Campaign'] before:text-6xl before:absolute before:-translate-y-10 before:inset-x-0 before:opacity-10">キャンペーン</h1>
         <div className="flex justify-center pt-20 ">
 
           <div className="basis-full ">
 
 
-            <div className="card card-compact md:card-normal bg-base-100 shadow-xl">
+            <div className="card card-compact lg:card-normal bg-base-100 shadow-xl">
             <h2 className="font-semibold bg-accent text-xl text-center py-3">
              当サイト限定！選べるキャンペーン
             </h2>
-            <div className="card md:card-side  rounded-t-none">
+            <div className="card lg:card-side  rounded-t-none">
             <Link href="/campaignDetail">
             <figure className="w-full p-2"><Image loader={({src}) => src} src="/main/campaign/限定キャンペーン.svg" alt="ipV6ルーター無料" width={800} height={500} className="hover:scale-105 w-full hover:opacity-60" /></figure>
              </Link>
 
-            <div className="card-body border-t border-primary">
+            <div className="card-body border-t lg:border-none border-primary">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
                 <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または
                   工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！
@@ -34,8 +34,8 @@ const Campaign = () => {
                 <div className="card-actions justify-end">
                 <Link href='/campaignDetail'>
                 <button 
-                className="btn btn-secondary w-1/2 before:content-['詳しく見る'] before:text-lg relative rounded-xl">
-                <span className="text-xl absolute right-0.5 md:right-2"><IoIosArrowForward /></span>
+                className="btn btn-secondary btn-sm lg:btn-md px-8 lg:px-0 lg:w-1/3 before:content-['詳しく見る'] before:lg:text-lg  relative rounded-xl">
+                <span className="text-xl absolute right-0.5 lg:right-2"><IoIosArrowForward /></span>
                 </button>
                 </Link>
                 </div>
@@ -47,7 +47,7 @@ const Campaign = () => {
           </div>
         </div>
 
-        <div className="md:flex justify-center space-y-5 md:space-y-0 md:space-x-5 pt-5">
+        <div className="lg:flex justify-center space-y-5 lg:space-y-0 lg:space-x-5 pt-5">
 
         <div className="basis-1/3 ">
       
@@ -81,7 +81,7 @@ const Campaign = () => {
         <div className="card-body border-t border-primary ">
             <h2 className="card-title ">auの携帯料金がお得に！</h2>
             <p>ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</p>
-            <div className="card-actions justify-end pt-5 md:pt-0 2xl:pt-5">
+            <div className="card-actions justify-end pt-5 lg:pt-0 2xl:pt-5">
             <Link href="/campaignDetail/#au-sv">
             <button className="relative btn btn-secondary btn-sm px-8 rounded-xl"> 
                 <span className="">詳しく見る</span>

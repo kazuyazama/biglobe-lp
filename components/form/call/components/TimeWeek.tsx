@@ -12,7 +12,7 @@ const TimeWeek = ({time,week,registerWeek,registerTime}:Props) => {
     return (
         <div className="pb-3">
 
-        <div className="md:flex items-center space-y-3 md:space-y-0">
+        <div className="lg:flex items-center space-y-3 lg:space-y-0">
 
         <div className="basis-1/3 space-x-2">
         <div className="badge badge-primary">任意</div>
@@ -20,7 +20,7 @@ const TimeWeek = ({time,week,registerWeek,registerTime}:Props) => {
        
         </div>
 
-        <div className="basis-full flex space-x-0 md:space-x-2">
+        <div className="basis-full flex space-x-0 lg:space-x-2">
       
         <div className="form-control">
         <label className="label cursor-pointer self-start space-x-2">
@@ -63,7 +63,7 @@ const TimeWeek = ({time,week,registerWeek,registerTime}:Props) => {
         </div>
         
         <div className="flex">
-        <div className="md:basis-1/3">
+        <div className="lg:basis-1/3">
         </div >
         <p className="basis-full text-error">※ご希望の時間に添えない場合もございます。予めご了承ください。</p> 
         </div>
