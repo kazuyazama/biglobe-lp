@@ -1,11 +1,13 @@
 import Link from "next/link";
 
+
+
 const Footer = () => {
     return (
         <>
         <footer className="footer footer-center p-10 bg-gradient-to-r from-cyan-500 to-blue-500 text-base-content ">
         <div className="grid grid-flow-col gap-4 text-white">
-            <Link href="/">
+            <Link href='/'>
             <a className="link link-hover">TOP</a> 
             </Link>
             <Link href="/company">

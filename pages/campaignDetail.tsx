@@ -45,7 +45,7 @@ const Campaign:NextPageWithLayout = () => {
             <div className="col-span-6 space-y-3 text-center " id='original'>
                 <h1 className="text-xl lg:text-xl font-semibold ">当サイト限定選べるキャンペーン</h1>
                 <h2 className="lg:text-lg">当サイトからお申し込みでお得なキャンペーンが適用されます！下記2つからお好きなキャンペーンをお選びいただけます。</h2>
-                <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="選べるキャンペーン" width={1000} height={350}  /></figure>
+                <figure className="full"><Image loader={({src}) => src} src="/main/campaign/キャンペーン.svg" alt="当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！" width={1000} height={350}  /></figure>
             </div>
       
 
@@ -221,7 +221,7 @@ const Campaign:NextPageWithLayout = () => {
                 <h1 className="text-lg lg:text-xl font-semibold">auスマートバリュー</h1>
                 <h2 className="lg:text-lg">ビッグローブ光(ネット＋電話)とauスマートフォン等をセットでのご利用でau携帯電話のご利用料金が割引！</h2>
                 <div>
-                    <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                    <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="auスマートバリューで家族みんなのスマホが永年割引 1人あたり最大1100円/月割引" width={800} height={300} />
                 </div>
                 {/* <p>特典１の詳細</p> */}
             </div>
@@ -261,7 +261,7 @@ const Campaign:NextPageWithLayout = () => {
             </div>
             <div className="col-span-6 lg:col-span-3">
                 <div>
-                    <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                    <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="一人でも家族でもお得" width={800} height={300} />
                 </div>
             </div>
 
@@ -309,7 +309,7 @@ const Campaign:NextPageWithLayout = () => {
             <div className="col-span-6 space-y-3 text-center" id="uq-set">
                 <h1 className="text-lg lg:text-xl font-semibold">UQ mobile 自宅セット割</h1>
                 <h2 className="lg:text-lg">ビッグローブ光(ネット＋電話)とUQmobileをセットでのご利用でUQmobileのご利用料金が割引！</h2>
-                <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="" width={800} height={300} /></div>
+                <div className=""><Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="UQモバイル自宅セット割 ビッグローブ光とUQMoblieの同時利用で家族みんなのスマホが1人あたり最大858円割引" width={800} height={300} /></div>
               
             </div>
 
@@ -374,7 +374,7 @@ const Campaign:NextPageWithLayout = () => {
             </div>
             <div className="col-span-6 lg:col-span-3">
                 <div>
-                    <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="無線LAN付IPv6対応ルータ月額料金無料特典" width={800} height={300} />
+                    <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt="ひとりでも家族でもお得" width={800} height={300} />
                 </div>
             </div>
 

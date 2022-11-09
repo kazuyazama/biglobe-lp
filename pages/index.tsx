@@ -27,8 +27,8 @@ const Home: NextPageWithLayout = () => {
           
         <div className='container mx-auto sm:px-20 '>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
-          <figure className='pt-10 hidden lg:block'><Image loader={({src}) => src} src="/main/top/mainVisual.svg" alt="topimage" width={1000} height={500} layout="responsive"   /></figure>
-          <figure className='pt-5 block lg:hidden'><Image loader={({src}) => src} src="/main/top/mainVisual(SPver).svg" alt="topimage" width={470} height={650} layout="responsive" className='w-full' /></figure>
+          <figure className='pt-10 hidden lg:block'><Image loader={({src}) => src} src="/main/top/mainVisual.svg" alt="賃貸住宅の方にお住まいの方でも安心。ビッグローブ光なら何回引っ越しても工事費無料！インターネット回線はBIGLOBEが提供するビッグローブ光がおすすめ！当社からのお申し込みで、「最大35,000円キャッシュバック」or「キャッシュバック＋工事費無料（合計29,800円相当お得！）」の選べるキャンペーン実施中！" width={1000} height={500} layout="responsive"   /></figure>
+          <figure className='pt-5 block lg:hidden'><Image loader={({src}) => src} src="/main/top/mainVisual(SPver).svg" alt="賃貸住宅の方にお住まいの方でも安心。ビッグローブ光なら何回引っ越しても工事費無料！インターネット回線はBIGLOBEが提供するビッグローブ光がおすすめ！当社からのお申し込みで、「最大35,000円キャッシュバック」or「キャッシュバック＋工事費無料（合計29,800円相当お得！）」の選べるキャンペーン実施中！" width={470} height={650} layout="responsive" className='w-full' /></figure>
        
         </div>
 

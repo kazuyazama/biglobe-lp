@@ -23,7 +23,12 @@ const Campaign = () => {
             </h2>
             <div className="card lg:card-side  rounded-t-none">
             <Link href="/campaignDetail">
-            <figure className="w-full p-2"><Image loader={({src}) => src} src="/main/campaign/限定キャンペーン.svg" alt="ipV6ルーター無料" width={800} height={500} className="hover:scale-105 w-full hover:opacity-60" /></figure>
+            <figure className="w-full p-2">
+              <Image loader={({src}) => src} 
+              src="/main/campaign/限定キャンペーン.svg" 
+              alt="当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！" 
+              width={800} height={500} className="hover:scale-105 w-full hover:opacity-60" />
+            </figure>
              </Link>
 
             <div className="card-body border-t lg:border-none border-primary">
@@ -54,7 +59,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">ipV6ルーター無料特典</div>
         <Link href="/campaignDetail">
-        <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ビッグローブ光と同時申し込みでipV6ルーターが６ヶ月間無料レンタル可能" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary ">
             <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>
@@ -76,7 +81,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">auスマートバリュー</div>
         <Link href="/campaignDetail">
-        <Image loader={({src}) => src}  src="/main/campaign/au-smart-value.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image loader={({src}) => src}  src="/main/campaign/au-smart-value.svg" alt="auスマートバリューで家族みんなのスマホが永年割引 1人あたり最大1100円/月割引"  width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary ">
             <h2 className="card-title ">auの携帯料金がお得に！</h2>
@@ -102,7 +107,7 @@ const Campaign = () => {
         <div className="card card-compact bg-base-100 shadow-xl ">
           <div className="bg-accent text-xl font-semibold py-2 text-center">UQモバイル自宅セット割</div>
         <Link href="/campaignDetail">
-        <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="ipV6ルーター無料" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
+        <Image loader={({src}) => src} src="/main/campaign/UQmobile.svg" alt="UQモバイル自宅セット割 ビッグローブ光とUQMoblieの同時利用で家族みんなのスマホが1人あたり最大858円割引" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary ">
             <h2 className="card-title ">UQモバイルの携帯料金がお得に！</h2>

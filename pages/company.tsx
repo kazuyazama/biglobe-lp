@@ -29,7 +29,7 @@ const Company:NextPageWithLayout = () => {
 
         <ul className="border border-primary rounded-md divide-y">
           <li className="md:flex divide-x-2 divide-y-2 md:divide-y-0">
-            <div className="basis-1/3  bg-sky-100 flex items-center justify-center py-3">会社名</div>
+            <div className="basis-1/3  bg-sky-100 flex items-center justify-center py-3 rounded-tl">会社名</div>
             <div className="basis-full py-3 pl-3">株式会社リ・スターツ</div>
           </li>
           <li className="md:flex divide-x-2 divide-y-2 md:divide-y-0 ">
@@ -73,7 +73,7 @@ const Company:NextPageWithLayout = () => {
             <div className="basis-full py-3 pl-3">各通信サービスの定めるところによる</div>
           </li>
           <li className="md:flex divide-x-2 divide-y-2 md:divide-y-0 ">
-            <div className="basis-1/3  bg-sky-100 flex items-center justify-center py-3">返品/返還の特約</div>
+            <div className="basis-1/3  bg-sky-100 flex items-center justify-center py-3 rounded-bl">返品/返還の特約</div>
             <div className="basis-full py-3 pl-3">
             【サービス提供前】<br />
             当サイト：0120-197-8-2 <br />

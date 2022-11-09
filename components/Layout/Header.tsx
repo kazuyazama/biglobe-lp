@@ -20,7 +20,7 @@ const Header = () => {
                 </label>
                 <ul tabIndex={0} className="menu dropdown-content mt-3 p-2 shadow bg-sky-100 rounded-box w-56 hover-bordered ">
                     <li>
-                        <Scroll to="top" smooth={true} duration={600}>HOME</Scroll>
+                        <Scroll to="top" smooth={true} duration={600}>TOP</Scroll>
                     </li>
                     <li>
                         <Scroll to="campaign" smooth={true} duration={600} offset={-60}>キャンペーン</Scroll>
@@ -51,12 +51,12 @@ const Header = () => {
                
                 
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <nav className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                 
                 <li>
                     <Scroll to="top" smooth={true} duration={600} >
-                    HOME
+                    TOP
                     </Scroll> 
                 </li>
                 <li>
@@ -84,10 +84,10 @@ const Header = () => {
                
     
                 </ul>
-            </div>
+            </nav>
             <div className="navbar-end flex ">
                 <Link href="/form/web">
-                <a className=" btn btn-secondary rounded-full w-[160px] lg:w-48 lg:w-52 lg:px-3 border-double border-4 border-base-100 ">
+                <a className=" btn btn-secondary rounded-full w-[160px] lg:w-48 lg:px-3 border-double border-4 border-base-100 ">
                     <div className="inline-flex items-center space-x-1 lg:space-x-2 justify-between  ">
                     <AiOutlineForm className='lg:text-xl' />
                     <span className='text-slate-100 whitespace-nowrap'>Webお申し込み</span>

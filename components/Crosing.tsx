@@ -13,10 +13,10 @@ const Crosing = () => {
             <div className="basis-full mb-1 lg:mb-0">
              
                 <figure className="hidden lg:block">
-                    <Image loader={({src}) => src} src="/main/crosing/不安を解消.svg" width={600} height={170} layout='responsive'   />
+                    <Image loader={({src}) => src} src="/main/crosing/不安を解消.svg" alt="キャンセルは工事まえであれば可能です。まずはご相談ください" width={600} height={170} layout='responsive'   />
                 </figure>
                 <figure className="lg:hidden scale-105">
-                    <Image loader={({src}) => src} src="/main/crosing/不安を解消(SPver).svg" width={350} height={500}  />
+                    <Image loader={({src}) => src} src="/main/crosing/不安を解消(SPver).svg" alt="キャンセルは工事まえであれば可能です。まずはご相談ください" width={350} height={500}  />
                 </figure>
          
             </div>

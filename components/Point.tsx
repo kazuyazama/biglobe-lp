@@ -127,10 +127,10 @@ const Point = () => {
             <div className="col-span-2 space-y-5 text-center">
                 <h1 className="text-lg lg:text-2xl font-semibold">auスマートバリュー</h1>
                 <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl lg:hidden">
-                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={230} />     
+                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" alt="auスマートバリュー" width={600} height={230} />     
                 </div>
                 <div className="shadow-lg border-2 border-primary bg-sky-50 rounded-xl hidden lg:block">
-                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg" width={600} height={200} />     
+                 <Image loader={({src}) => src} src="/main/campaign/au-smart-value.svg"　alt="auスマートバリュー" width={600} height={200} />     
                 </div>
             </div>
 
@@ -148,10 +148,10 @@ const Point = () => {
             <h1 className="text-lg lg:text-2xl font-semibold">ひとりでも家族でもお得！</h1>   
 
             <div className="lg:hidden">
-            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={700} height={300} />     
+            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt='ひとりでも家族でもお得' width={700} height={300} />     
             </div>
             <div className="hidden lg:block">
-            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" width={700} height={250} />     
+            <Image loader={({src}) => src} src="/main/campaign/ひとりでも家族でもお得.svg" alt='ひとりでも家族でもお得'  width={700} height={250} />     
             </div>
 
             <p className="text-start lg:px-20">
@@ -192,16 +192,16 @@ const Point = () => {
 
             <div className="flex flex-col lg:flex-row col-span-2 gap-4 lg:gap-0 justify-center ">
             <div className="basis-1/3 block lg:hidden">
-            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={600} height={350}  />
+            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" alt="IPv4だと、混雑していて通信速度が低下" width={600} height={350}  />
             </div>
             <div className="hidden lg:block basis-1/3">
-            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" width={500} height={350}  />
+            <Image loader={({src}) => src} src="/main/point/IPv4ver.svg" alt="IPv4だと、混雑していて通信速度が低下" width={500} height={350}  />
             </div>
             <div className="basis-1/3 block lg:hidden ">
-            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={600} height={350}  />
+            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" alt="IPv6だと、混雑無しの高速通信！" width={600} height={350}  />
             </div>
             <div className="hidden lg:block basis-1/3 ">
-            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" width={500} height={350}  />
+            <Image loader={({src}) => src} src="/main/point/IPv6ver.svg" alt="IPv6だと、混雑無しの高速通信！"  width={500} height={350}  />
             </div>
         
             </div>
@@ -218,7 +218,7 @@ const Point = () => {
 
             <div className="col-span-2">
             <figure className="-mx-3">
-            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={600} height={250}   />   
+            <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" alt="回線速度はフレッツ光と同じ最大1Gbpsだから快適！" width={600} height={250}   />   
             </figure>
             {/* <figure className="block lg:hidden">
             <Image loader={({src}) => src} src="/main/point/フレッツ光と同じ速度.svg" width={330} height={150} layout='fixed' />   
@@ -259,7 +259,7 @@ const Point = () => {
             </div>
 
             <div className="col-span-2 -mx-2">
-            <Image loader={({src}) => src} src="/main/point/引っ越し無料.svg" width={600} height={250}  /> 
+            <Image loader={({src}) => src} src="/main/point/引っ越し無料.svg" alt="引っ越し時の移転費用が何度でも無料なのは、ビッグローブ光だけ！" width={600} height={250}  /> 
             </div>
 
        
