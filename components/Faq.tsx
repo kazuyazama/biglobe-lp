@@ -31,11 +31,7 @@ const Faq = () => {
             <p className="pb-2">
             現在NTT東日本・NTT西日本の提供しているフレッツ光およびオプションサービスをご利用のお客さまが、当社の提供する光回線（「ビッグローブ光」）およびオプションサービスに契約を変更することを「転用」といいます。転用でお申し込みの場合の流れは下記ページからご確認いただけます。
             </p>
-            <span>東日本にお住まいの方⇨</span>
-            <Link href="https://flets.com/app4/input/index/"><a className="link link-primary">NTT東日本公式HP</a></Link>
-            <br/>
-            <span>西日本にお住まいの方⇨</span>
-            <Link href="https://flets-w.com/collabo/tenyou/entry/"><a className="link link-primary">NTT西日本公式HP</a></Link>
+       
            
         </div>
         </div>
@@ -51,11 +47,7 @@ const Faq = () => {
             事業者変更でお申し込みの場合は、現在契約中の事業者が発行する「事業者変更承諾番号」が必要です。
             事業者変更でお申し込みの場合の流れは下記ページからご確認いただけます。
             </p>
-            <span>東日本にお住まいの方⇨</span>
-            <Link href="https://flets.com/app10/kaiji/"><a className="link link-primary">NTT東日本公式HP</a></Link>
-            <br/>
-            <span>西日本にお住まいの方⇨</span>
-            <Link href="https://flets-w.com/collabo/change/"><a className="link link-primary">NTT西日本公式HP</a></Link>
+          
             
         </div>
         </div>

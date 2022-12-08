@@ -76,7 +76,7 @@ const Company:NextPageWithLayout = () => {
             <div className="basis-1/3  bg-sky-100 flex items-center justify-center py-3 rounded-bl">返品/返還の特約</div>
             <div className="basis-full py-3 pl-3">
             【サービス提供前】<br />
-            当サイト：0120-197-8-2 <br />
+            当サイト：0120-197-802 <br />
             【サービス提供後】<br />
             ビッグローブ光：0120-04-0962
             </div>

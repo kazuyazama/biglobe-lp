@@ -16,6 +16,7 @@ const Home: NextPageWithLayout = () => {
   
   return (
     <> 
+    {/* サイト公開OKになったらnoindexを外す */}
     <NextSeo noindex={true} />
     <div className='overflow-x-hidden'>
       {/* topimage */}
@@ -41,7 +42,7 @@ const Home: NextPageWithLayout = () => {
 
         {/* news */}
 
-        <div className='flex justify-center my-2 md:my-5'>
+        {/* <div className='flex justify-center my-2 md:my-5'>
         <div className='flex items-center space-x-2'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info flex-shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           <h1 className='text-xs md:text-base'>法改正により、よりお得にご利用ができるようになりました。</h1>
@@ -49,7 +50,7 @@ const Home: NextPageWithLayout = () => {
         </div>
 
       
-        </div>
+        </div> */}
 
       </section>
 

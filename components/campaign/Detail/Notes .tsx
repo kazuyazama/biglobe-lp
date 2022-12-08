@@ -9,7 +9,7 @@ type Props = {
     list6:string;
     list7:string;
     list8:string;
-    list9:string;
+    list9?:string;
 }
 
 
@@ -34,7 +34,7 @@ const Notes  = ({title,list1,list2,list3,list4,list5,list6,list7,list8,list9,id}
             <li>{list6}</li>
             <li>{list7}</li>
             <li>{list8}</li>
-            <li>{list9}</li>
+            {list9 && (<li>{list9}</li>)}
         </ul>
         </div>
      </div>

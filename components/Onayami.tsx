@@ -18,7 +18,7 @@ const Onayami = () => {
 
             <div className="lg:flex space-y-8 lg:space-y-0 bg-base-100">
             <div className="basis-full relative">
-                <p className="-mb-10 bg-slate-200 p-6 rounded-2xl w-3/4 h-1/4 mx-auto relative self-center flex items-center justify-center">ケータイがauだけど、au光が建物に対応していない、、、</p>
+                <p className="-mb-10 bg-slate-200 p-6 rounded-2xl w-3/4 h-1/4 mx-auto relative self-center flex items-center justify-center">ケータイがauだけど、auひかりが建物に対応していない、、、</p>
                 {/* <span className="bg-primary before:content-['ケータイがauだけど、au光が対応していない、、、'] before:absolute before:inset-x-1/2 before:-translate-x-40 before:whitespace-nowrap "></span> */}
                 <span className="rounded-full bg-slate-200 h-6 w-6 inline-flex absolute right-20 top-24 lg:top-24"></span>
                 <span className="rounded-full bg-slate-200 h-3 w-3 inline-flex absolute right-28 top-32 lg:top-32"></span>
@@ -26,7 +26,7 @@ const Onayami = () => {
             border-l-[300px] lg:border-l-[30px] 
             border-b-transparent border-r-transparent border-l-transparent absolute inset-x-1/2 -translate-x-1/2"></span> */}
                 
-            <figure className="py-5"><Image loader={({src}) => src} src="/main/onayami/悩み1.svg" alt="ケータイがauだけど、au光が建物に対応していない、、"　 width={500} height={350} layout='responsive' /></figure>
+            <figure className="py-5"><Image loader={({src}) => src} src="/main/onayami/悩み1.svg" alt="ケータイがauだけど、auひかりが建物に対応していない、、"　 width={500} height={350} layout='responsive' /></figure>
             </div>
             <div className="basis-full relative">
                 <p className="-mb-10 bg-slate-200 p-6 rounded-2xl w-3/4 h-1/4 mx-auto relative flex items-center justify-center">オンラインゲームをやるからIPv6を無料で使いたい</p>

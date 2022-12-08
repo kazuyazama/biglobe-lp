@@ -62,8 +62,8 @@ const Campaign = () => {
         <Image loader={({src}) => src} src="/main/campaign/IPv6.svg" alt="ビッグローブ光と同時申し込みでipV6ルーターが６ヶ月間無料レンタル可能" width={350} height={125} className="hover:scale-105 w-full hover:opacity-60" />
         </Link>
         <div className="card-body border-t border-primary ">
-            <h2 className="card-title ">IPv6ルーターがレンタル無料！</h2>
-            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料に</p>
+            <h2 className="card-title ">通常550円/月が６ヶ月間無料に！</h2>
+            <p>ビッグローブ光と無線LAN付きルーターの同時申込で無線LAN付きルーターが６ヶ月間無料！</p>
             <div className="card-actions justify-end pt-5">
             <Link href="/campaignDetail/#ip-v6">
             <button className="relative btn btn-secondary btn-sm px-8 rounded-xl "> 
