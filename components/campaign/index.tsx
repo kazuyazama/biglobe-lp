@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {IoIosArrowForward} from "react-icons/io"
-import {Link as Scroll} from "react-scroll"
 
 
 

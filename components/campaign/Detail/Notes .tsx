@@ -1,19 +1,16 @@
+
+type notes = {
+    desc:string;
+}
+
 type Props = {
     id?:string;
     title:string;
-    list1:string;
-    list2:string;
-    list3:string;
-    list4:string;
-    list5:string;
-    list6:string;
-    list7:string;
-    list8:string;
-    list9?:string;
+    notes:notes[];
 }
 
 
-const Notes  = ({title,list1,list2,list3,list4,list5,list6,list7,list8,list9,id}:Props) => {
+const Notes  = ({title,id,notes}:Props) => {
     return (
         <div  className="col-span-6 justify-self-start w-full" id={id}>
         <div tabIndex={0} className="collapse collapse-arrow md:collapse-open">
@@ -23,18 +20,11 @@ const Notes  = ({title,list1,list2,list3,list4,list5,list6,list7,list8,list9,id}
 
 
         <ul className="collapse-content list-disc list-inside space-y-2 border-b border-l border-r">
-        
-            <li className="pt-3">
-                {list1}
-            </li>
-            <li>{list2}</li>
-            <li>{list3}</li>
-            <li>{list4}</li>
-            <li>{list5}</li>
-            <li>{list6}</li>
-            <li>{list7}</li>
-            <li>{list8}</li>
-            {list9 && (<li>{list9}</li>)}
+
+            {notes?.map((li) => (
+                <li className=" first-of-type:pt-3" key={li.desc}>{li.desc}</li>
+            ))}
+            
         </ul>
         </div>
      </div>

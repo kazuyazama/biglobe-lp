@@ -5,8 +5,11 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <>
-        <footer className="footer footer-center p-10 bg-gradient-to-r from-cyan-500 to-blue-500 text-base-content ">
-        <div className="grid grid-flow-col gap-4 text-white">
+        <footer className="footer footer-center p-10 bg-gradient-to-r from-cyan-500 to-blue-500 text-base-content relative ">
+        <div className="w-full absolute top-0 bg-white text-[10px] lg:text-xs">※特に注記のない限り、記載の金額は全て税込金額です。消費税計算の都合上、実際の請求額とは異なる場合があります。記載されている会社名、商品名およびサービス名は、各社の商標または登録商標です。</div>
+        <div className=" flex flex-col gap-4 lg:translate-y-0 pt-12 lg:py-3">
+
+        <div className="grid grid-flow-col gap-4 text-white ">
             <Link href='/'>
             <a className="link link-hover">TOP</a> 
             </Link>
@@ -30,6 +33,8 @@ const Footer = () => {
         <div className="text-white">
             <p>Copyright © 2022 - All right reserved by restarts Ltd</p>
         </div>
+        </div>
+
         </footer>
         </>
     );
