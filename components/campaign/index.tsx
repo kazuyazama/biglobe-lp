@@ -33,7 +33,7 @@ const Campaign = () => {
             <div className="card-body border-t lg:border-none border-primary">
                 <h2 className="card-title">当サイトだけのお得なキャンペーン！</h2>
                 <p>当サイト限定のビッグローブ光キャンペーン！高額キャッシュバック(最大35,000円)または
-                  工事費無料+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！
+                  工事費割引+キャッシュバック(最大29,800円相当)のどちらかをお選びいただけるキャンペーンです！
                 </p>
                 <div className="card-actions justify-end">
                 <Link href='/campaignDetail'>

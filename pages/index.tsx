@@ -26,11 +26,14 @@ const Home: NextPageWithLayout = () => {
     
         
           
-        <div className='container mx-auto sm:px-20 '>
+        <div className='container mx-auto sm:px-20 relative '>
           {/* <figure><img src="/images/main/lp_pc.png" alt="topimage"/></figure> */}
           <figure className='pt-10 hidden lg:block'><Image loader={({src}) => src} src="/main/top/newMainVisual.svg" alt="賃貸住宅の方にお住まいの方でも安心。ビッグローブ光なら何回引っ越しても工事費無料！インターネット回線はBIGLOBEが提供するビッグローブ光がおすすめ！当社からのお申し込みで、「最大35,000円キャッシュバック」or「キャッシュバック＋工事費無料（合計29,800円相当お得！）」の選べるキャンペーン実施中！" width={1000} height={500} layout="responsive"   /></figure>
           <figure className='pt-5 block lg:hidden'><Image loader={({src}) => src} src="/main/top/mainVisual(SPver).svg" alt="賃貸住宅の方にお住まいの方でも安心。ビッグローブ光なら何回引っ越しても工事費無料！インターネット回線はBIGLOBEが提供するビッグローブ光がおすすめ！当社からのお申し込みで、「最大35,000円キャッシュバック」or「キャッシュバック＋工事費無料（合計29,800円相当お得！）」の選べるキャンペーン実施中！" width={470} height={650} layout="responsive" className='w-full' /></figure>
-       
+          {/* <div className='text-[1px] lg:text-xs absolute bottom-32 lg:bottom-8 left-5 lg:left-48'>
+          <p className=''>特典A受取条件：３年プランの場合、当サイト限定キャッシュバック（BIGLOBEより30,000円 + 当社より5,000円 <br/> ※他社転用・事業者変更の場合は15,000円</p>
+          <p className=''>特典B受取条件：３年プランの場合、新規工事費分割払い相当をBIGLOBE利用料金から値引き<br />＋当社限定キャッシュバック10,000円</p>
+          </div> */}
         </div>
 
         </div>
