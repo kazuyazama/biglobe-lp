@@ -1,4 +1,3 @@
-import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Campaign from '../components/campaign';
 import ContactSection from '../components/ContactSection';
@@ -16,8 +15,6 @@ const Home: NextPageWithLayout = () => {
   
   return (
     <> 
-    {/* サイト公開OKになったらnoindexを外す */}
-    <NextSeo noindex={true} />
     <div className='overflow-x-hidden'>
       {/* topimage */}
       <section className='container pt-20' id='top'>
