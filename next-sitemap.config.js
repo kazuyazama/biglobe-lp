@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl:'https://biglobe-lp.pages.dev/',
+    siteUrl:'https://biglobe-lp.pages.dev',
     generateRobotsTxt: true,
   }
