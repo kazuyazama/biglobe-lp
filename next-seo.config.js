@@ -9,7 +9,7 @@ export default {
       site_name: 'ビッグローブ光正規代理店株式会社リ・スターツ',
       images: [
         {
-          url: "",
+          url: "/main/top/newMainVisual.svg",
           width: 800,
           height: 600,
           alt: 'Og Image Alt',
@@ -17,9 +17,9 @@ export default {
         },
        ],
     },
-    twitter: {
-      handle: '@hogehoge',
-      site: '@fugafuga',
-      cardType: 'summary_large_image',
-    },
+    // twitter: {
+    //   handle: '@hogehoge',
+    //   site: '@fugafuga',
+    //   cardType: 'summary_large_image',
+    // },
 };

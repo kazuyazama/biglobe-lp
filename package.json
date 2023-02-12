@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev":  "next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap --config sitemap.config.js"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
@@ -16,6 +17,7 @@
     "daisyui": "^2.31.0",
     "next": "12.3.1",
     "next-seo": "^5.5.0",
+    "next-sitemap": "^3.1.52",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.37.0",
